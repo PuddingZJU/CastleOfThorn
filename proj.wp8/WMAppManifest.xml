@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{2ac777ca-2d3b-41c8-98ac-b6ed1a4b0988}" Title="CastleOfThorn" RuntimeType="Modern Native" Version="1.0.0.0" Genre="apps.normal" Author="CastleOfThorn author" Description="Simple Direct3D application" Publisher="CastleOfThorn" PublisherID="{aeaf9128-fa87-4333-9a06-d5491093e1c3}">
+  <App xmlns="" ProductID="{2ac777ca-2d3b-41c8-98ac-b6ed1a4b0988}" Title="Castle of Thorn" RuntimeType="Modern Native" Version="1.0.0.0" Genre="apps.normal" Author="CodKnight" Description="Simple Direct3D application" Publisher="CodeKnight" PublisherID="{aeaf9128-fa87-4333-9a06-d5491093e1c3}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
