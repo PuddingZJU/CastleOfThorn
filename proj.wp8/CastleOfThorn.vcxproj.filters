@@ -11,6 +11,9 @@
     <Filter Include="Classes\ClickAndMoveTest">
       <UniqueIdentifier>{c4067854-d06e-431d-b750-d76dab15655d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Assets\Resources">
+      <UniqueIdentifier>{624118b7-db39-4dcb-a6b3-9aa82920420e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\ApplicationIcon.png">
@@ -34,6 +37,18 @@
     <Image Include="Assets\Tiles\IconicTileSmall.png">
       <Filter>Assets</Filter>
     </Image>
+    <Image Include="..\Resources\CloseNormal.png">
+      <Filter>Assets\Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\CloseSelected.png">
+      <Filter>Assets\Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\main_menu_background.png">
+      <Filter>Assets\Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\main_menu_button_normal.png">
+      <Filter>Assets\Resources</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CastleOfThorn.cpp" />
@@ -41,6 +56,9 @@
       <Filter>Classes</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\MainMenuScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCRPGTalkBox.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,6 +71,9 @@
       <Filter>Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\MainMenuScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCRPGTalkBox.h">
       <Filter>Classes</Filter>
     </ClInclude>
   </ItemGroup>

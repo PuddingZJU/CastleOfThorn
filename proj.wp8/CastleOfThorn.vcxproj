@@ -184,6 +184,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\Resources\CloseNormal.png" />
+    <Image Include="..\Resources\CloseSelected.png" />
+    <Image Include="..\Resources\main_menu_background.png" />
+    <Image Include="..\Resources\main_menu_button_normal.png" />
     <Image Include="Assets\ApplicationIcon.png" />
     <Image Include="Assets\AlignmentGrid.png" />
     <Image Include="Assets\Tiles\FlipCycleTileLarge.png" />
@@ -200,11 +204,13 @@
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\AppMacros.h" />
+    <ClInclude Include="..\Classes\CCRPGTalkBox.h" />
     <ClInclude Include="..\Classes\MainMenuScene.h" />
     <ClInclude Include="CastleOfThorn.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\CCRPGTalkBox.cpp" />
     <ClCompile Include="..\Classes\MainMenuScene.cpp" />
     <ClCompile Include="CastleOfThorn.cpp" />
   </ItemGroup>
