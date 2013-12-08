@@ -1,5 +1,5 @@
 #include "MainMenuScene.h"
-
+#include "CCRPGTalkBox.h"
 USING_NS_CC;
 
 CCScene* MainMenu::scene()
@@ -43,7 +43,9 @@ bool MainMenu::init()
     pSprite->setScaleX(winw/spx);
     pSprite->setScaleY(winh/spy);
     this->addChild(pSprite, 0);
-    
+    CCRPGTalkBox* box1 = CCRPGTalkBox::create(visibleSize, "arial.ttf",ccc3(0, 0, 0), 20.0, "1.png","dialog-box.png", 13, CCSizeMake(visibleSize.width, 200));
+    box1->SetContent("⼩小熹呢,还没回家吗?⼩小熹呢,还没回家吗?⼩小熹呢,还没回家吗?⼩小熹呢,还没回家吗?\n⼩小熹呢,还没回家吗?⼩小熹呢,还没回家吗?⼩小熹呢,还没回家吗");
+    this->addChild(box1,1);
     return true;
 }
 
