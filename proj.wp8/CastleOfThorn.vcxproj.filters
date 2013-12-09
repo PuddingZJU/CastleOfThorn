@@ -123,13 +123,16 @@
     <Xml Include="WMAppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Font Include="..\Resources\fonts\arial.ttf">
-      <Filter>Assets\Resources\fonts</Filter>
-    </Font>
-    <Font Include="..\Resources\fonts\arplmingu20lt.ttf">
-      <Filter>Assets\Resources\fonts</Filter>
-    </Font>
     <Font Include="..\Resources\fonts\Marker Felt.ttf">
+      <Filter>Assets\Resources\fonts</Filter>
+    </Font>
+    <Font Include="..\Resources\fonts\Arial.ttf">
+      <Filter>Assets\Resources\fonts</Filter>
+    </Font>
+    <Font Include="..\Resources\fonts\Heiti TC.ttf">
+      <Filter>Assets\Resources\fonts</Filter>
+    </Font>
+    <Font Include="..\Resources\fonts\AR PLMingU20 Light.ttf">
       <Filter>Assets\Resources\fonts</Filter>
     </Font>
   </ItemGroup>

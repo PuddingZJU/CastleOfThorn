@@ -252,8 +252,9 @@
     </_CustomResource>
   </ItemGroup>
   <ItemGroup>
-    <Font Include="..\Resources\fonts\arial.ttf" />
-    <Font Include="..\Resources\fonts\arplmingu20lt.ttf" />
+    <Font Include="..\Resources\fonts\AR PLMingU20 Light.ttf" />
+    <Font Include="..\Resources\fonts\Arial.ttf" />
+    <Font Include="..\Resources\fonts\Heiti TC.ttf" />
     <Font Include="..\Resources\fonts\Marker Felt.ttf" />
   </ItemGroup>
   <ItemGroup>
