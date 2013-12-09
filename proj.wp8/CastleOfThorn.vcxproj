@@ -184,10 +184,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\Resources\CloseNormal.png" />
-    <Image Include="..\Resources\CloseSelected.png" />
-    <Image Include="..\Resources\main_menu_background.png" />
-    <Image Include="..\Resources\main_menu_button_normal.png" />
+    <Image Include="..\Resources\image\background\dialog-box.png" />
+    <Image Include="..\Resources\image\background\main_menu_background.png" />
+    <Image Include="..\Resources\image\button\btn-continue-pressed.png" />
+    <Image Include="..\Resources\image\button\btn-continue.png" />
+    <Image Include="..\Resources\image\button\btn-exit-pressed.png" />
+    <Image Include="..\Resources\image\button\btn-exit.png" />
+    <Image Include="..\Resources\image\button\btn-newgame-pressed.png" />
+    <Image Include="..\Resources\image\button\btn-newgame.png" />
+    <Image Include="..\Resources\image\character\1.png" />
+    <Image Include="..\Resources\image\character\lin.png" />
+    <Image Include="..\Resources\image\character\vichy.png" />
+    <Image Include="..\Resources\image\character\xee squared.png" />
     <Image Include="Assets\ApplicationIcon.png" />
     <Image Include="Assets\AlignmentGrid.png" />
     <Image Include="Assets\Tiles\FlipCycleTileLarge.png" />
@@ -242,6 +250,14 @@
       <Link>Assets\Resources\%(RecursiveDir)%(FileName)%(Extension)</Link>
       <DeploymentContent>true</DeploymentContent>
     </_CustomResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\fonts\arial.ttf" />
+    <Font Include="..\Resources\fonts\arplmingu20lt.ttf" />
+    <Font Include="..\Resources\fonts\Marker Felt.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\maps\map-apartment.tmx" />
   </ItemGroup>
   <Target Name="_CollectCustomResources" BeforeTargets="AssignTargetPaths">
     <Message Text="Adding resource: %(_CustomResource.Identity) -&gt; %(_CustomResource.Link)" />

@@ -12,7 +12,7 @@ CCRPGTalkBox* CCRPGTalkBox::create(cocos2d::CCSize screensize,std::string font,c
     cur->boardpixel = boardpixel;
     cur->setContentSize(screensize);
     cur->_content = CCLabelTTF::create("", font.c_str(), textsize);
-    //_content->setFontFillColor(textcolor);
+	cur->_content->setColor(textcolor);
     CCSprite* tmp = CCSprite::create(background_image.c_str());
     CCSize size = tmp->getContentSize();
     CCRect fullRect = CCRectMake(0,0, size.width, size.height);
