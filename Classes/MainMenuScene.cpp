@@ -27,10 +27,12 @@ bool MainMenu::init()
         return false;
     }
     
+    scaleX = 0.0;
+    scaleY = 0.0;
     CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
     CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
 
-
+    //背景图片  start
     CCSprite* pSprite = CCSprite::create("main_menu_background.png");
 
     // position the sprite on the center of the screen
@@ -40,15 +42,51 @@ bool MainMenu::init()
     float spx = pSprite->getTextureRect().getMaxX();
     float spy = pSprite->getTextureRect().getMaxY();
     // add the sprite as a child to this layer
-    pSprite->setScaleX(winw/spx);
-    pSprite->setScaleY(winh/spy);
+    scaleX = winw/spx;
+    scaleY = winh/spy;
+    pSprite->setScaleX(scaleX);
+    pSprite->setScaleY(scaleY);
     this->addChild(pSprite, 0);
-    CCRPGTalkBox* box1 = CCRPGTalkBox::create(visibleSize, "fonts/AR PLMingU20 Light.ttf",ccc3(0, 0, 0), 20.0, "1.png","dialog-box.png", 13, CCSizeMake(visibleSize.width, 200));
-	box1->SetContent("货架上的客服还是开发的");
-	this->addChild(box1,1);
+    //背景图片 end
+
+    //菜单 start
+    int btn_interval =50;
+    CCMenuItemImage* newgameButton = CCMenuItemImage::create("btn-newgame.png", "btn-newgame-pressed.png",this,menu_selector(MainMenu::menu_startNewGame));
+    CCMenuItemImage* continueButton = CCMenuItemImage::create("btn-continue.png", "btn-continue-pressed.png");
+    CCMenuItemImage* exitButton = CCMenuItemImage::create("btn-exit.png", "btn-exit-pressed.png",this,menu_selector(MainMenu::menuCloseCallback));
+    newgameButton->setScaleX(scaleX);
+    newgameButton->setScaleY(scaleY);
+    continueButton->setScaleX(scaleX);
+    continueButton->setScaleY(scaleY);
+    exitButton->setScaleX(scaleX);
+    exitButton->setScaleY(scaleY);
+    continueButton->setPosition(ccp(0 , -50));
+    newgameButton->setPosition(0 , continueButton->getPositionY()+(continueButton->getContentSize().height/2+btn_interval)*scaleY);
+    exitButton->setPosition(0, continueButton->getPositionY()-(continueButton->getContentSize().height/2+btn_interval)*scaleY);
+    CCMenu * MainMenu = CCMenu::create(newgameButton,continueButton,exitButton,NULL);
+    this->addChild(MainMenu);
+    //菜单 end
+
     return true;
 }
 
+void MainMenu::talk2(){
+    CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
+    CCRPGTalkBox* box2 = CCRPGTalkBox::create(13, "dialog-box.png", "text2.txt", 13, CCSizeMake(visibleSize.width, 200), scaleY,NULL,this);
+    //box1->setPosition(ccp(visibleSize.width/2 , visibleSize.height/2 ));
+    addChild(box2,1,13);
+     box2->NextText();
+}
+void MainMenu::menu_startNewGame(){
+    CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
+    CCRPGTalkBox* box1 = CCRPGTalkBox::create(12, "dialog-box.png", "text.txt", 13, CCSizeMake(visibleSize.width, 200), scaleY,callfunc_selector(MainMenu::talk2),this);
+    //box1->setPosition(ccp(visibleSize.width/2 , visibleSize.height/2 ));
+    addChild(box1,14,12);
+    box1->NextText();
+    
+   
+
+}
 
 void MainMenu::menuCloseCallback(CCObject* pSender)
 {
@@ -61,3 +99,4 @@ void MainMenu::menuCloseCallback(CCObject* pSender)
 #endif
 #endif
 }
+
