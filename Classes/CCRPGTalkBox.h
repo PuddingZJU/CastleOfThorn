@@ -40,7 +40,7 @@ public:
     std::string  getfilepath(std::string filename);
     virtual bool ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
     virtual void ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
-    void TextUpdate();
+    void TextUpdate(float ctime);
 protected:
     cocos2d::CCObject* m_pListen;
     

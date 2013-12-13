@@ -1,5 +1,6 @@
 #include "MainMenuScene.h"
 #include "CCRPGTalkBox.h"
+#include "IntroScene.h"
 USING_NS_CC;
 
 CCScene* MainMenu::scene()
@@ -77,10 +78,11 @@ void MainMenu::talk2(){
      box2->NextText();
 }
 void MainMenu::menu_startNewGame(CCObject* pSender){
-    CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
-    CCRPGTalkBox* box1 = CCRPGTalkBox::create(12, "dialog-box.png", "text.txt", 13, CCSizeMake(visibleSize.width, 200), scaleY,callfunc_selector(MainMenu::talk2),this);
-    addChild(box1,14,12);
-    box1->NextText();
+	/*   CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
+	CCRPGTalkBox* box1 = CCRPGTalkBox::create(12, "dialog-box.png", "text.txt", 13, CCSizeMake(visibleSize.width, 200), scaleY,callfunc_selector(MainMenu::talk2),this);
+	addChild(box1,14,12);
+	box1->NextText();*/
+	CCDirector::sharedDirector()->replaceScene(IntroScene::scene());
 }
 
 void MainMenu::menuCloseCallback(CCObject* pSender)

@@ -11,7 +11,7 @@
 
 #include "cocos2d.h"
 
-class MainMenu : public cocos2d::CCLayer
+class IntroScene : public cocos2d::CCLayer
 {
 private:
     float scaleX ;
@@ -24,10 +24,8 @@ public:
     static cocos2d::CCScene* scene();
     
     // a selector callback
-    void menuCloseCallback(CCObject* pSender);
-    void menu_startNewGame(CCObject* pSender);
+
     // implement the "static node()" method manually
-    CREATE_FUNC(MainMenu);
-    void talk2();
+    CREATE_FUNC(IntroScene);
 };
 #endif /* defined(__Castle_of_Thorn__IntroScene__) */

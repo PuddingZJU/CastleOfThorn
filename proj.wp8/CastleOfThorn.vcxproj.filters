@@ -94,6 +94,144 @@
     <Image Include="..\Resources\image\character\xee squared.png">
       <Filter>Assets\Resources\image\button</Filter>
     </Image>
+    <Image Include="..\Resources\maps\babygrand.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\bk9.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\candyshop.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\clutter2.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\clutter2_1.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\face_w2_2d.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\gallery_97945_471_9692.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\gallery_113008_882_4375.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\HXc7UOY.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\indoor_free_tileset__by_thegreatblaid-d5x95zt.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\key.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\krmy.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\lgs.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\library_tiles.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\light.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\m6f.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\mack__s_tile_set__a4_by_draymondc-d2z3z7j.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\outside.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\phone.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\rpg_maker_vx___carpets_autotiles_by_ayene_chan-d5og8bo.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\RPG_Maker_VX_RTP_Tileset_by_telles0808.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\tilec (1).png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\tilec.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\tilec_c.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\tiled.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\tiled_school.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\tilee  old.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\tilee.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\tilee2.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\tilee3.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\tileset2j.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\tmw_desert_spacing.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\Untitled4.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\window.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\windows.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\ywed.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\2nq8y2x.jpg">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\2v13pkp.jpg">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\tilea410.jpg">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\2nq8y2x.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\4nl3.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\016-ForestTown02.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\apartment.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\autotile.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\autotile01.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\maps\tilecclassroom.png">
+      <Filter>Assets\Resources\maps</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CastleOfThorn.cpp" />
@@ -104,6 +242,24 @@
       <Filter>Classes</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\CCRPGTalkBox.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCRPGJoystick.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCRPGLoadMenu.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCRPGPlayer.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCRPGSaveMenu.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCRPGStatusMenu.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IntroScene.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -119,6 +275,24 @@
       <Filter>Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\CCRPGTalkBox.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCRPGJoystick.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCRPGLoadMenu.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCRPGPlayer.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCRPGSaveMenu.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCRPGStatusMenu.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IntroScene.h">
       <Filter>Classes</Filter>
     </ClInclude>
   </ItemGroup>
@@ -140,16 +314,22 @@
     </Font>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Resources\maps\map-apartment.tmx">
-      <Filter>Assets\Resources\maps</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="..\Resources\script\text.txt">
       <Filter>Assets\Resources\script</Filter>
     </Text>
     <Text Include="..\Resources\script\text2.txt">
       <Filter>Assets\Resources\script</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\maps\desert.tmx">
+      <Filter>Assets\Resources\maps</Filter>
+    </None>
+    <None Include="..\Resources\maps\map-apartment.tmx">
+      <Filter>Assets\Resources\maps</Filter>
+    </None>
+    <None Include="..\Resources\maps\desert.tsx">
+      <Filter>Assets\Resources\maps</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -99,18 +99,18 @@ void CCRPGTalkBox::NextText(){
     }
     
 }
-void CCRPGTalkBox::TextUpdate(){
+void CCRPGTalkBox::TextUpdate(float ctime){
     if (textpos<_text[cur_pos-1].size()) {
        
-        
-        _content->setString(_text[cur_pos-1].substr(0,textpos+1).c_str());
-         _content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
-        
-        textpos= textpos + _text[cur_pos-1].size()/5+1;
-        if (textpos>=_text[cur_pos-1].size()) {
-             textpos=_text[cur_pos-1].size()-1;
-            _content->setString(_text[cur_pos-1].substr(0,textpos+1).c_str());
-            _content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
+
+		_content->setString(_text[cur_pos-1].substr(0,textpos+1).c_str());
+		_content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
+
+		textpos= textpos + _text[cur_pos-1].size()/5+1;
+		if (textpos>=_text[cur_pos-1].size()) {
+			textpos=_text[cur_pos-1].size()-1;
+			_content->setString(_text[cur_pos-1].substr(0,textpos+1).c_str());
+			_content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
             textpos=_text[cur_pos-1].size();
         }
     }
