@@ -32,6 +32,9 @@
     <Filter Include="Assets\Resources\image\button">
       <UniqueIdentifier>{10606344-de0f-4c30-b45b-ec0bc052a61c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Assets\Resources\script">
+      <UniqueIdentifier>{840dd9c8-4570-4c61-b0f1-6cdf846e17be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\ApplicationIcon.png">
@@ -140,5 +143,13 @@
     <None Include="..\Resources\maps\map-apartment.tmx">
       <Filter>Assets\Resources\maps</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Resources\script\text.txt">
+      <Filter>Assets\Resources\script</Filter>
+    </Text>
+    <Text Include="..\Resources\script\text2.txt">
+      <Filter>Assets\Resources\script</Filter>
+    </Text>
   </ItemGroup>
 </Project>

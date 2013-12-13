@@ -77,7 +77,7 @@ void MainMenu::talk2(){
     addChild(box2,1,13);
      box2->NextText();
 }
-void MainMenu::menu_startNewGame(){
+void MainMenu::menu_startNewGame(CCObject* pSender){
     CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
     CCRPGTalkBox* box1 = CCRPGTalkBox::create(12, "dialog-box.png", "text.txt", 13, CCSizeMake(visibleSize.width, 200), scaleY,callfunc_selector(MainMenu::talk2),this);
     //box1->setPosition(ccp(visibleSize.width/2 , visibleSize.height/2 ));

@@ -260,6 +260,10 @@
   <ItemGroup>
     <None Include="..\Resources\maps\map-apartment.tmx" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Resources\script\text.txt" />
+    <Text Include="..\Resources\script\text2.txt" />
+  </ItemGroup>
   <Target Name="_CollectCustomResources" BeforeTargets="AssignTargetPaths">
     <Message Text="Adding resource: %(_CustomResource.Identity) -&gt; %(_CustomResource.Link)" />
     <ItemGroup>

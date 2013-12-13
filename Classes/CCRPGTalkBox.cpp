@@ -5,6 +5,7 @@ USING_NS_CC_EXT;
 CCRPGTalkBox::CCRPGTalkBox(){
     stop = true;
     box_scale = 1;
+	cur_pos = 0;
 }
 std::string  CCRPGTalkBox::getfilepath(std::string filename){
     return CCFileUtils::sharedFileUtils()->fullPathForFilename(filename.c_str());
