@@ -184,6 +184,12 @@
 		356214981854E6330068A292 /* arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 356214951854E6330068A292 /* arial.ttf */; };
 		3562149A1854E6330068A292 /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 356214971854E6330068A292 /* Marker Felt.ttf */; };
 		3579F8C21859FF0F0085C989 /* text2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3579F8C11859FF0F0085C989 /* text2.txt */; };
+		35BA4D4F185AFF2800CD2C62 /* IntroScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35BA4D4D185AFF2800CD2C62 /* IntroScene.cpp */; };
+		35BA4D55185B036F00CD2C62 /* CCRPGPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35BA4D53185B036F00CD2C62 /* CCRPGPlayer.cpp */; };
+		35BA4D58185B038800CD2C62 /* CCRPGJoystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35BA4D56185B038800CD2C62 /* CCRPGJoystick.cpp */; };
+		35BA4D5B185B03AC00CD2C62 /* CCRPGSaveMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35BA4D59185B03AC00CD2C62 /* CCRPGSaveMenu.cpp */; };
+		35BA4D5E185B03C600CD2C62 /* CCRPGLoadMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35BA4D5C185B03C600CD2C62 /* CCRPGLoadMenu.cpp */; };
+		35BA4D61185B03DD00CD2C62 /* CCRPGStatusMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35BA4D5F185B03DD00CD2C62 /* CCRPGStatusMenu.cpp */; };
 		35C2F6581855A2F400BA2A9B /* AR PLMingU20 Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35C2F6571855A2F400BA2A9B /* AR PLMingU20 Light.ttf */; };
 		35C954F81858F5CB00BBBFEB /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35C954F71858F5CB00BBBFEB /* text.txt */; };
 		379BB99517F03F3700829B88 /* CCActionFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB8FC17F03F3700829B88 /* CCActionFrame.cpp */; };
@@ -627,6 +633,18 @@
 		356214951854E6330068A292 /* arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = arial.ttf; sourceTree = "<group>"; };
 		356214971854E6330068A292 /* Marker Felt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marker Felt.ttf"; sourceTree = "<group>"; };
 		3579F8C11859FF0F0085C989 /* text2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text2.txt; sourceTree = "<group>"; };
+		35BA4D4D185AFF2800CD2C62 /* IntroScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntroScene.cpp; path = ../Classes/IntroScene.cpp; sourceTree = "<group>"; };
+		35BA4D4E185AFF2800CD2C62 /* IntroScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = ../Classes/IntroScene.h; sourceTree = "<group>"; };
+		35BA4D53185B036F00CD2C62 /* CCRPGPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCRPGPlayer.cpp; path = ../Classes/CCRPGPlayer.cpp; sourceTree = "<group>"; };
+		35BA4D54185B036F00CD2C62 /* CCRPGPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCRPGPlayer.h; path = ../Classes/CCRPGPlayer.h; sourceTree = "<group>"; };
+		35BA4D56185B038800CD2C62 /* CCRPGJoystick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCRPGJoystick.cpp; path = ../Classes/CCRPGJoystick.cpp; sourceTree = "<group>"; };
+		35BA4D57185B038800CD2C62 /* CCRPGJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCRPGJoystick.h; path = ../Classes/CCRPGJoystick.h; sourceTree = "<group>"; };
+		35BA4D59185B03AC00CD2C62 /* CCRPGSaveMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCRPGSaveMenu.cpp; path = ../Classes/CCRPGSaveMenu.cpp; sourceTree = "<group>"; };
+		35BA4D5A185B03AC00CD2C62 /* CCRPGSaveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCRPGSaveMenu.h; path = ../Classes/CCRPGSaveMenu.h; sourceTree = "<group>"; };
+		35BA4D5C185B03C600CD2C62 /* CCRPGLoadMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCRPGLoadMenu.cpp; path = ../Classes/CCRPGLoadMenu.cpp; sourceTree = "<group>"; };
+		35BA4D5D185B03C600CD2C62 /* CCRPGLoadMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCRPGLoadMenu.h; path = ../Classes/CCRPGLoadMenu.h; sourceTree = "<group>"; };
+		35BA4D5F185B03DD00CD2C62 /* CCRPGStatusMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCRPGStatusMenu.cpp; path = ../Classes/CCRPGStatusMenu.cpp; sourceTree = "<group>"; };
+		35BA4D60185B03DD00CD2C62 /* CCRPGStatusMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCRPGStatusMenu.h; path = ../Classes/CCRPGStatusMenu.h; sourceTree = "<group>"; };
 		35C2F6571855A2F400BA2A9B /* AR PLMingU20 Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AR PLMingU20 Light.ttf"; sourceTree = "<group>"; };
 		35C954F71858F5CB00BBBFEB /* text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
 		379BB8FC17F03F3700829B88 /* CCActionFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCActionFrame.cpp; sourceTree = "<group>"; };
@@ -1300,6 +1318,18 @@
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* MainMenuScene.cpp */,
 				1AFAF8B616D35DE700DB1158 /* MainMenuScene.h */,
+				35BA4D4D185AFF2800CD2C62 /* IntroScene.cpp */,
+				35BA4D4E185AFF2800CD2C62 /* IntroScene.h */,
+				35BA4D53185B036F00CD2C62 /* CCRPGPlayer.cpp */,
+				35BA4D54185B036F00CD2C62 /* CCRPGPlayer.h */,
+				35BA4D56185B038800CD2C62 /* CCRPGJoystick.cpp */,
+				35BA4D57185B038800CD2C62 /* CCRPGJoystick.h */,
+				35BA4D59185B03AC00CD2C62 /* CCRPGSaveMenu.cpp */,
+				35BA4D5A185B03AC00CD2C62 /* CCRPGSaveMenu.h */,
+				35BA4D5C185B03C600CD2C62 /* CCRPGLoadMenu.cpp */,
+				35BA4D5D185B03C600CD2C62 /* CCRPGLoadMenu.h */,
+				35BA4D5F185B03DD00CD2C62 /* CCRPGStatusMenu.cpp */,
+				35BA4D60185B03DD00CD2C62 /* CCRPGStatusMenu.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1942,6 +1972,7 @@
 				15A3D8FF1682F7D5002FB0C5 /* b2BroadPhase.cpp in Sources */,
 				15A3D9001682F7D5002FB0C5 /* b2CollideCircle.cpp in Sources */,
 				15A3D9011682F7D5002FB0C5 /* b2CollideEdge.cpp in Sources */,
+				35BA4D5E185B03C600CD2C62 /* CCRPGLoadMenu.cpp in Sources */,
 				15A3D9021682F7D5002FB0C5 /* b2CollidePolygon.cpp in Sources */,
 				15A3D9031682F7D5002FB0C5 /* b2Collision.cpp in Sources */,
 				15A3D9041682F7D5002FB0C5 /* b2Distance.cpp in Sources */,
@@ -1979,6 +2010,7 @@
 				15A3D9241682F7D5002FB0C5 /* b2MouseJoint.cpp in Sources */,
 				15A3D9251682F7D5002FB0C5 /* b2PrismaticJoint.cpp in Sources */,
 				15A3D9261682F7D5002FB0C5 /* b2PulleyJoint.cpp in Sources */,
+				35BA4D58185B038800CD2C62 /* CCRPGJoystick.cpp in Sources */,
 				15A3D9271682F7D5002FB0C5 /* b2RevoluteJoint.cpp in Sources */,
 				15A3D9281682F7D5002FB0C5 /* b2RopeJoint.cpp in Sources */,
 				15A3D9291682F7D5002FB0C5 /* b2WeldJoint.cpp in Sources */,
@@ -2012,6 +2044,7 @@
 				15A3D9AE1682F7F9002FB0C5 /* cpSpaceQuery.c in Sources */,
 				15A3D9AF1682F7F9002FB0C5 /* cpSpaceStep.c in Sources */,
 				15A3D9B01682F7F9002FB0C5 /* cpSpatialIndex.c in Sources */,
+				35BA4D4F185AFF2800CD2C62 /* IntroScene.cpp in Sources */,
 				15A3D9B11682F7F9002FB0C5 /* cpSweep1D.c in Sources */,
 				15A3D9B21682F7F9002FB0C5 /* cpVect.c in Sources */,
 				15A3DA311682F826002FB0C5 /* CCBAnimationManager.cpp in Sources */,
@@ -2078,6 +2111,7 @@
 				1A8F3B73175E05DA00049216 /* Attachment.cpp in Sources */,
 				1A8F3B74175E05DA00049216 /* AttachmentLoader.cpp in Sources */,
 				1A8F3B75175E05DA00049216 /* Bone.cpp in Sources */,
+				35BA4D61185B03DD00CD2C62 /* CCRPGStatusMenu.cpp in Sources */,
 				1A8F3B76175E05DA00049216 /* BoneData.cpp in Sources */,
 				1A8F3B77175E05DA00049216 /* CCSkeleton.cpp in Sources */,
 				1A8F3B78175E05DA00049216 /* CCSkeletonAnimation.cpp in Sources */,
@@ -2109,6 +2143,7 @@
 				379BB9A217F03F3700829B88 /* CCDisplayFactory.cpp in Sources */,
 				379BB9A317F03F3700829B88 /* CCDisplayManager.cpp in Sources */,
 				379BB9A417F03F3700829B88 /* CCSkin.cpp in Sources */,
+				35BA4D55185B036F00CD2C62 /* CCRPGPlayer.cpp in Sources */,
 				379BB9A517F03F3700829B88 /* CCColliderDetector.cpp in Sources */,
 				379BB9A617F03F3700829B88 /* CCArmatureDataManager.cpp in Sources */,
 				379BB9A717F03F3700829B88 /* CCArmatureDefine.cpp in Sources */,
@@ -2126,6 +2161,7 @@
 				379BB9B317F03F3700829B88 /* UIWidget.cpp in Sources */,
 				379BB9B417F03F3700829B88 /* UILayout.cpp in Sources */,
 				379BB9B617F03F3700829B88 /* UILayoutParameter.cpp in Sources */,
+				35BA4D5B185B03AC00CD2C62 /* CCRPGSaveMenu.cpp in Sources */,
 				379BB9B717F03F3700829B88 /* UILayoutDefine.cpp in Sources */,
 				379BB9B817F03F3700829B88 /* CocosGUI.cpp in Sources */,
 				379BB9B917F03F3700829B88 /* UIHelper.cpp in Sources */,

@@ -17,8 +17,11 @@ private:
     int left;
     int tag;
     int cur_pos;
+    int textpos;
+    bool startschdule;
     std::string _background_image;
      CC_SYNTHESIZE_RETAIN(cocos2d::CCLabelTTF*,_content,Content);
+    //CC_SYNTHESIZE_RETAIN(cocos2d::CCLabelTTF*,_contentbuf,ContentBuf);
      CC_SYNTHESIZE_RETAIN(cocos2d::extension::CCScale9Sprite*,_box,Box);
     CC_SYNTHESIZE_RETAIN(cocos2d::CCSprite*,_icon,Icon);
     //CC_SYNTHESIZE_RETAIN(cocos2d::CCMenu*, _menu, Menu);
@@ -37,6 +40,7 @@ public:
     std::string  getfilepath(std::string filename);
     virtual bool ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
     virtual void ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
+    void TextUpdate();
 protected:
     cocos2d::CCObject* m_pListen;
     

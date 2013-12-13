@@ -3,15 +3,15 @@
 USING_NS_CC;
 USING_NS_CC_EXT;
 CCRPGTalkBox::CCRPGTalkBox(){
-    stop = true;
-    box_scale = 1;
-	cur_pos = 0;
+    
 }
 std::string  CCRPGTalkBox::getfilepath(std::string filename){
     return CCFileUtils::sharedFileUtils()->fullPathForFilename(filename.c_str());
 }
 CCRPGTalkBox* CCRPGTalkBox::create(int tag,std::string background_image,std::string script_filename,int boardpixel,cocos2d::CCSize boxsize,float scale,SEL_CallFunc nextfunc,CCObject* listen){
     CCRPGTalkBox *cur = CCRPGTalkBox::create();
+    cur->box_scale = 1;
+	cur->cur_pos = 0;
     if (cur == NULL) {
         CCLOG("error");
     }
@@ -20,8 +20,6 @@ CCRPGTalkBox* CCRPGTalkBox::create(int tag,std::string background_image,std::str
     cur->tag = tag;
     cur->setScale(scale);
     cur->boardpixel = boardpixel;
-    cur->_content = CCLabelTTF::create();
-    cur->addChild(cur->_content, 3, 3);
     cur->_background_image = background_image;
     cur->origWidth = boxsize.width;cur->width = boxsize.width;
     cur->height = boxsize.height*scale;
@@ -46,14 +44,12 @@ CCRPGTalkBox* CCRPGTalkBox::create(int tag,std::string background_image,std::str
 }
 
 void CCRPGTalkBox::onEnter(){
-    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, -128, true);
-   
+    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, -129, true);
     CCLayer::onEnter();
 }
 
 void  CCRPGTalkBox::onExit(){
     CCDirector::sharedDirector()->getTouchDispatcher()->removeDelegate(this);
-    CCDirector::sharedDirector()->resume();
     CCLayer::onExit();
 }
 
@@ -86,37 +82,71 @@ void CCRPGTalkBox::NextText(){
         _box = CCScale9Sprite::create(_background_image.c_str(),fullRect,insetRect);
         _box->setContentSize(CCSizeMake(width,height));
         _box->setPosition(ccp(left+_box->getContentSize().width/2, height/2));
-        _content->setString(_text[cur_pos].c_str());
+        this->removeChildByTag(3);
+        _content = CCLabelTTF::create();
         _content->setColor(ccc3(0, 0, 0));
         _content->setAnchorPoint(ccp(0.5, 0.5));
         _content->setFontName(_font[cur_pos].c_str());
         _content->setFontSize(_font_size[cur_pos]);
-        _content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
+        _content->setDimensions(CCSizeMake(width-boardpixel*2,height-boardpixel*2));
+        this->addChild(_content, 3, 3);
+        textpos = 0;
         this->addChild(_box,1,1);
+        cur_pos+=1;
+        startschdule = true;
+        schedule(schedule_selector(CCRPGTalkBox::TextUpdate), 1/60);
         width=origWidth;
     }
-    cur_pos+=1;
+    
 }
+void CCRPGTalkBox::TextUpdate(){
+    if (textpos<_text[cur_pos-1].size()) {
+       
+        
+        _content->setString(_text[cur_pos-1].substr(0,textpos+1).c_str());
+         _content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
+        
+        textpos= textpos + _text[cur_pos-1].size()/5+1;
+        if (textpos>=_text[cur_pos-1].size()) {
+             textpos=_text[cur_pos-1].size()-1;
+            _content->setString(_text[cur_pos-1].substr(0,textpos+1).c_str());
+            _content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
+            textpos=_text[cur_pos-1].size();
+        }
+    }
+    else{
+        startschdule = false;
+    }
+}
+
 bool CCRPGTalkBox::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent){
     CCLOG("ccTouchBegan"); 
     return true;
 }
 
 void CCRPGTalkBox::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent){
-    if (hasNext()) {
+    if (startschdule) {
+        unschedule(schedule_selector(CCRPGTalkBox::TextUpdate));
+        startschdule = false;
+        _content->setString(_text[cur_pos-1].c_str());
+        _content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
+
+    }
+    else if (hasNext()) {
+        
         NextText();
     }
     else{
-        
+        this->removeFromParentAndCleanup(true);
         if (m_pfnSelectior!=NULL) {
             (m_pListen->*m_pfnSelectior)();
         }
-        this->removeFromParent();
+        
     }
 }
 CCRPGTalkBox::~CCRPGTalkBox(){
-    CC_SAFE_RELEASE(_content);
+    //CC_SAFE_RELEASE(_content);
     //CC_SAFE_RELEASE(_menu);
-    CC_SAFE_RELEASE(_box);
-    CC_SAFE_RELEASE(_icon);
+    //CC_SAFE_RELEASE(_box);
+    //CC_SAFE_RELEASE(_icon);
 }

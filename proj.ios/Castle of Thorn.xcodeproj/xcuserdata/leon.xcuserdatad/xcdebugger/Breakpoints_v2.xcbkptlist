@@ -23,12 +23,12 @@
                   symbolName = "CCRPGTalkBox::getContent() const"
                   moduleName = "Castle of Thorn"
                   urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/CCRPGTalkBox.h"
-                  timestampString = "408601277.942544"
+                  timestampString = "408607475.186339"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "6">
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "0">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -37,12 +37,12 @@
                   symbolName = "CCRPGTalkBox::setContent(cocos2d::CCLabelTTF*)"
                   moduleName = "Castle of Thorn"
                   urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/CCRPGTalkBox.h"
-                  timestampString = "408601277.942955"
+                  timestampString = "408607475.186737"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "11">
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "0">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -50,108 +50,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/CCRPGTalkBox.cpp"
-            timestampString = "408560156.965657"
+            timestampString = "408607384.330528"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "CCRPGTalkBox::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CCRPGTalkBox::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*)"
-                  moduleName = "Castle of Thorn"
-                  urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/CCRPGTalkBox.cpp"
-                  timestampString = "408601277.943328"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "111"
-                  endingLineNumber = "111"
-                  offsetFromSymbolStart = "43">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "non-virtual thunk to CCRPGTalkBox::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*)"
-                  moduleName = "Castle of Thorn"
-                  urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/CCRPGTalkBox.cpp"
-                  timestampString = "408601277.943671"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "111"
-                  endingLineNumber = "111"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Classes/CCRPGTalkBox.cpp"
-            timestampString = "408601179.851175"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "CCRPGTalkBox::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CCRPGTalkBox::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*)"
-                  moduleName = "Castle of Thorn"
-                  urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/CCRPGTalkBox.cpp"
-                  timestampString = "408601277.94404"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "non-virtual thunk to CCRPGTalkBox::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*)"
-                  moduleName = "Castle of Thorn"
-                  urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/CCRPGTalkBox.cpp"
-                  timestampString = "408601277.944406"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "77">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Classes/CCRPGTalkBox.cpp"
-            timestampString = "408601274.684307"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "CCRPGTalkBox::create(int tag,std::string background_image,std::string script_filename,int boardpixel,cocos2d::CCSize boxsize,float scale,SEL_CallFunc nextfunc,CCObject* listen)"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "CCRPGTalkBox::TextUpdate()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
