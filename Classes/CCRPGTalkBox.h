@@ -21,7 +21,7 @@ private:
      CC_SYNTHESIZE_RETAIN(cocos2d::CCLabelTTF*,_content,Content);
      CC_SYNTHESIZE_RETAIN(cocos2d::extension::CCScale9Sprite*,_box,Box);
     CC_SYNTHESIZE_RETAIN(cocos2d::CCSprite*,_icon,Icon);
-    CC_SYNTHESIZE_RETAIN(cocos2d::CCMenu*, _menu, Menu);
+    //CC_SYNTHESIZE_RETAIN(cocos2d::CCMenu*, _menu, Menu);
 public:
     bool stop;
     void setScale(float scale);

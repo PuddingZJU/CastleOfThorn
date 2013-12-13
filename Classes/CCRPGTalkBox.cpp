@@ -11,7 +11,7 @@ std::string  CCRPGTalkBox::getfilepath(std::string filename){
     return CCFileUtils::sharedFileUtils()->fullPathForFilename(filename.c_str());
 }
 CCRPGTalkBox* CCRPGTalkBox::create(int tag,std::string background_image,std::string script_filename,int boardpixel,cocos2d::CCSize boxsize,float scale,SEL_CallFunc nextfunc,CCObject* listen){
-    CCRPGTalkBox *cur = new CCRPGTalkBox();
+    CCRPGTalkBox *cur = CCRPGTalkBox::create();
     if (cur == NULL) {
         CCLOG("error");
     }
@@ -107,15 +107,16 @@ void CCRPGTalkBox::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEve
         NextText();
     }
     else{
-        this->removeFromParentAndCleanup(true);
+        
         if (m_pfnSelectior!=NULL) {
             (m_pListen->*m_pfnSelectior)();
         }
+        this->removeFromParent();
     }
 }
 CCRPGTalkBox::~CCRPGTalkBox(){
     CC_SAFE_RELEASE(_content);
-    CC_SAFE_RELEASE(_menu);
+    //CC_SAFE_RELEASE(_menu);
     CC_SAFE_RELEASE(_box);
     CC_SAFE_RELEASE(_icon);
 }

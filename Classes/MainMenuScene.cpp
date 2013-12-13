@@ -73,19 +73,14 @@ bool MainMenu::init()
 void MainMenu::talk2(){
     CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
     CCRPGTalkBox* box2 = CCRPGTalkBox::create(13, "dialog-box.png", "text2.txt", 13, CCSizeMake(visibleSize.width, 200), scaleY,NULL,this);
-    //box1->setPosition(ccp(visibleSize.width/2 , visibleSize.height/2 ));
     addChild(box2,1,13);
      box2->NextText();
 }
 void MainMenu::menu_startNewGame(CCObject* pSender){
     CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
     CCRPGTalkBox* box1 = CCRPGTalkBox::create(12, "dialog-box.png", "text.txt", 13, CCSizeMake(visibleSize.width, 200), scaleY,callfunc_selector(MainMenu::talk2),this);
-    //box1->setPosition(ccp(visibleSize.width/2 , visibleSize.height/2 ));
     addChild(box1,14,12);
     box1->NextText();
-    
-   
-
 }
 
 void MainMenu::menuCloseCallback(CCObject* pSender)
