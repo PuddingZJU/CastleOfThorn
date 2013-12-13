@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="apartment" tilewidth="32" tileheight="32">
   <image source="C:/Users/7Charlotte/Documents/Project1/Graphics/Tilesets/apartment.png" width="256" height="768"/>
@@ -7,28 +7,28 @@
   </terraintypes>
  </tileset>
  <tileset firstgid="193" name="tilee3" tilewidth="32" tileheight="32">
-  <image source="../像素人设/Tilesets/tilee3.png" width="512" height="512"/>
+  <image source="/Tilesets/tilee3.png" width="512" height="512"/>
  </tileset>
  <tileset firstgid="449" name="RPG_Maker_VX_RTP_Tileset_by_telles0808" tilewidth="32" tileheight="32">
-  <image source="../像素人设/Tilesets/RPG_Maker_VX_RTP_Tileset_by_telles0808.png" width="1024" height="2016"/>
+  <image source="/Tilesets/RPG_Maker_VX_RTP_Tileset_by_telles0808.png" width="1024" height="2016"/>
  </tileset>
  <tileset firstgid="2465" name="tilee2" tilewidth="32" tileheight="32">
-  <image source="../像素人设/Tilesets/tilee2.png" width="512" height="672"/>
+  <image source="/Tilesets/tilee2.png" width="512" height="672"/>
  </tileset>
  <tileset firstgid="2801" name="tilec" tilewidth="32" tileheight="32">
-  <image source="../像素人设/Tilesets/tilec.png" width="256" height="512"/>
+  <image source="/Tilesets/tilec.png" width="256" height="512"/>
  </tileset>
  <tileset firstgid="2929" name="tilee" tilewidth="32" tileheight="32">
-  <image source="../像素人设/Tilesets/tilee.png" width="512" height="512"/>
+  <image source="/Tilesets/tilee.png" width="512" height="512"/>
  </tileset>
  <tileset firstgid="3185" name="2nq8y2x" tilewidth="32" tileheight="32">
-  <image source="../像素人设/Tilesets/2nq8y2x.png" width="512" height="512"/>
+  <image source="/Tilesets/2nq8y2x.png" width="512" height="512"/>
  </tileset>
  <tileset firstgid="3441" name="window" tilewidth="32" tileheight="32">
-  <image source="../像素人设/Tilesets/window.png" width="32" height="64"/>
+  <image source="/Tilesets/window.png" width="32" height="64"/>
  </tileset>
  <tileset firstgid="3443" name="tilec——classroom" tilewidth="32" tileheight="32">
-  <image source="../像素人设/Tilesets/tilec——classroom.png" width="512" height="512"/>
+  <image source="/Tilesets/tilec——classroom.png" width="512" height="512"/>
  </tileset>
  <layer name="bg" width="40" height="30">
   <data encoding="base64" compression="zlib">
