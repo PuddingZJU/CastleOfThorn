@@ -1,38 +1,41 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="apartment" tilewidth="32" tileheight="32">
-	 <image source="apartment.png" width="256" height="768"/>
+  <image source="apartment.png" width="256" height="768"/>
   <terraintypes>
    <terrain name="新地形" tile="-1"/>
   </terraintypes>
  </tileset>
- <tileset firstgid="193" name="tilee3" tilewidth="32" tileheight="32">
+ <tileset firstgid="193" name="tileOfWindows" tilewidth="32" tileheight="32">
   <image source="tilee3.png" width="512" height="512"/>
+  <terraintypes>
+   <terrain name="新地形" tile="-1"/>
+  </terraintypes>
  </tileset>
- <tileset firstgid="449" name="RPG_Maker_VX_RTP_Tileset_by_telles0808" tilewidth="32" tileheight="32">
+ <tileset firstgid="449" name="basicTiles" tilewidth="32" tileheight="32">
   <image source="RPG_Maker_VX_RTP_Tileset_by_telles0808.png" width="1024" height="2016"/>
  </tileset>
- <tileset firstgid="2465" name="tilee2" tilewidth="32" tileheight="32">
+ <tileset firstgid="2465" name="tileOfBeds" tilewidth="32" tileheight="32">
   <image source="tilee2.png" width="512" height="672"/>
  </tileset>
- <tileset firstgid="2801" name="tilec" tilewidth="32" tileheight="32">
+ <tileset firstgid="2801" name="tileOfKitchen" tilewidth="32" tileheight="32">
   <image source="tilec.png" width="256" height="512"/>
  </tileset>
- <tileset firstgid="2929" name="tilee" tilewidth="32" tileheight="32">
+ <tileset firstgid="2929" name="tileOfCurtain" tilewidth="32" tileheight="32">
   <image source="tilee.png" width="512" height="512"/>
  </tileset>
- <tileset firstgid="3185" name="2nq8y2x" tilewidth="32" tileheight="32">
+ <tileset firstgid="3185" name="tileOfItems" tilewidth="32" tileheight="32">
   <image source="2nq8y2x.png" width="512" height="512"/>
  </tileset>
  <tileset firstgid="3441" name="window" tilewidth="32" tileheight="32">
   <image source="window.png" width="32" height="64"/>
  </tileset>
- <tileset firstgid="3443" name="tilec——classroom" tilewidth="32" tileheight="32">
+ <tileset firstgid="3443" name="tileClassroom" tilewidth="32" tileheight="32">
   <image source="tilecclassroom.png" width="512" height="512"/>
  </tileset>
  <layer name="bg" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJztw7ENAAAMAiDT/2fv9Y0OkNBLqqqqqqpPD9IiyJ8=
+   eJztzrEJADAIADBx7tne4L3+0EWQDNnTGdHH1ds/AAAAAPBnAEM4yJc=
   </data>
  </layer>
  <layer name="floor" width="40" height="30">
@@ -42,7 +45,7 @@
  </layer>
  <layer name="wall" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJzt1jEOgCAMhWHGntB4ksbJsxsHwwLoo2o0/F/SiZYykEJK3+dCtPInyzGbVlvrtVuFaOW75VhMq631AjAOP095pPaqyFxipqGk582+u1dp7aC82dEzKv+O3v17vTFfIpgv4+JuAsC/bBpFOr0=
+   eJxjYBj8oIwEjE99GAcCR3CQpheXXSBQRwLGp76MA4ErOEjTi8uuUTAKRsHIAWWEldBEL7GAknJptEwbBdgAOXU2te3CJgcDpNTZlLqRlHYHueaTC+hRvlACBrJ8YRpAu5HBcI4jfH4bDP7G57fRuo92gFr9S1zl/2DpX+Iq/0f7l6NgqAIAzuVdDw==
   </data>
  </layer>
  <layer name="window furniture" width="40" height="30">
