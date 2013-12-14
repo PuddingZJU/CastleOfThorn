@@ -184,14 +184,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\Resources\animation\ani01.png" />
-    <Image Include="..\Resources\animation\ani02.png" />
-    <Image Include="..\Resources\animation\ani03.png" />
-    <Image Include="..\Resources\animation\ani04.png" />
-    <Image Include="..\Resources\animation\ani05.png" />
-    <Image Include="..\Resources\animation\ani06.png" />
-    <Image Include="..\Resources\animation\ani07.png" />
-    <Image Include="..\Resources\animation\ani08.png" />
     <Image Include="..\Resources\animation\lin-back-left.png" />
     <Image Include="..\Resources\animation\lin-back-right.png" />
     <Image Include="..\Resources\animation\lin-back.png" />
@@ -255,52 +247,7 @@
     <Image Include="..\Resources\image\character\lin.png" />
     <Image Include="..\Resources\image\character\vichy.png" />
     <Image Include="..\Resources\image\character\xee squared.png" />
-    <Image Include="..\Resources\maps\016-ForestTown02.png" />
-    <Image Include="..\Resources\maps\2nq8y2x.jpg" />
-    <Image Include="..\Resources\maps\2nq8y2x.png" />
-    <Image Include="..\Resources\maps\2v13pkp.jpg" />
-    <Image Include="..\Resources\maps\4nl3.png" />
-    <Image Include="..\Resources\maps\apartment.png" />
-    <Image Include="..\Resources\maps\autotile.png" />
-    <Image Include="..\Resources\maps\autotile01.png" />
-    <Image Include="..\Resources\maps\babygrand.png" />
-    <Image Include="..\Resources\maps\bk9.png" />
-    <Image Include="..\Resources\maps\candyshop.png" />
-    <Image Include="..\Resources\maps\clutter2.png" />
-    <Image Include="..\Resources\maps\clutter2_1.png" />
-    <Image Include="..\Resources\maps\face_w2_2d.png" />
-    <Image Include="..\Resources\maps\gallery_113008_882_4375.png" />
-    <Image Include="..\Resources\maps\gallery_97945_471_9692.png" />
-    <Image Include="..\Resources\maps\HXc7UOY.png" />
-    <Image Include="..\Resources\maps\indoor_free_tileset__by_thegreatblaid-d5x95zt.png" />
-    <Image Include="..\Resources\maps\key.png" />
-    <Image Include="..\Resources\maps\krmy.png" />
-    <Image Include="..\Resources\maps\lgs.png" />
-    <Image Include="..\Resources\maps\library_tiles.png" />
-    <Image Include="..\Resources\maps\light.png" />
-    <Image Include="..\Resources\maps\m6f.png" />
-    <Image Include="..\Resources\maps\mack__s_tile_set__a4_by_draymondc-d2z3z7j.png" />
-    <Image Include="..\Resources\maps\outside.png" />
-    <Image Include="..\Resources\maps\phone.png" />
-    <Image Include="..\Resources\maps\RPG_Maker_VX_RTP_Tileset_by_telles0808.png" />
-    <Image Include="..\Resources\maps\rpg_maker_vx___carpets_autotiles_by_ayene_chan-d5og8bo.png" />
-    <Image Include="..\Resources\maps\tilea410.jpg" />
-    <Image Include="..\Resources\maps\tilec (1).png" />
-    <Image Include="..\Resources\maps\tilec.png" />
-    <Image Include="..\Resources\maps\tilecclassroom.png" />
-    <Image Include="..\Resources\maps\tilec_c.png" />
-    <Image Include="..\Resources\maps\tiled.png" />
-    <Image Include="..\Resources\maps\tiled_school.png" />
-    <Image Include="..\Resources\maps\tilee  old.png" />
-    <Image Include="..\Resources\maps\tilee.png" />
-    <Image Include="..\Resources\maps\tilee2.png" />
-    <Image Include="..\Resources\maps\tilee3.png" />
-    <Image Include="..\Resources\maps\tileset2j.png" />
-    <Image Include="..\Resources\maps\tmw_desert_spacing.png" />
-    <Image Include="..\Resources\maps\Untitled4.png" />
-    <Image Include="..\Resources\maps\window.png" />
-    <Image Include="..\Resources\maps\windows.png" />
-    <Image Include="..\Resources\maps\ywed.png" />
+    <Image Include="..\Resources\maps\apartment-tilesets.png" />
     <Image Include="Assets\ApplicationIcon.png" />
     <Image Include="Assets\AlignmentGrid.png" />
     <Image Include="Assets\Tiles\FlipCycleTileLarge.png" />
@@ -326,6 +273,7 @@
     <ClInclude Include="..\Classes\IntroScene.h" />
     <ClInclude Include="..\Classes\MainMenuScene.h" />
     <ClInclude Include="CastleOfThorn.h" />
+    <ClInclude Include="CCRPGScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
@@ -338,6 +286,7 @@
     <ClCompile Include="..\Classes\IntroScene.cpp" />
     <ClCompile Include="..\Classes\MainMenuScene.cpp" />
     <ClCompile Include="CastleOfThorn.cpp" />
+    <ClCompile Include="CCRPGScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\cocos2dx\platform\third_party\winrt\angleproject\src\libEGL\libEGL_phone.vcxproj">
@@ -369,7 +318,6 @@
     </_CustomResource>
   </ItemGroup>
   <ItemGroup>
-    <Font Include="..\Resources\fonts\AR PLMingU20 Light.ttf" />
     <Font Include="..\Resources\fonts\Arial.ttf" />
     <Font Include="..\Resources\fonts\Heiti TC.ttf" />
     <Font Include="..\Resources\fonts\Marker Felt.ttf" />
@@ -379,11 +327,7 @@
     <Text Include="..\Resources\script\text2.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Resources\maps\desert.tmx" />
-    <None Include="..\Resources\maps\desert.tsx" />
-    <None Include="..\Resources\maps\map-apartment.tmx">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="..\Resources\maps\apartment.tmx" />
   </ItemGroup>
   <Target Name="_CollectCustomResources" BeforeTargets="AssignTargetPaths">
     <Message Text="Adding resource: %(_CustomResource.Identity) -&gt; %(_CustomResource.Link)" />

@@ -28,6 +28,7 @@ public:
 	int hp;
 	int hpmax;
 	int mp;
+	int faceto;
 	int mpmax;
 	int level;
 	string name;

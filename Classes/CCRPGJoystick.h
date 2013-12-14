@@ -11,21 +11,26 @@
 
 #include "cocos2d.h"
 #include <sstream>
+#include "CCRPGScene.h"
 USING_NS_CC;
 using std::string;
 class CCRPGJoystick:public CCLayer{
 public:
 	CREATE_FUNC(CCRPGJoystick);
-	static CCRPGJoystick* create(float Scale);
 	void Enable(bool isStopOther );
 	void Disable();
+	void initJoyStick(CCRPGScene* scene);
+	void A_button_Pressed(CCObject* Object);
+	void B_button_Pressed(CCObject* Object);
 private:
 	bool isEnable;
-	
-
-	virtual void ccTouchesBegan(CCSet *pTouches, CCEvent *pEvent);
-	virtual void ccTouchesMoved(CCSet *pTouches, CCEvent *pEvent);
-	virtual	void ccTouchesEnded(CCSet *pTouches, CCEvent *pEvent);
+	int height;
+	void onEnter();
+	void onExit();
+	CCRPGScene* scene;
+	virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
+	virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
+	virtual	void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
 };
 
 #endif /* defined(__Castle_of_Thorn__CCRPGJoystick__) */

@@ -10,8 +10,8 @@
 #define __Castle_of_Thorn__IntroScene__
 
 #include "cocos2d.h"
-#include "CCRPGPlayer.h"
-class IntroScene : public cocos2d::CCLayer
+#include "CCRPGScene.h"
+class IntroScene : public CCRPGScene
 {
 private:
     float scaleX ;
@@ -19,10 +19,10 @@ private:
 public:
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();
-    CCRPGPlayer * Player;
+	virtual void A_Button_Pressed();
+	virtual void B_Button_Pressed();
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::CCScene* scene();
-    void PlayerMove(float t);
     // a selector callback
 
     // implement the "static node()" method manually
