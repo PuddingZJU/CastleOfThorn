@@ -76,23 +76,23 @@ void CCRPGPlayer::MoveUP(){
 	faceto = 2;
 	this->stopAllActions();
 	this->runAction(CCRepeatForever::create(CCAnimate::create(animitionUp)));
-	this->runAction(CCRepeatForever::create(CCMoveBy::create(0.4f, ccp(0, 32))));
+	this->runAction(CCRepeatForever::create(CCMoveBy::create(0.2f, ccp(0, 32))));
 }
 void CCRPGPlayer::MoveDown(){
 	faceto = 1;
 	this->stopAllActions();
 	this->runAction(CCRepeatForever::create(CCAnimate::create(animitionDown)));
-	this->runAction(CCRepeatForever::create(CCMoveBy::create(0.4f, ccp(0, -32))));
+	this->runAction(CCRepeatForever::create(CCMoveBy::create(0.2f, ccp(0, -32))));
 }
 void CCRPGPlayer::MoveLeft(){
 	faceto = 3;
 	this->stopAllActions();
 	this->runAction(CCRepeatForever::create(CCAnimate::create(animitionLeft)));
-	this->runAction(CCRepeatForever::create(CCMoveBy::create(0.4f, ccp(-32,0)))); 
+	this->runAction(CCRepeatForever::create(CCMoveBy::create(0.2f, ccp(-32,0)))); 
 }
 void CCRPGPlayer::MoveRight(){
 	faceto = 4;
 	this->stopAllActions();
 	this->runAction(CCRepeatForever::create(CCAnimate::create(animitionRight)));
-	this->runAction(CCRepeatForever::create(CCMoveBy::create(0.4f, ccp(32,0))));
+	this->runAction(CCRepeatForever::create(CCMoveBy::create(0.2f, ccp(32,0))));
 }

@@ -44,8 +44,10 @@ bool IntroScene::init(){
 
 
 void IntroScene::A_Button_Pressed(){
-	player->MoveRight();
+	CCRPGTalkBox* dialog1 = CCRPGTalkBox::create(9999,"dialog-box.png","text.txt",13,CCSizeMake(CCDirector::sharedDirector()->getVisibleSize().width,200),1,NULL,this,screenpos);
+	this->addChild(dialog1,9999);
+	dialog1->NextText();
 }
 void IntroScene::B_Button_Pressed(){
-	player->MoveLeft();
+	
 }

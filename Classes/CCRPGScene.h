@@ -12,5 +12,6 @@ public:
 	virtual void B_Button_Pressed();
 	CCRPGPlayer* player;
 	CCTMXTiledMap* map;
+	CCPoint* screenpos;
 };
 #endif /* defined(__Castle_of_Thorn__CCRPGScene__) */

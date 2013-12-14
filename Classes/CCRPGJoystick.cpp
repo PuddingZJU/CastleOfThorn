@@ -43,8 +43,8 @@ void CCRPGJoystick::initJoyStick(CCRPGScene* scene){
 	A_button->setPosition(ccp(visibleSize.width/2-A_button->getContentSize().width*2-10,height/2-visibleSize.height/2));
 	CCMenuItemImage* B_button = CCMenuItemImage::create("btnB.png","btnB_down.png",this,SEL_MenuHandler(&CCRPGJoystick::B_button_Pressed));
 	B_button->setPosition(ccp(visibleSize.width/2-B_button->getContentSize().width,height/2-visibleSize.height/2));
-	addChild(A_button,2,15);
-	addChild(B_button,2,16);
+	addChild(A_button,2,16);
+	addChild(B_button,2,17);
 	CCMenu* buttons = CCMenu::create(A_button,B_button,NULL);
 	this->addChild(buttons,2,15);
 	schedule(schedule_selector(CCRPGJoystick::UpDate));
@@ -178,13 +178,15 @@ void CCRPGJoystick::setSceneScrollPosition(cocos2d::CCPoint position){
 	CCPoint scrollPosition=ccpSub(screenCenter, heroPosition);
 
 	//将场景移动到相应位置
+	scene->screenpos = scrollPosition;
 	scene->setPosition(scrollPosition);
 	getChildByTag(10)->setPosition(ccp(height/2+20-scrollPosition.x,height/2+10-scrollPosition.y));
 	getChildByTag(11)->setPosition(ccp(height/2+20-scrollPosition.x,height/2+10-scrollPosition.y));
 	getChildByTag(12)->setPosition(ccp(height/2+20-scrollPosition.x,height/2+10-scrollPosition.y));
 	getChildByTag(13)->setPosition(ccp(height/2+20-scrollPosition.x,height/2+10-scrollPosition.y));
-	getChildByTag(15)->setPosition(ccp(screenSize.width/2-66*2-10-scrollPosition.x,height/2-screenSize.height/2-scrollPosition.y));
-	getChildByTag(16)->setPosition(ccp(screenSize.width/2-66-scrollPosition.x,height/2-screenSize.height/2-scrollPosition.y));
+	getChildByTag(14)->setPosition(ccp(height/2+20-scrollPosition.x,height/2+10-scrollPosition.y));
+	getChildByTag(16)->setPosition(ccp(screenSize.width/2-66*2-10-scrollPosition.x,height/2-screenSize.height/2-scrollPosition.y));
+	getChildByTag(17)->setPosition(ccp(screenSize.width/2-66-scrollPosition.x,height/2-screenSize.height/2-scrollPosition.y));
 	CCLog("%f,%f",scrollPosition.x,scrollPosition.y);
 
 }

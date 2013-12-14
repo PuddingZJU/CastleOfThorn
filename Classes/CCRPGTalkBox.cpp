@@ -8,13 +8,14 @@ CCRPGTalkBox::CCRPGTalkBox(){
 std::string  CCRPGTalkBox::getfilepath(std::string filename){
     return CCFileUtils::sharedFileUtils()->fullPathForFilename(filename.c_str());
 }
-CCRPGTalkBox* CCRPGTalkBox::create(int tag,std::string background_image,std::string script_filename,int boardpixel,cocos2d::CCSize boxsize,float scale,SEL_CallFunc nextfunc,CCObject* listen){
+CCRPGTalkBox* CCRPGTalkBox::create(int tag,std::string background_image,std::string script_filename,int boardpixel,cocos2d::CCSize boxsize,float scale,SEL_CallFunc nextfunc,CCObject* listen,CCPoint* screenpos){
     CCRPGTalkBox *cur = CCRPGTalkBox::create();
     cur->box_scale = 1;
 	cur->cur_pos = 0;
     if (cur == NULL) {
         CCLOG("error");
     }
+	cur->screenpos = screenpos;
     cur->m_pListen = listen;
     cur->m_pfnSelectior = nextfunc;
     cur->tag = tag;
@@ -71,7 +72,7 @@ void CCRPGTalkBox::NextText(){
             this->removeChildByTag(2);
             _icon = CCSprite::create(_speaker_icon[cur_pos].c_str());
             _icon->cocos2d::CCNode::setScale(height/_icon->getContentSize().width, height/_icon->getContentSize().height);
-            _icon->setPosition(CCSizeMake(height/2, height/2));
+			_icon->setPosition(CCSizeMake(height/2-screenpos.x, height/2-screenpos.y));
             this->addChild(_icon,2,2);
         }
         this->removeChildByTag(1);
@@ -81,7 +82,7 @@ void CCRPGTalkBox::NextText(){
         CCRect insetRect = CCRectMake(boardpixel, boardpixel,size.width-boardpixel*2, size.height-boardpixel*2);
         _box = CCScale9Sprite::create(_background_image.c_str(),fullRect,insetRect);
         _box->setContentSize(CCSizeMake(width,height));
-        _box->setPosition(ccp(left+_box->getContentSize().width/2, height/2));
+        _box->setPosition(ccp(left+_box->getContentSize().width/2-screenpos.x, height/2-screenpos.y));
         this->removeChildByTag(3);
         _content = CCLabelTTF::create();
         _content->setColor(ccc3(0, 0, 0));
@@ -104,13 +105,13 @@ void CCRPGTalkBox::TextUpdate(float ctime){
        
 
 		_content->setString(_text[cur_pos-1].substr(0,textpos+1).c_str());
-		_content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
+		_content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2-screenpos.x, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2-screenpos.y));
 
 		textpos= textpos + _text[cur_pos-1].size()/5+1;
 		if (textpos>=_text[cur_pos-1].size()) {
 			textpos=_text[cur_pos-1].size()-1;
 			_content->setString(_text[cur_pos-1].substr(0,textpos+1).c_str());
-			_content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
+			_content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2-screenpos.x, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2-screenpos.y));
             textpos=_text[cur_pos-1].size();
         }
     }

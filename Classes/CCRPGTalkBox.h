@@ -18,6 +18,7 @@ private:
     int tag;
     int cur_pos;
     int textpos;
+	cocos2d::CCPoint* screenpos;
     bool startschdule;
     std::string _background_image;
      CC_SYNTHESIZE_RETAIN(cocos2d::CCLabelTTF*,_content,Content);
@@ -32,7 +33,7 @@ public:
     virtual void onExit();
     
 	CREATE_FUNC(CCRPGTalkBox);
-	static CCRPGTalkBox*  create(int tag,std::string background_image,std::string script_filename,int boardpixel,cocos2d::CCSize boxsize,float scale,cocos2d::SEL_CallFunc nextfunc,CCObject* listen);
+	static CCRPGTalkBox*  create(int tag,std::string background_image,std::string script_filename,int boardpixel,cocos2d::CCSize boxsize,float scale,cocos2d::SEL_CallFunc nextfunc,CCObject* listen,cocos2d::CCPoint screenpos);
     CCRPGTalkBox();
     ~CCRPGTalkBox();
     bool hasNext();
