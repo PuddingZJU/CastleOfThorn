@@ -22,6 +22,8 @@ public:
 	void initJoyStick(CCRPGScene* scene);
 	void A_button_Pressed(CCObject* Object);
 	void B_button_Pressed(CCObject* Object);
+	void setSceneScrollPosition(cocos2d::CCPoint position);
+	void UpDate(float time);
 private:
 	bool isEnable;
 	int height;

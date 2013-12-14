@@ -43,8 +43,11 @@ void CCRPGJoystick::initJoyStick(CCRPGScene* scene){
 	A_button->setPosition(ccp(visibleSize.width/2-A_button->getContentSize().width*2-10,height/2-visibleSize.height/2));
 	CCMenuItemImage* B_button = CCMenuItemImage::create("btnB.png","btnB_down.png",this,SEL_MenuHandler(&CCRPGJoystick::B_button_Pressed));
 	B_button->setPosition(ccp(visibleSize.width/2-B_button->getContentSize().width,height/2-visibleSize.height/2));
+	addChild(A_button,2,15);
+	addChild(B_button,2,16);
 	CCMenu* buttons = CCMenu::create(A_button,B_button,NULL);
-	this->addChild(buttons);
+	this->addChild(buttons,2,15);
+	schedule(schedule_selector(CCRPGJoystick::UpDate));
 }
 
 void CCRPGJoystick::onEnter(){
@@ -68,9 +71,10 @@ void CCRPGJoystick::B_button_Pressed(CCObject* Object){
 bool CCRPGJoystick::ccTouchBegan(CCTouch* pTouch, CCEvent* pEvent)  
 {  
 	CCPoint location = this->convertTouchToNodeSpace(pTouch);  
-
-	int x = location.x - height/2-20;  
-	int y = location.y - height/2-10;  
+	CCPoint controlpoint = getChildByTag(11)->getPosition();
+	int x = location.x - controlpoint.x;  
+	int y = location.y - controlpoint.y;  
+ 
 
 	if (abs(x)<=height/2 && abs(y)<=height/2)
 	{
@@ -106,8 +110,9 @@ void CCRPGJoystick::ccTouchMoved(CCTouch* pTouch, CCEvent* pEvent)
 	getChildByTag(12)->setVisible(false);
 	getChildByTag(13)->setVisible(false);
 	getChildByTag(14)->setVisible(false);
-	int x = location.x - height/2-20;  
-	int y = location.y - height/2-10;  
+	CCPoint controlpoint = getChildByTag(11)->getPosition();
+	int x = location.x - controlpoint.x;  
+	int y = location.y - controlpoint.y;  
 	if (abs(x)<=height/2 && abs(y)<=height/2)
 	{
 
@@ -147,3 +152,45 @@ void CCRPGJoystick::ccTouchEnded(CCTouch* pTouch, CCEvent* pEvent)
 
 	scene->player->stopAllActions();
 } 
+void CCRPGJoystick::setSceneScrollPosition(cocos2d::CCPoint position){
+	//获取屏幕尺寸
+	CCSize screenSize=CCDirector::sharedDirector()->getWinSize();
+	//计算timeMap的高度，单位像素
+	CCSize mapSizeInPixel=CCSizeMake(scene->map->getMapSize().width*scene->map->getTileSize().width, scene->map->getMapSize().height*scene->map->getTileSize().height);
+	//获取勇士位置和屏幕中点x和y的最大值
+	float x=MAX(position.x, screenSize.width/2.0f);
+	float y=MAX(position.y, screenSize.height/2.0f);
+	//地图总宽度大于屏幕宽度时才可能滚动
+	if (mapSizeInPixel.width>screenSize.width) {
+		//场景移动距离不能超过地图总宽度减去屏幕宽的一半
+		x=MIN(x, mapSizeInPixel.width-screenSize.width/2.0f);
+	}
+	//地图总高度大于屏幕高度时才可能滚动
+	if (mapSizeInPixel.height>screenSize.height) {
+		//场景移动距离不能超过地图总高度减去屏幕高的一半
+		y=MIN(y, mapSizeInPixel.height-screenSize.height/2.0f);
+	}
+	//勇士实际位置
+	CCPoint heroPosition=ccp(x,y);
+	//屏幕中点位置
+	CCPoint screenCenter=ccp(screenSize.width/2.0f,screenSize.height/2.0f);
+	//计算勇士实际位置和重点位置的距离
+	CCPoint scrollPosition=ccpSub(screenCenter, heroPosition);
+
+	//将场景移动到相应位置
+	scene->setPosition(scrollPosition);
+	getChildByTag(10)->setPosition(ccp(height/2+20-scrollPosition.x,height/2+10-scrollPosition.y));
+	getChildByTag(11)->setPosition(ccp(height/2+20-scrollPosition.x,height/2+10-scrollPosition.y));
+	getChildByTag(12)->setPosition(ccp(height/2+20-scrollPosition.x,height/2+10-scrollPosition.y));
+	getChildByTag(13)->setPosition(ccp(height/2+20-scrollPosition.x,height/2+10-scrollPosition.y));
+	getChildByTag(15)->setPosition(ccp(screenSize.width/2-66*2-10-scrollPosition.x,height/2-screenSize.height/2-scrollPosition.y));
+	getChildByTag(16)->setPosition(ccp(screenSize.width/2-66-scrollPosition.x,height/2-screenSize.height/2-scrollPosition.y));
+	CCLog("%f,%f",scrollPosition.x,scrollPosition.y);
+
+}
+
+void CCRPGJoystick::UpDate(float time){
+
+		setSceneScrollPosition(scene->player->getPosition());
+	
+}

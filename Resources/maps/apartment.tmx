@@ -8,6 +8,11 @@
    eJztw0ENAAAMA6Grf9OzsQckrJqqqqqqPn0QtASx
   </data>
  </layer>
+ <layer name="walk" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt0uEKgCAMBOBhvf8z90uwcbfMqZXtYFQa7GMqElk9u3ovC2UrCq2xfd1D99N7zGSVZbmqq17I2+pjT4+Pnd2deSJPjW22bxOcUb433L/wPe9rteVa0Xc3nvOdkb/7Euhnfet1jy8VzyRnC1rz9Gv1oUJ7yNdjTlZ5fDpsBqN9In6f9Y/3fJmvZj4zfNb9q+nR4sthPmb+gm9U2L2ORCJ9cgA/Twfg
+  </data>
+ </layer>
  <layer name="floor" width="40" height="30">
   <data encoding="base64" compression="zlib">
    eJzt07EOgCAMBFAiLi4s/v/36apfYBxMGKqxlCOn9JJbYOgjQAj8GRU9E190EtZKZqF8c0VfAvikanzpQ76F0LdmPsT7s/rQ/6Mn30bo2zMf+//V+EptV//o08Zyv+h5Vt9wU2nPfe19lrL7YgOf9TzMPsnwVPf14UMld3k8nvo5APNzDjs=
