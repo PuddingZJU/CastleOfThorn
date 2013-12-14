@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32">
- <layer name="块层 1" width="40" height="30">
+ <tileset firstgid="1" name="apartment-tilesets" tilewidth="32" tileheight="32">
+  <image source="apartment-tilesets.png" width="320" height="960"/>
+ </tileset>
+ <layer name="background" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20ND6AAAAAA4NcAEsAAAQ==
+   eJztw0ENAAAMA6Grf9OzsQckrJqqqqqqPn0QtASx
+  </data>
+ </layer>
+ <layer name="floor" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt07EOgCAMBFAiLi4s/v/36apfYBxMGKqxlCOn9JJbYOgjQAj8GRU9E190EtZKZqF8c0VfAvikanzpQ76F0LdmPsT7s/rQ/6Mn30bo2zMf+//V+EptV//o08Zyv+h5Vt9wU2nPfe19lrL7YgOf9TzMPsnwVPf14UMld3k8nvo5APNzDjs=
+  </data>
+ </layer>
+ <layer name="wall" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1rEOgCAMRVEWDJvG//9Y42DCAMhr0Wi4J+lESxlIIYTvi0K08pcsklhb63VahWjlb1nsYm2tF4B5xPuUR2p7eeYSMw0lljd7dK/S2kV5s71nVP4d1v2t3pgvHsyXeXE3AeBfDn/8BOU=
+  </data>
+ </layer>
+ <layer name="furniture" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztkTssRUEQQPeFyqfzrfwrFCQoaDylJ6JAQuFTICGhpaWlpVXrtbRqtcK38C9ROZJNbDZz1964+94r9iQnM7Mzu3eSq1T5U401Ad8/E84+rPjXHvXYIJx3Yw/mcUzob+KWY7dP/DLqYyPvsmZnjTxv9VqwVXh/AAexgBNCfxt3HPtV5JSqzP3WJ0av05pdMvKC400fLv55X2I9w7cudXy0Yiiu8QZvPeevjDz0bj884TO+pLizgquGawH2ikQikbTUppy/w3t80HUjNmEvjuJpdqupKqtu9rjzim/4rus2bMchHMfzrJaDOqvuEGYmM/xeMZmzYinYTTg/wn7s07FU7CecD+OIEV0sa5PYE/Tl0NHz/a/TOOPoHwgWkwVcTDE/FWiPJDa0vsyHWiQSiZQt37/vL8Y=
+  </data>
+ </layer>
+ <layer name="items" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjZwJXG5stRqN+NKq6AgJ1UNGsUDD4gM9AOGAWjYBSMglFAEGgMtANGwYgE84B4AhBvHmiHDHMwB4izBtoRVAQ3B9oBBID6QDtgFIyCUUB3AACg4wWO
   </data>
  </layer>
 </map>
