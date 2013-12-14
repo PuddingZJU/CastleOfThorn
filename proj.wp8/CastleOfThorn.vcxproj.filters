@@ -35,6 +35,9 @@
     <Filter Include="Assets\Resources\script">
       <UniqueIdentifier>{840dd9c8-4570-4c61-b0f1-6cdf846e17be}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Assets\Resources\animation">
+      <UniqueIdentifier>{ec4acc72-f28c-472a-bd47-2dc3f9120702}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\ApplicationIcon.png">
@@ -63,36 +66,6 @@
     </Image>
     <Image Include="..\Resources\image\background\dialog-box.png">
       <Filter>Assets\Resources\image\background</Filter>
-    </Image>
-    <Image Include="..\Resources\image\button\btn-continue.png">
-      <Filter>Assets\Resources\image\character</Filter>
-    </Image>
-    <Image Include="..\Resources\image\button\btn-continue-pressed.png">
-      <Filter>Assets\Resources\image\character</Filter>
-    </Image>
-    <Image Include="..\Resources\image\button\btn-exit.png">
-      <Filter>Assets\Resources\image\character</Filter>
-    </Image>
-    <Image Include="..\Resources\image\button\btn-exit-pressed.png">
-      <Filter>Assets\Resources\image\character</Filter>
-    </Image>
-    <Image Include="..\Resources\image\button\btn-newgame.png">
-      <Filter>Assets\Resources\image\character</Filter>
-    </Image>
-    <Image Include="..\Resources\image\button\btn-newgame-pressed.png">
-      <Filter>Assets\Resources\image\character</Filter>
-    </Image>
-    <Image Include="..\Resources\image\character\1.png">
-      <Filter>Assets\Resources\image\button</Filter>
-    </Image>
-    <Image Include="..\Resources\image\character\lin.png">
-      <Filter>Assets\Resources\image\button</Filter>
-    </Image>
-    <Image Include="..\Resources\image\character\vichy.png">
-      <Filter>Assets\Resources\image\button</Filter>
-    </Image>
-    <Image Include="..\Resources\image\character\xee squared.png">
-      <Filter>Assets\Resources\image\button</Filter>
     </Image>
     <Image Include="..\Resources\maps\babygrand.png">
       <Filter>Assets\Resources\maps</Filter>
@@ -231,6 +204,213 @@
     </Image>
     <Image Include="..\Resources\maps\tilecclassroom.png">
       <Filter>Assets\Resources\maps</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\btn-continue-pressed.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\btn-continue.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\btn-newgame-pressed.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\btn-newgame.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\character\1.png">
+      <Filter>Assets\Resources\image\character</Filter>
+    </Image>
+    <Image Include="..\Resources\image\character\lin.png">
+      <Filter>Assets\Resources\image\character</Filter>
+    </Image>
+    <Image Include="..\Resources\image\character\vichy.png">
+      <Filter>Assets\Resources\image\character</Filter>
+    </Image>
+    <Image Include="..\Resources\image\character\xee squared.png">
+      <Filter>Assets\Resources\image\character</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\btnA.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\btnA_down.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\btn-about.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\btn-about-pressed.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\btnB.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\btnB_down.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\chara.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\chara_down.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\close.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\close_down.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\dpad_down.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\dpad_left.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\dpad_right.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\dpad_up.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\package.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\package_down.png">
+      <Filter>Assets\Resources\image\button</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\ani07.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\ani08.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\lin-back.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\lin-back-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\lin-back-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\lin-front.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\lin-front-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\lin-front-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\lin-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\lin-left-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\lin-left-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\lin-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\lin-right-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\lin-right-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\xi-back.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\xi-back-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\xi-back-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\xi-front.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\xi-front-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\xi-front-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\xi-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\xi-left-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\xi-left-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\xi-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\xi-right-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\xi-right-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\yi-back.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\yi-back-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\yi-back-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\yi-front.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\yi-front-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\yi-front-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\yi-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\yi-left-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\yi-left-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\yi-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\yi-right-left.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\yi-right-right.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\ani01.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\ani02.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\ani03.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\ani04.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\ani05.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\animation\ani06.png">
+      <Filter>Assets\Resources\animation</Filter>
+    </Image>
+    <Image Include="..\Resources\image\button\dpad.png">
+      <Filter>Assets\Resources\image\button</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>

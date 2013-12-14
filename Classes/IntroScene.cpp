@@ -29,7 +29,20 @@ bool IntroScene::init(){
 	{
 		return false;
 	}
+	CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
 	CCTMXTiledMap* map = CCTMXTiledMap::create("maps/map-apartment.tmx");
 	addChild(map,0,1);
+	this->Player = CCRPGPlayer::create("xi",100,100,100,100,1);
+	Player->setPosition(ccp(visibleSize.width/2,visibleSize.height/2));
+	addChild(Player,9999,2);
+	Player->MoveUP();
+	//Player->MoveUP();
+	//schedule(SEL_SCHEDULE(&IntroScene::PlayerMove),1);
 	return true;
+}
+
+void IntroScene::PlayerMove(float t){
+
+	Player->MoveUP();
+
 }

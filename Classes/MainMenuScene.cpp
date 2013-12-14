@@ -1,6 +1,7 @@
 #include "MainMenuScene.h"
 #include "CCRPGTalkBox.h"
 #include "IntroScene.h"
+#include "CCRPGPlayer.h"
 USING_NS_CC;
 
 CCScene* MainMenu::scene()
@@ -27,7 +28,6 @@ bool MainMenu::init()
     {
         return false;
     }
-    
     scaleX = 0.0;
     scaleY = 0.0;
     CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
@@ -54,7 +54,7 @@ bool MainMenu::init()
     int btn_interval =50;
     CCMenuItemImage* newgameButton = CCMenuItemImage::create("btn-newgame.png", "btn-newgame-pressed.png",this,menu_selector(MainMenu::menu_startNewGame));
     CCMenuItemImage* continueButton = CCMenuItemImage::create("btn-continue.png", "btn-continue-pressed.png");
-    CCMenuItemImage* exitButton = CCMenuItemImage::create("btn-exit.png", "btn-exit-pressed.png",this,menu_selector(MainMenu::menuCloseCallback));
+    CCMenuItemImage* exitButton = CCMenuItemImage::create("btn-about.png", "btn-about-pressed.png",this,menu_selector(MainMenu::menuCloseCallback));
     newgameButton->setScaleX(scaleX);
     newgameButton->setScaleY(scaleY);
     continueButton->setScaleX(scaleX);
@@ -66,6 +66,7 @@ bool MainMenu::init()
     exitButton->setPosition(0, continueButton->getPositionY()-(continueButton->getContentSize().height/2+btn_interval)*scaleY);
     CCMenu * MainMenu = CCMenu::create(newgameButton,continueButton,exitButton,NULL);
     this->addChild(MainMenu);
+	
     //菜单 end
 
     return true;
@@ -87,13 +88,7 @@ void MainMenu::menu_startNewGame(CCObject* pSender){
 
 void MainMenu::menuCloseCallback(CCObject* pSender)
 {
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT) || (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)
 	CCMessageBox("You pressed the close button. Windows Store Apps do not implement a close button.","Alert");
-#else
-    CCDirector::sharedDirector()->end();
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    exit(0);
-#endif
-#endif
+
 }
 
