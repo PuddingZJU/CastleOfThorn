@@ -72,23 +72,13 @@ bool MainMenu::init()
     return true;
 }
 
-void MainMenu::talk2(){
-    CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
-    CCRPGTalkBox* box2 = CCRPGTalkBox::create(13, "dialog-box.png", "text2.txt", 13, CCSizeMake(visibleSize.width, 200), scaleY,NULL,this);
-    addChild(box2,1,13);
-     box2->NextText();
-}
 void MainMenu::menu_startNewGame(CCObject* pSender){
-	/*   CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
-	CCRPGTalkBox* box1 = CCRPGTalkBox::create(12, "dialog-box.png", "text.txt", 13, CCSizeMake(visibleSize.width, 200), scaleY,callfunc_selector(MainMenu::talk2),this);
-	addChild(box1,14,12);
-	box1->NextText();*/
-	CCDirector::sharedDirector()->replaceScene(IntroScene::scene());
+	CCDirector::sharedDirector()->replaceScene(	CCTransitionFade::create(3.0f,IntroScene::scene()));
 }
 
 void MainMenu::menuCloseCallback(CCObject* pSender)
 {
-	CCMessageBox("You pressed the close button. Windows Store Apps do not implement a close button.","Alert");
+	CCMessageBox("Hello, Write About Here","About");
 
 }
 

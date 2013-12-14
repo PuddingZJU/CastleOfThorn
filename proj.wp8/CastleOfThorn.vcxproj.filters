@@ -336,12 +336,15 @@
     <Font Include="..\Resources\fonts\Heiti TC.ttf">
       <Filter>Assets\Resources\fonts</Filter>
     </Font>
+    <Font Include="..\Resources\fonts\AR PLMingU20 Light.ttf">
+      <Filter>Assets\Resources\fonts</Filter>
+    </Font>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\Resources\script\text.txt">
+    <Text Include="..\Resources\script\intro.txt">
       <Filter>Assets\Resources\script</Filter>
     </Text>
-    <Text Include="..\Resources\script\text2.txt">
+    <Text Include="1_1.txt">
       <Filter>Assets\Resources\script</Filter>
     </Text>
   </ItemGroup>

@@ -8,7 +8,7 @@ CCRPGTalkBox::CCRPGTalkBox(){
 std::string  CCRPGTalkBox::getfilepath(std::string filename){
     return CCFileUtils::sharedFileUtils()->fullPathForFilename(filename.c_str());
 }
-CCRPGTalkBox* CCRPGTalkBox::create(int tag,std::string background_image,std::string script_filename,int boardpixel,cocos2d::CCSize boxsize,float scale,SEL_CallFunc nextfunc,CCObject* listen,CCPoint* screenpos){
+CCRPGTalkBox* CCRPGTalkBox::create(int tag,std::string background_image,std::string script_filename,int boardpixel,cocos2d::CCSize boxsize,float scale,SEL_CallFunc nextfunc,CCObject* listen,CCPoint screenpos){
     CCRPGTalkBox *cur = CCRPGTalkBox::create();
     cur->box_scale = 1;
 	cur->cur_pos = 0;
@@ -37,7 +37,7 @@ CCRPGTalkBox* CCRPGTalkBox::create(int tag,std::string background_image,std::str
         cur->_speaker_icon.push_back(t_spicn);
         cur->_text.push_back(t_text);
         cur->_font_size.push_back(t_fs);
-        cur->_font.push_back(t_f);
+        cur->_font.push_back("fonts/AR PLMingU20 Light.ttf");
         cur->_color.push_back(t_c);
     }
     fin.close();
@@ -66,7 +66,7 @@ void CCRPGTalkBox::NextText(){
     if (cur_pos<_text.size()) {
         this->setTouchEnabled(true);
         left=0;
-        if (_speaker_icon[cur_pos]!="unknowm") {
+        if (_speaker_icon[cur_pos]!="unknown") {
             left = height;
             width=origWidth-height;
             this->removeChildByTag(2);
@@ -84,18 +84,16 @@ void CCRPGTalkBox::NextText(){
         _box->setContentSize(CCSizeMake(width,height));
         _box->setPosition(ccp(left+_box->getContentSize().width/2-screenpos.x, height/2-screenpos.y));
         this->removeChildByTag(3);
-        _content = CCLabelTTF::create();
+        _content = CCLabelTTF::create("",_font[cur_pos].c_str(),_font_size[cur_pos],CCSizeMake(width-boardpixel*2,height-boardpixel*2),kCCTextAlignmentLeft,kCCVerticalTextAlignmentTop);
         _content->setColor(ccc3(0, 0, 0));
         _content->setAnchorPoint(ccp(0.5, 0.5));
-        _content->setFontName(_font[cur_pos].c_str());
-        _content->setFontSize(_font_size[cur_pos]);
-        _content->setDimensions(CCSizeMake(width-boardpixel*2,height-boardpixel*2));
+      
         this->addChild(_content, 3, 3);
         textpos = 0;
         this->addChild(_box,1,1);
         cur_pos+=1;
         startschdule = true;
-        schedule(schedule_selector(CCRPGTalkBox::TextUpdate), 1/60);
+        schedule(schedule_selector(CCRPGTalkBox::TextUpdate), 0.01);
         width=origWidth;
     }
     
@@ -103,15 +101,17 @@ void CCRPGTalkBox::NextText(){
 void CCRPGTalkBox::TextUpdate(float ctime){
     if (textpos<_text[cur_pos-1].size()) {
        
-
+	
 		_content->setString(_text[cur_pos-1].substr(0,textpos+1).c_str());
-		_content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2-screenpos.x, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2-screenpos.y));
+		// _content->setDimensions(CCSizeMake(width-boardpixel*2,height-boardpixel*2));
+		_content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
 
 		textpos= textpos + _text[cur_pos-1].size()/5+1;
 		if (textpos>=_text[cur_pos-1].size()) {
 			textpos=_text[cur_pos-1].size()-1;
 			_content->setString(_text[cur_pos-1].substr(0,textpos+1).c_str());
-			_content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2-screenpos.x, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2-screenpos.y));
+			// _content->setDimensions(CCSizeMake(width-boardpixel*2,height-boardpixel*2));
+			_content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
             textpos=_text[cur_pos-1].size();
         }
     }
@@ -130,8 +130,8 @@ void CCRPGTalkBox::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEve
         unschedule(schedule_selector(CCRPGTalkBox::TextUpdate));
         startschdule = false;
         _content->setString(_text[cur_pos-1].c_str());
+		// _content->setDimensions(CCSizeMake(width-boardpixel*2,height-boardpixel*2));
         _content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
-
     }
     else if (hasNext()) {
         

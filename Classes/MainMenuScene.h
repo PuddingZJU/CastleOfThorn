@@ -19,8 +19,7 @@ public:
     void menuCloseCallback(CCObject* pSender);
     void menu_startNewGame(CCObject* pSender);
     // implement the "static node()" method manually
-    CREATE_FUNC(MainMenu);
-    void talk2();
+	CREATE_FUNC(MainMenu);
 };
 
 #endif // __MAINMENU_SCENE_H__

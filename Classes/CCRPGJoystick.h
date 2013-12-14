@@ -24,12 +24,15 @@ public:
 	void B_button_Pressed(CCObject* Object);
 	void setSceneScrollPosition(cocos2d::CCPoint position);
 	void UpDate(float time);
+	bool ismoving;
 private:
 	bool isEnable;
 	int height;
 	void onEnter();
 	void onExit();
 	CCRPGScene* scene;
+	CCPoint tilePosFromLocation(CCPoint location,CCTMXTiledMap * tilemap);  
+	bool isTilePosBlocked(CCPoint tilepos,CCTMXTiledMap * tileMap); 
 	virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
 	virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
 	virtual	void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);

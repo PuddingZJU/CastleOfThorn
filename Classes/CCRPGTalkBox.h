@@ -18,7 +18,7 @@ private:
     int tag;
     int cur_pos;
     int textpos;
-	cocos2d::CCPoint* screenpos;
+	cocos2d::CCPoint screenpos;
     bool startschdule;
     std::string _background_image;
      CC_SYNTHESIZE_RETAIN(cocos2d::CCLabelTTF*,_content,Content);

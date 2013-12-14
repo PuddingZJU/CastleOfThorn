@@ -318,13 +318,14 @@
     </_CustomResource>
   </ItemGroup>
   <ItemGroup>
+    <Font Include="..\Resources\fonts\AR PLMingU20 Light.ttf" />
     <Font Include="..\Resources\fonts\Arial.ttf" />
     <Font Include="..\Resources\fonts\Heiti TC.ttf" />
     <Font Include="..\Resources\fonts\Marker Felt.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\Resources\script\text.txt" />
-    <Text Include="..\Resources\script\text2.txt" />
+    <Text Include="..\Resources\script\intro.txt" />
+    <Text Include="1_1.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Resources\maps\apartment.tmx" />

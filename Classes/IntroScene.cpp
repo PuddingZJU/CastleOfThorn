@@ -31,23 +31,37 @@ bool IntroScene::init(){
 		return false;
 	}
 	CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
+	CCRPGTalkBox* box1 = CCRPGTalkBox::create(12, "dialog-box.png", "intro.txt", 13, CCSizeMake(visibleSize.width, 200), 1,callfunc_selector(IntroScene::LoadScene),this,screenpos);
+	addChild(box1,9999,12);
+	box1->NextText();
+	return true;
+}
+void IntroScene::LoadScene(){
+	removeChildByTag(12);
+	CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
 	map = CCTMXTiledMap::create("maps/apartment.tmx");
+	this->setPosition(-visibleSize.width/2,0);
+	screenpos = ccp(-visibleSize.width/2,0);
 	addChild(map,0,1);
 	this->player = CCRPGPlayer::create("yi",100,100,100,100,1);
-	player->setPosition(ccp(visibleSize.width/2,visibleSize.height/2));
-	addChild(player,9999,2);
+	player->setPosition(ccp(visibleSize.width/2-screenpos.x-48,visibleSize.height/2-screenpos.y));
+	map->addChild(player,4,1024);
+	CCRPGPlayer* lin = CCRPGPlayer::create("lin",100,100,100,100,1);
+	lin->setPosition(ccp(visibleSize.width/2-screenpos.x-16,visibleSize.height/2-screenpos.y));
+	addChild(lin,10,1025);
 	CCRPGJoystick* controller = CCRPGJoystick::create();
 	controller->initJoyStick(this);
 	addChild(controller,1);
-	return true;
+	CCRPGTalkBox* box1 = CCRPGTalkBox::create(13, "dialog-box.png", "1_1.txt", 13, CCSizeMake(visibleSize.width, 200), 1,NULL,this,screenpos);
+	addChild(box1,9999,13);
+	box1->NextText();
 }
-
-
 void IntroScene::A_Button_Pressed(){
-	CCRPGTalkBox* dialog1 = CCRPGTalkBox::create(9999,"dialog-box.png","text.txt",13,CCSizeMake(CCDirector::sharedDirector()->getVisibleSize().width,200),1,NULL,this,screenpos);
+	CCRPGTalkBox* dialog1 = CCRPGTalkBox::create(9999,"dialog-box.png","1_1.txt",13,CCSizeMake(CCDirector::sharedDirector()->getVisibleSize().width,200),1,NULL,this,screenpos);
 	this->addChild(dialog1,9999);
 	dialog1->NextText();
 }
 void IntroScene::B_Button_Pressed(){
-	
+	CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
+	player->setPosition(ccp(visibleSize.width/2-32,visibleSize.height/2));
 }
