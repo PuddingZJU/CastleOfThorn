@@ -73,7 +73,7 @@ void CCRPGPlayer::initAction(){
 	actionRight->retain();  
 }
 void CCRPGPlayer::MoveUP(){
-	// this->runAction(CCRepeatForever::create(animitionUp));  
+	this->runAction(actionUp);  
 }
 void CCRPGPlayer::MoveDown(){
 	this->runAction(actionDown); 
