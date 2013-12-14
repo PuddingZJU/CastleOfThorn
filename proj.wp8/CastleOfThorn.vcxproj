@@ -268,12 +268,12 @@
     <ClInclude Include="..\Classes\CCRPGLoadMenu.h" />
     <ClInclude Include="..\Classes\CCRPGPlayer.h" />
     <ClInclude Include="..\Classes\CCRPGSaveMenu.h" />
+    <ClInclude Include="..\Classes\CCRPGScene.h" />
     <ClInclude Include="..\Classes\CCRPGStatusMenu.h" />
     <ClInclude Include="..\Classes\CCRPGTalkBox.h" />
     <ClInclude Include="..\Classes\IntroScene.h" />
     <ClInclude Include="..\Classes\MainMenuScene.h" />
     <ClInclude Include="CastleOfThorn.h" />
-    <ClInclude Include="CCRPGScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
@@ -281,12 +281,12 @@
     <ClCompile Include="..\Classes\CCRPGLoadMenu.cpp" />
     <ClCompile Include="..\Classes\CCRPGPlayer.cpp" />
     <ClCompile Include="..\Classes\CCRPGSaveMenu.cpp" />
+    <ClCompile Include="..\Classes\CCRPGScene.cpp" />
     <ClCompile Include="..\Classes\CCRPGStatusMenu.cpp" />
     <ClCompile Include="..\Classes\CCRPGTalkBox.cpp" />
     <ClCompile Include="..\Classes\IntroScene.cpp" />
     <ClCompile Include="..\Classes\MainMenuScene.cpp" />
     <ClCompile Include="CastleOfThorn.cpp" />
-    <ClCompile Include="CCRPGScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\cocos2dx\platform\third_party\winrt\angleproject\src\libEGL\libEGL_phone.vcxproj">

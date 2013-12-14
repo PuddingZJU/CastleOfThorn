@@ -283,7 +283,7 @@
     <ClCompile Include="..\Classes\IntroScene.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="CCRPGScene.cpp">
+    <ClCompile Include="..\Classes\CCRPGScene.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -319,7 +319,7 @@
     <ClInclude Include="..\Classes\IntroScene.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="CCRPGScene.h">
+    <ClInclude Include="..\Classes\CCRPGScene.h">
       <Filter>Classes</Filter>
     </ClInclude>
   </ItemGroup>
