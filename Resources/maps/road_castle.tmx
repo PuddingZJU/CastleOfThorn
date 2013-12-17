@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="road" tilewidth="32" tileheight="32">
+  <image source="road.png" width="320" height="320"/>
+  <tile id="3">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="grass" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjEKACAMBMFw/3+0jb1IiiDOwvaTqsr+VIbn4+Pj4+Pj4+Pj4/vHNxFfL75efL1e8vn+BYbxBdE=
+  </data>
+ </layer>
+ <layer name="walk" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjEKACAMQ9EOvf+ZpeCoFgzSFPMhS6Znpl7kc0x5surkw5IPSz68jjYWo3xY7L6oo43FKB8Wuy862aq+zFY5+f7xMRqZbTvfylr5qfsGXscGfQ==
+  </data>
+ </layer>
+ <layer name="road" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1LENACAIBEAS99/ZCSxEoibclVA+TwQAnBnJHXSgH7C2248bM/iF+6zx6pfIr94EO6sAOg==
+  </data>
+ </layer>
+ <layer name="trees" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1LENACAMA8E02X9lRqAAoWDdVSnSveQqYKcv/TCTvtn0zaZvNn3f6AE3efTNpu+5Cdv72yYvIJAAtQ==
+  </data>
+ </layer>
+ <layer name="light" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1bEOABAMhGGT2ez9H9QkMYmWXJH/G9uRu6YEAMjOnUpx7lSqc4c3kI895ONv1nwoZiNrPhSzkTUfihnOueFGzNxwI2b6/4zqktX3i+qS1feL6hL65bwG7h0DkQ==
+  </data>
+ </layer>
+ <layer name="castle" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjEOgCAQRNG9hpUaKjHc/3psAjWh0ua95HdTTMRwZGd2Lbrn7g8l9v6Vz58NLXuyuuidOwAAAAD2dbAPBI0=
+  </data>
+ </layer>
+ <layer name="door" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztySEOgDAQRNGeBQEIBEUC9z8XI6oaEKia95KfTWZLeTenJa0f/1GmdvdU09Hto23tnulKd7cDAAAA8M8Du+MCVg==
+  </data>
+ </layer>
+ <layer name="entrance" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzisOACAMRMFasOD43P+YIBB1tAESxJtkU7PJNolIFbvi7J8KM9G4WZz9G9JMXne32VS/P/5Lb3Z1rX0AAAAAAIBfDB8wAkk=
+  </data>
+ </layer>
+ <layer name="entrance_covered" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt0KENACAMRcFasGBh/zHpCjWAuEtevm06ImJmo7A3tawX9rbK3+aD+1a2CwsAAADwmwOxHwO8
+  </data>
+ </layer>
+</map>
