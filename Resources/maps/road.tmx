@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="road" tilewidth="32" tileheight="32">
+  <image source="road.png" width="320" height="96"/>
+  <tile id="3">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="grass" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjEKACAMBMFw/3+0jb1IiiDOwvaTqsr+VIbn4+Pj4+Pj4+Pj4/vHNxFfL75efL1e8vn+BYbxBdE=
+  </data>
+ </layer>
+ <layer name="walk" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjEOACAMQtEO3v/MppOL2kQGaOQnLEwvYjWKsbMPyz68jjYVo31Y6r6so03FaB+Wui/raFMx2oel7stuNtZX2Ziz7x+folHZdvLtrMzPvTcBGgEGzQ==
+  </data>
+ </layer>
+ <layer name="road" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1EEKACAIBECh//+5FwgVYkEzRz2uawSwYhzu4Af6ATn9gNxuPzpm8Ar3WePWL5FfvQmYzwBA
+  </data>
+ </layer>
+ <layer name="trees" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1LENAEAIw0Aa9l+ZIR6hvOWrKOgspUobeulHmezLZl82+7LZl82+NzrgFo992ez7LmF7f9vkAc6MAL8=
+  </data>
+ </layer>
+ <layer name="light" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1SsOACAMA1AUGs39D4oiQS3sk45Pn9wktCuFflGNO5Rm3KF0447uwHz4MB9vYz58mI+3afOBmK20+UDMVtp8IGYU54QbITnhRkjm/8zqkt33y+qS3ffL6hL2S7wB47cD8Q==
+  </data>
+ </layer>
+</map>

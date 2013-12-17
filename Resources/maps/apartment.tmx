@@ -17,6 +17,86 @@
     <property name="allow_movement" value="1"/>
    </properties>
   </tile>
+  <tile id="5">
+   <properties>
+    <property name="curtain" value="15"/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="flower" value="7"/>
+   </properties>
+  </tile>
+  <tile id="29">
+   <properties>
+    <property name="light" value="8"/>
+   </properties>
+  </tile>
+  <tile id="36">
+   <properties>
+    <property name="drawing" value="2"/>
+   </properties>
+  </tile>
+  <tile id="38">
+   <properties>
+    <property name="key" value="11"/>
+   </properties>
+  </tile>
+  <tile id="39">
+   <properties>
+    <property name="knife" value="10"/>
+   </properties>
+  </tile>
+  <tile id="52">
+   <properties>
+    <property name="wardrobe" value="16"/>
+   </properties>
+  </tile>
+  <tile id="53">
+   <properties>
+    <property name="wardrobe" value="16"/>
+   </properties>
+  </tile>
+  <tile id="68">
+   <properties>
+    <property name="showdate" value="3"/>
+   </properties>
+  </tile>
+  <tile id="69">
+   <properties>
+    <property name="telephone" value="0"/>
+   </properties>
+  </tile>
+  <tile id="75">
+   <properties>
+    <property name="books01" value="12"/>
+   </properties>
+  </tile>
+  <tile id="76">
+   <properties>
+    <property name="books02" value="13"/>
+   </properties>
+  </tile>
+  <tile id="96">
+   <properties>
+    <property name="bed" value="14"/>
+   </properties>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="fruit" value="15"/>
+   </properties>
+  </tile>
+  <tile id="157">
+   <properties>
+    <property name="cake" value="5"/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="book" value="6"/>
+   </properties>
+  </tile>
  </tileset>
  <layer name="walk" width="40" height="30">
   <data encoding="base64" compression="zlib">
@@ -25,7 +105,7 @@
  </layer>
  <layer name="floor" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJzt07EOgCAMBFAiLi4s/v/36apfYBxMGKqxlCOn9JJbYOgjQAj8GRU9E190EtZKZqF8c0VfAvikanzpQ76F0LdmPsT7s/rQ/6Mn30bo2zMf+//V+EptV//o08Zyv+h5Vt9wU2nPfe19lrL7YgOf9TzMPsnwVPf14UMld3k8nvo5APNzDjs=
+   eJzt0z0KgDAMBeBiXVy6eAaP4IE8va56AhEUMlQxiSmvkgcPoQ79+hcCflpGj8QX7c7vQMYkc1n5+syY1JcMfLlyfKki3wzoW4jP4v5pfdbvo1bfKPCtgPu3ER/6++X4pLarf/Rxozlf6/m0vuamuX/uK+/TFN0XC/i060H25QxP1fgmcB/6/pX0WYW6PB7P99kB19wO7A==
   </data>
  </layer>
  <layer name="wall" width="40" height="30">
@@ -33,14 +113,14 @@
    eJzt1rEOgCAMRVEWDJvG//9Y42DCAMhr0Wi4J+lESxlIIYTvi0K08pcsklhb63VahWjlb1nsYm2tF4B5xPuUR2p7eeYSMw0lljd7dK/S2kV5s71nVP4d1v2t3pgvHsyXeXE3AeBfDn/8BOU=
   </data>
  </layer>
- <layer name="items" width="40" height="30">
-  <data encoding="base64" compression="zlib">
-   eJxjYBjZwJXG5stRqN+NKq6AgJ1UNGsUDD4gM9AOGAWjYBSMglFAEGgMtANGwYgE84B4AhBvHmiHDHMwB4izBtoRVAQ3B9oBBID6QDtgFIyCUUB3AACg4wWO
-  </data>
- </layer>
  <layer name="furniture" width="40" height="30">
   <data encoding="base64" compression="zlib">
    eJztkTssRUEQQPeFyqfzrfwrFCQoaDylJ6JAQuFTICGhpaWlpVXrtbRqtcK38C9ROZJNbDZz1964+94r9iQnM7Mzu3eSq1T5U401Ad8/E84+rPjXHvXYIJx3Yw/mcUzob+KWY7dP/DLqYyPvsmZnjTxv9VqwVXh/AAexgBNCfxt3HPtV5JSqzP3WJ0av05pdMvKC400fLv55X2I9w7cudXy0Yiiu8QZvPeevjDz0bj884TO+pLizgquGawH2ikQikbTUppy/w3t80HUjNmEvjuJpdqupKqtu9rjzim/4rus2bMchHMfzrJaDOqvuEGYmM/xeMZmzYinYTTg/wn7s07FU7CecD+OIEV0sa5PYE/Tl0NHz/a/TOOPoHwgWkwVcTDE/FWiPJDa0vsyHWiQSiZQt37/vL8Y=
+  </data>
+ </layer>
+ <layer name="items" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjZwJXG5stRqN+NKq6AgJ1UNGsUDD4gM9AOGAWjYBSMglFAEGgMtANGwYgE84B4AhBvHmiHDHMwB4izBtoRVAQ3B9oBBID6QDtgFIyCUUB3AACg4wWO
   </data>
  </layer>
  <layer name="background" width="40" height="30">
