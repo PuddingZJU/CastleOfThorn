@@ -40,17 +40,17 @@
  </layer>
  <layer name="door" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJztySEOgDAQRNGeBQEIBEUC9z8XI6oaEKia95KfTWZLeTenJa0f/1GmdvdU09Hto23tnulKd7cDAAAA8M8Du+MCVg==
+   eJztzisOgDAQANGeBQEVhE8Vv/ufixFVDSS4RcxLJs3umqb0rKeB8ss9SlffhVYqzT7aSBMddNJFc93/xdbMe8gvJEmSJEmSvrkBdH0DJA==
   </data>
  </layer>
  <layer name="entrance" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzisOACAMRMFasOD43P+YIBB1tAESxJtkU7PJNolIFbvi7J8KM9G4WZz9G9JMXne32VS/P/5Lb3Z1rX0AAAAAAIBfDB8wAkk=
+   eJzt0LsKwCAMheGz1jXdvLz/Y2qhQsYoWDr8HwSXIznEJN2Ky2/expSFf7uuMSm4K7v807Ed7DWZ4veoLv9Ft7mzuTeaBwAAAAAA+IsO5R0Cfg==
   </data>
  </layer>
- <layer name="entrance_covered" width="40" height="30">
+ <layer name="entrance_covered" width="40" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzt0KENACAMRcFasGBh/zHpCjWAuEtevm06ImJmo7A3tawX9rbK3+aD+1a2CwsAAADwmwOxHwO8
+   eJzt0CEOACAMQ9FZsMOy+x+TCcQECZkZgv+SprapisjwaKIrNU9PdLXMb+PBvumx3bdt9mBfFLeeGgAAAAAA/GkBVsUEWA==
   </data>
  </layer>
 </map>

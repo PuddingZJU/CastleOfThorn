@@ -1,8 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32">
- <layer name="块层 1" width="40" height="30">
+ <tileset firstgid="1" name="castle_001" tilewidth="32" tileheight="32">
+  <image source="castle_001.png" width="768" height="1344"/>
+  <tile id="624">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="625">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="626">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="650">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="bg" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20ND6AAAAAA4NcAEsAAAQ==
+   eJzt1sEJADAIBEFJ/03YaVowcA8DM3Bv92mfqh4sbXLzZfr06dOnT5++XB8AwG/Sf5jt2gWgN/H1
+  </data>
+ </layer>
+ <layer name="floor_walk" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1LEJADAIBEDJytkfMkIUtJF7sPQ5GyP25J6e4ePb7KuYf/t8fHx8GcvU/8t2dvoqd/Dx8fHx8W30dWWqV/bmAdKwHio=
+  </data>
+ </layer>
+ <layer name="walls" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1cEJwDAMQ1El+8/Wdoq0U7TJsTcTjAiE/8BXSzdJ+ziKdCbvKr5+bfy+k/cY+73j95c8VV8/AAD+ot13bPpMZrT7jk2fyYx237HpKzIBAMAeOm7ZXuQ=
+  </data>
+ </layer>
+ <layer name="windows" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1rENACAIBVHCBrqFbqH7DyUTIDFREnOvpbjyI/KvoiJVz++3NWt3p7+73zasPZ3+7g4AwCtZmx7tZm16tJu16fwSAAAgagG0LAQV
+  </data>
+ </layer>
+ <layer name="carpet" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1sEJwCAMheHg/nNop7Cdwnac5mBPPqGQlqTl/ZBbwA8Poghj3y8nkdJnSd6asaqmtc/m7MvgnmY+tPt2FThmPrRLH31/9jU9a9c5bvjQrkeR3j8Ufbbos0WfLfps0Wcruu/6B0T4CzD2VCezO2ID
+  </data>
+ </layer>
+ <layer name="decorations" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1bkNgEAMBVHjFqAL6AKahy6gC4j4yWpTJ2sOzZMcWA4mtNn/rJ3ZpundbPC6R++t7WodmlHtyesevbd2qnVpZrUXr3v0DgBAtvLT39otPz1btFt+eranugAA4HtucZUZgQ==
+  </data>
+ </layer>
+ <layer name="ceiling" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt2MEJACEQQ9Gpx/4LtAUhiTPKD+z18dmLYtXZlvlzz2nSN8dKmPTNsRImfXOshEnfPavjTE/cJTr+H32aRZ9m0adZ9GkWfZr1Sp/7TSBhsj+3AX7XGPE=
+  </data>
+ </layer>
+ <layer name="light_left_scope" width="40" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1kEKgCAQBVDroNUZWlRnMKzuE52hY3SMmkWCDGNglH3CD3/tQ3BGpVJS/hudK9WzokSyofisraCW1ArItziWhtpSOxCfYRYknxEsKL75dCD6tONA82nm4JaBOlKnD3xauCfu+2r+8dmL5JP2AorPt7MQfD4biu/qTARf/ZBvzeIbQ3zbiz6fMcS3v+yTjCG+WDO6Bve5RoT3e2W0/wD+F0DwpaTczQH4pZmD
+  </data>
+ </layer>
+ <layer name="light_right_scope" width="40" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1lEKgzAMBmDnQXVX2Mv0CuLYdp6xO3iMHWPGh0CVkcYkNh30h/+lSPMhtLSqSkr+I2O97lB7i9bZ+nIzoqmBttBzZkb0XaEdtA/+4ysDI+Vb1m7OxpivczZyfEvfTkaur3c6M2i5Qx/QJ+HzONe/7j/Kl9oo8aU0Sn2pjBqfxsjdR+uTGrn7WPhGI9/WOJ1sfBdDX2j8GPgktpgPjV+lT2rj+DilfBrb0T6tjePDGXt9FrbY3HAG9R2+GfDdYGUrKfHMDKw7v7g=
+  </data>
+ </layer>
+ <layer name="lights_off" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzDENADAIADCCTubfxkQAB0kroBEAAMCGl/2jBg4AuO4DYxMAvg==
+  </data>
+ </layer>
+ <layer name="light_left_on" width="40" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztzgEJAAAIA7DbP7NgChFkS7AEAADY0HU9AIAfBliAAP8=
+  </data>
+ </layer>
+ <layer name="light_right_on" width="40" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztzjEBAAAIA6DZv7KHMeYBCUgAAICvdtoDAOg7DfgA/g==
+  </data>
+ </layer>
+ <layer name="shadows_all" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1bEJADAIRUFx/1kzQ1pbiZAQ7uDXvs6If6ycmb43+wCguvGTOjf1nfUBAFQbElZlQQ==
   </data>
  </layer>
 </map>
