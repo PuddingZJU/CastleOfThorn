@@ -42,6 +42,8 @@ public:
 	cocos2d::CCAction* actionDown;  
 	cocos2d::CCAction* actionLeft;  
 	cocos2d::CCAction* actionRight;
+	CCPoint curTile;
+	CCPoint facetoTile;
 	CREATE_FUNC(CCRPGPlayer);
 	static CCRPGPlayer* create(string name,int hp,int hpmax, int mp,int mpmax,int level);
 	void MoveUP();

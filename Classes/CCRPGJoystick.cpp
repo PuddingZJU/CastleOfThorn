@@ -219,6 +219,8 @@ void CCRPGJoystick::UpDate(float time){
 			offset.y = 0;
 		}
 		CCPoint tilePos = this->tilePosFromLocation(pos, scene->map);  
+		scene->player->curTile = tilePos;
+		scene->Scan_cur_block(tilePos);
 		if (tilePos.y<=20 && tilePos.y>= 18 || (tilePos.y==4 && tilePos.x ==14))
 		{
 			scene->map->getChildByTag(1024)->setZOrder(3);
@@ -228,7 +230,9 @@ void CCRPGJoystick::UpDate(float time){
 		}
 		//获取当前要移动一个位置的相对坐标  
 		//计算获得要移动到那个位置的绝对坐标  
-		tilePos = CCPointMake(tilePos.x + offset.x, tilePos.y + offset.y);  
+		tilePos = CCPointMake(tilePos.x + offset.x, tilePos.y + offset.y); 
+		scene->player->facetoTile = tilePos;
+		scene->Scan_Face_To_block(tilePos);
 		//确保主角不会超出屏幕的边界,如果超出则按照边界点来算  
 		//tilePos = this->ensureTilePosIsWithinBounds(tilePos);  
 		//判断目标位置是否能移动  
@@ -236,6 +240,7 @@ void CCRPGJoystick::UpDate(float time){
 			//将要移动的那个坐标的瓷砖块移动到当前屏幕的中央  
 			scene->player->stopAllActions();
 		}  
+		
 	}
 	
 }

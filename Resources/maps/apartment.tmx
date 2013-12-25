@@ -24,7 +24,7 @@
   </tile>
   <tile id="27">
    <properties>
-    <property name="flower" value="7"/>
+    <property name="ItemID" value="7"/>
    </properties>
   </tile>
   <tile id="29">
@@ -94,7 +94,8 @@
   </tile>
   <tile id="184">
    <properties>
-    <property name="book" value="6"/>
+    <property name="Info" value="这是小林的画册"/>
+    <property name="ItemID" value="1"/>
    </properties>
   </tile>
  </tileset>

@@ -9,6 +9,7 @@
 #include "IntroScene.h"
 #include "CCRPGTalkBox.h"
 #include "CCRPGJoystick.h"
+#include <sstream>
 USING_NS_CC;
 
 CCScene* IntroScene::scene(){
@@ -57,9 +58,14 @@ void IntroScene::LoadScene(){
 	box1->NextText();
 }
 void IntroScene::A_Button_Pressed(){
-	CCRPGTalkBox* dialog1 = CCRPGTalkBox::create(9999,"dialog-box.png","1_1.txt",13,CCSizeMake(CCDirector::sharedDirector()->getVisibleSize().width,200),1,NULL,this,screenpos);
-	this->addChild(dialog1,9999);
-	dialog1->NextText();
+	int itemid = get_item("items");
+	if (itemid!=0)
+	{
+
+	}
+	
+	CCMessageBox("ItemID:","About");
+
 }
 void IntroScene::B_Button_Pressed(){
 	CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
