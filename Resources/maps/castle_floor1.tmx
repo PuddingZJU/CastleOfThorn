@@ -113,7 +113,7 @@
    eJztzDENADAIADCCTubfxkQAB0kroBEAAMCGl/2jBg4AuO4DYxMAvg==
   </data>
  </layer>
- <layer name="light_left_on" width="40" height="30" visible="0">
+ <layer name="light_left_on" width="40" height="30">
   <data encoding="base64" compression="zlib">
    eJztzgEJAAAIA7DbP7NgChFkS7AEAADY0HU9AIAfBliAAP8=
   </data>

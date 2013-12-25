@@ -19,37 +19,49 @@
   </tile>
   <tile id="5">
    <properties>
-    <property name="curtain" value="15"/>
+    <property name="info" value="天都快黑了，为什么小熹还不回家？"/>
+    <property name="itemID" value="8"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="info" value="天都快黑了，为什么小熹还不回家？"/>
+    <property name="itemID" value="8"/>
    </properties>
   </tile>
   <tile id="27">
    <properties>
-    <property name="ItemID" value="7"/>
+    <property name="info" value="新插上的蔷薇花"/>
+    <property name="itemID" value="2"/>
    </properties>
   </tile>
   <tile id="29">
    <properties>
-    <property name="light" value="8"/>
+    <property name="itemID" value="4"/>
    </properties>
   </tile>
   <tile id="36">
    <properties>
-    <property name="drawing" value="2"/>
+    <property name="info" value="小熹的画越画越好了。"/>
+    <property name="itemID" value="14"/>
    </properties>
   </tile>
   <tile id="38">
    <properties>
-    <property name="key" value="11"/>
+    <property name="info" value="有一把钥匙"/>
+    <property name="itemID" value="12"/>
    </properties>
   </tile>
   <tile id="39">
    <properties>
-    <property name="knife" value="10"/>
+    <property name="info" value="一把水果刀"/>
+    <property name="itemID" value="6"/>
    </properties>
   </tile>
   <tile id="52">
    <properties>
-    <property name="wardrobe" value="16"/>
+    <property name="info" value="好像小林把锁上了"/>
+    <property name="itemID" value="3"/>
    </properties>
   </tile>
   <tile id="53">
@@ -59,7 +71,8 @@
   </tile>
   <tile id="68">
    <properties>
-    <property name="showdate" value="3"/>
+    <property name="info" value="12月17日，小熹生日"/>
+    <property name="itemID" value="10"/>
    </properties>
   </tile>
   <tile id="69">
@@ -69,44 +82,61 @@
   </tile>
   <tile id="75">
    <properties>
-    <property name="books01" value="12"/>
+    <property name="info" value="高中语文，高中数学...好多书，看着头疼，高中生真辛苦"/>
+    <property name="itemID" value="13"/>
    </properties>
   </tile>
   <tile id="76">
    <properties>
-    <property name="books02" value="13"/>
+    <property name="info" value="放满了书"/>
+    <property name="itemID" value="5"/>
    </properties>
   </tile>
   <tile id="96">
    <properties>
-    <property name="bed" value="14"/>
+    <property name="info" value="这孩子今天竟然整理了被子..."/>
+    <property name="itemID" value="15"/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="info" value="食材和蛋糕都准备好了，就等小熹回家了。"/>
+    <property name="itemID" value="7"/>
    </properties>
   </tile>
   <tile id="155">
    <properties>
-    <property name="fruit" value="15"/>
+    <property name="info" value="为小熹买的水果"/>
+    <property name="itemID" value="11"/>
    </properties>
   </tile>
   <tile id="157">
    <properties>
-    <property name="cake" value="5"/>
+    <property name="info" value="食材和蛋糕都准备好了，就等小熹回家了。"/>
+    <property name="itemID" value="7"/>
    </properties>
   </tile>
   <tile id="184">
    <properties>
-    <property name="Info" value="这是小林的画册"/>
     <property name="ItemID" value="1"/>
+    <property name="info" value="这是小林的画册"/>
+   </properties>
+  </tile>
+  <tile id="190">
+   <properties>
+    <property name="info" value="已经六点了"/>
+    <property name="itemID" value="9"/>
    </properties>
   </tile>
  </tileset>
  <layer name="walk" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJztktEOgCAIRZn2/9/cU5uxCxhkpXG2u0zbOIFEyepsbN0GUZugPemc1+D1+JnkpEVzsWLVQr5eP4+npxaxdc8/zuBXCTPK7wv3L/3e9/O6HVnR7yqR+T7B3/0KqKe98/2IX2mehc4uaC9Sz+uHgs6Q3x190hLx40g9GO1HFPfTvonOV/Lr6U+vn0T0/vX0wNM/y09ynsFvFNaskySJsQN46wfa
+   eJztklkOwCAIBYl6jN7/nP2xiSUPpVC7MsmLWxOmKFHwdUodlzpvg8hN0J503tYrbM7X3E+bnssoo1rI1+pn8bTUIjbX/OMb/DJhZvk94f2F3/1+VrctX/Q7iud+r+DvfgnU6635vscvNWOivQva89Sz+qGgM+R3Rp968fhxpB7M9iPy+/W+8d6v5Kfpj9ZPwvv+ND2w9G/kJzm/wW8Wo7sOgsDHClA5B/Y=
   </data>
  </layer>
  <layer name="floor" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJzt0z0KgDAMBeBiXVy6eAaP4IE8va56AhEUMlQxiSmvkgcPoQ79+hcCflpGj8QX7c7vQMYkc1n5+syY1JcMfLlyfKki3wzoW4jP4v5pfdbvo1bfKPCtgPu3ER/6++X4pLarf/Rxozlf6/m0vuamuX/uK+/TFN0XC/i060H25QxP1fgmcB/6/pX0WYW6PB7P99kB19wO7A==
+   eJzt0zEKgDAMBdBiXVy6eAYP5ul11ROIYCFDFNOY8iv58BHqkGcxIeCnF/RMfNHhek7krGSWlW9kzkp9ycDHVeJLDfkWQN9KfBb/n9ZnvR+t+iTzcjbA+9uJD31/Jb5SW+4ffdJo98NyntbX3ZR75776Pk3RfbGCT/s9yD7O8FSNbwb3od9fTZ9VqMvj8XyfAxYuDrc=
   </data>
  </layer>
  <layer name="wall" width="40" height="30">
@@ -116,7 +146,7 @@
  </layer>
  <layer name="furniture" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJztkTssRUEQQPeFyqfzrfwrFCQoaDylJ6JAQuFTICGhpaWlpVXrtbRqtcK38C9ROZJNbDZz1964+94r9iQnM7Mzu3eSq1T5U401Ad8/E84+rPjXHvXYIJx3Yw/mcUzob+KWY7dP/DLqYyPvsmZnjTxv9VqwVXh/AAexgBNCfxt3HPtV5JSqzP3WJ0av05pdMvKC400fLv55X2I9w7cudXy0Yiiu8QZvPeevjDz0bj884TO+pLizgquGawH2ikQikbTUppy/w3t80HUjNmEvjuJpdqupKqtu9rjzim/4rus2bMchHMfzrJaDOqvuEGYmM/xeMZmzYinYTTg/wn7s07FU7CecD+OIEV0sa5PYE/Tl0NHz/a/TOOPoHwgWkwVcTDE/FWiPJDa0vsyHWiQSiZQt37/vL8Y=
+   eJztkTksRUEUhueFytJZK3uFggQFDcpHRIGEwlIgIaGlpaWlVeu1tOpXK6yFvUTlk0xicjJ3zI07771ivuTLmTNzZu6fXKXKn2qsCfj+uWXvQ9S/ctRjg2W/G3twXCvZwm1Htk/8MvoTY90lZueM9Zg4a8FWy/sDOIiTWskO7jryVeSUqsz99qfGWaeYXTbWE443fbj8530bGxm+VdD1UdRQXOMN3nrOXxnr0Nl+eMJnfElxZxXXDNcD5IpEIpG01Kacv8N7fNB9IzZhL47iWXbRVJXomz3uvOIbvuu+DdtxCPN4kVU4qBN9h2VmKsPvFZN5UUvBXsL+MfZjn66l4iBhfxhHjOpiRZvEvkVfjhxnvv91Bmcd54cWi8kiLqWYnw6UI4lNrS8LoYJEIpGy5Rvh/y/I
   </data>
  </layer>
  <layer name="items" width="40" height="30">
