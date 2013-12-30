@@ -220,6 +220,7 @@
     <Image Include="..\Resources\animation\yi-right-left.png" />
     <Image Include="..\Resources\animation\yi-right-right.png" />
     <Image Include="..\Resources\animation\yi-right.png" />
+    <Image Include="..\Resources\image\background\about.png" />
     <Image Include="..\Resources\image\background\dialog-box.png" />
     <Image Include="..\Resources\image\background\main_menu_background.png" />
     <Image Include="..\Resources\image\button\btn-about-pressed.png" />
@@ -265,28 +266,26 @@
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\AppMacros.h" />
     <ClInclude Include="..\Classes\CCRPGJoystick.h" />
-    <ClInclude Include="..\Classes\CCRPGLoadMenu.h" />
     <ClInclude Include="..\Classes\CCRPGPlayer.h" />
-    <ClInclude Include="..\Classes\CCRPGSaveMenu.h" />
     <ClInclude Include="..\Classes\CCRPGScene.h" />
     <ClInclude Include="..\Classes\CCRPGStatusMenu.h" />
     <ClInclude Include="..\Classes\CCRPGTalkBox.h" />
     <ClInclude Include="..\Classes\IntroScene.h" />
     <ClInclude Include="..\Classes\MainMenuScene.h" />
     <ClInclude Include="CastleOfThorn.h" />
+    <ClInclude Include="CCRPGAboutScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\CCRPGJoystick.cpp" />
-    <ClCompile Include="..\Classes\CCRPGLoadMenu.cpp" />
     <ClCompile Include="..\Classes\CCRPGPlayer.cpp" />
-    <ClCompile Include="..\Classes\CCRPGSaveMenu.cpp" />
     <ClCompile Include="..\Classes\CCRPGScene.cpp" />
     <ClCompile Include="..\Classes\CCRPGStatusMenu.cpp" />
     <ClCompile Include="..\Classes\CCRPGTalkBox.cpp" />
     <ClCompile Include="..\Classes\IntroScene.cpp" />
     <ClCompile Include="..\Classes\MainMenuScene.cpp" />
     <ClCompile Include="CastleOfThorn.cpp" />
+    <ClCompile Include="CCRPGAboutScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\cocos2dx\platform\third_party\winrt\angleproject\src\libEGL\libEGL_phone.vcxproj">
@@ -320,12 +319,11 @@
   <ItemGroup>
     <Font Include="..\Resources\fonts\AR PLMingU20 Light.ttf" />
     <Font Include="..\Resources\fonts\Arial.ttf" />
-    <Font Include="..\Resources\fonts\Heiti TC.ttf" />
     <Font Include="..\Resources\fonts\Marker Felt.ttf" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="..\Resources\script\1_1.txt" />
     <Text Include="..\Resources\script\intro.txt" />
-    <Text Include="1_1.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Resources\maps\apartment.tmx" />

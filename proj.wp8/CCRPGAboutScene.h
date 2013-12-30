@@ -1,13 +1,10 @@
-#ifndef __MAINMENU_SCENE_H__
-#define __MAINMENU_SCENE_H__
+#ifndef __ABOUT_SCENE_H__
+#define __ABOUT_SCENE_H__
 
 #include "cocos2d.h"
 
-class MainMenu : public cocos2d::CCLayer
+class AboutScene : public cocos2d::CCLayer
 {
-private:
-    float scaleX ;
-    float scaleY;
 public:
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();  
@@ -16,11 +13,10 @@ public:
     static cocos2d::CCScene* scene();
     
     // a selector callback
-    void menuCloseCallback(CCObject* pSender);
-    void menu_startNewGame(CCObject* pSender);
-	void menu_continueGame(CCObject* pSender);
+    void backCallback(CCObject* pSender);
+
     // implement the "static node()" method manually
-	CREATE_FUNC(MainMenu);
+	CREATE_FUNC(AboutScene);
 };
 
-#endif // __MAINMENU_SCENE_H__
+#endif // __AboutMENU_SCENE_H__

@@ -21,10 +21,13 @@ public:
     virtual bool init();
 	virtual void A_Button_Pressed();
 	virtual void B_Button_Pressed();
+	virtual void Scan_cur_block(CCPoint pos);
+	void Scan_Face_To_block(CCPoint pos);
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::CCScene* scene();
     // a selector callback
 	void LoadScene();
+	bool event[3];
     // implement the "static node()" method manually
     CREATE_FUNC(IntroScene);
 };

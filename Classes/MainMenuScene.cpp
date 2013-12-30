@@ -2,6 +2,7 @@
 #include "CCRPGTalkBox.h"
 #include "IntroScene.h"
 #include "CCRPGPlayer.h"
+#include "CCRPGAboutScene.h"
 USING_NS_CC;
 
 CCScene* MainMenu::scene()
@@ -53,7 +54,7 @@ bool MainMenu::init()
     //菜单 start
     int btn_interval =50;
     CCMenuItemImage* newgameButton = CCMenuItemImage::create("btn-newgame.png", "btn-newgame-pressed.png",this,menu_selector(MainMenu::menu_startNewGame));
-    CCMenuItemImage* continueButton = CCMenuItemImage::create("btn-continue.png", "btn-continue-pressed.png");
+	CCMenuItemImage* continueButton = CCMenuItemImage::create("btn-continue.png", "btn-continue-pressed.png",this,menu_selector(MainMenu::menu_continueGame));
     CCMenuItemImage* exitButton = CCMenuItemImage::create("btn-about.png", "btn-about-pressed.png",this,menu_selector(MainMenu::menuCloseCallback));
     newgameButton->setScaleX(scaleX);
     newgameButton->setScaleY(scaleY);
@@ -75,10 +76,13 @@ bool MainMenu::init()
 void MainMenu::menu_startNewGame(CCObject* pSender){
 	CCDirector::sharedDirector()->replaceScene(	CCTransitionFade::create(3.0f,IntroScene::scene()));
 }
+void MainMenu::menu_continueGame(CCObject* pSender){
 
+	CCDirector::sharedDirector()->replaceScene(	CCTransitionFade::create(3.0f,IntroScene::scene()));
+}
 void MainMenu::menuCloseCallback(CCObject* pSender)
 {
-	CCMessageBox("Hello, Write About Here","About");
+	CCDirector::sharedDirector()->pushScene(	CCTransitionFade::create(1.0f,AboutScene::scene()));
 
 }
 

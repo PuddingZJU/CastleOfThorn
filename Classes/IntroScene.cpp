@@ -31,6 +31,9 @@ bool IntroScene::init(){
 	{
 		return false;
 	}
+	event[0]=false;
+	event[1]=false;
+	event[2]=false;
 	CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
 	CCRPGTalkBox* box1 = CCRPGTalkBox::create(12, "dialog-box.png", "intro.txt", 13, CCSizeMake(visibleSize.width, 200), 1,callfunc_selector(IntroScene::LoadScene),this,screenpos);
 	addChild(box1,9999,12);
@@ -58,16 +61,45 @@ void IntroScene::LoadScene(){
 	box1->NextText();
 }
 void IntroScene::A_Button_Pressed(){
-	int itemid = get_item("items");
+	int itemid = get_itemID("items","itemID");
 	if (itemid!=0)
 	{
-
+		switch (itemid)
+		{
+		case 2:{
+				CCMessageBox("存档完成！","存档");
+			break;
+			   }
+		default:{
+			CCMessageBox(get_info("items","info").c_str(),"");
+			break;
+				}
+		}
 	}
-	
-	CCMessageBox("ItemID:","About");
-
+	if (player->curTile.y==24 &&(player->curTile.x>=23 && player->curTile.x<=24))
+	{
+		CCMessageBox("Exit","事件触发");
+	}
 }
 void IntroScene::B_Button_Pressed(){
 	CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
 	player->setPosition(ccp(visibleSize.width/2-32,visibleSize.height/2));
+}
+
+void IntroScene::Scan_cur_block(CCPoint pos){
+	
+	if (pos.y==4 &&(pos.x>=30 && pos.x<=32) && !event[0])
+	{
+		event[0]=true;
+		CCMessageBox("事件1","事件触发");
+	}
+	if (pos.x==24 && pos.y==4 && event[0] && !event[1])
+	{
+		event[1]=true;
+		CCMessageBox("事件2","事件触发");
+	}
+}
+
+void IntroScene::Scan_Face_To_block(CCPoint pos){
+	
 }
