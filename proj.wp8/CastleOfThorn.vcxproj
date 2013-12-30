@@ -246,6 +246,7 @@
     <Image Include="..\Resources\image\button\package_down.png" />
     <Image Include="..\Resources\image\character\1.png" />
     <Image Include="..\Resources\image\character\lin.png" />
+    <Image Include="..\Resources\image\character\npc.png" />
     <Image Include="..\Resources\image\character\vichy.png" />
     <Image Include="..\Resources\image\character\xee squared.png" />
     <Image Include="..\Resources\maps\apartment-tilesets.png" />
@@ -266,24 +267,36 @@
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\AppMacros.h" />
     <ClInclude Include="..\Classes\CCRPGJoystick.h" />
+    <ClInclude Include="..\Classes\CCRPGLoadMenu.h" />
     <ClInclude Include="..\Classes\CCRPGPlayer.h" />
+    <ClInclude Include="..\Classes\CCRPGSaveMenu.h" />
     <ClInclude Include="..\Classes\CCRPGScene.h" />
     <ClInclude Include="..\Classes\CCRPGStatusMenu.h" />
     <ClInclude Include="..\Classes\CCRPGTalkBox.h" />
+    <ClInclude Include="..\Classes\FirstfloorScene.h" />
+    <ClInclude Include="..\Classes\GameoverScene.h" />
     <ClInclude Include="..\Classes\IntroScene.h" />
     <ClInclude Include="..\Classes\MainMenuScene.h" />
+    <ClInclude Include="..\Classes\NewgameScene.h" />
+    <ClInclude Include="..\Classes\RoadScene.h" />
     <ClInclude Include="CastleOfThorn.h" />
     <ClInclude Include="CCRPGAboutScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\GameoverScene.cpp" />
     <ClCompile Include="..\Classes\CCRPGJoystick.cpp" />
+    <ClCompile Include="..\Classes\CCRPGLoadMenu.cpp" />
     <ClCompile Include="..\Classes\CCRPGPlayer.cpp" />
+    <ClCompile Include="..\Classes\CCRPGSaveMenu.cpp" />
     <ClCompile Include="..\Classes\CCRPGScene.cpp" />
     <ClCompile Include="..\Classes\CCRPGStatusMenu.cpp" />
     <ClCompile Include="..\Classes\CCRPGTalkBox.cpp" />
+    <ClCompile Include="..\Classes\FirstfloorScene.cpp" />
     <ClCompile Include="..\Classes\IntroScene.cpp" />
     <ClCompile Include="..\Classes\MainMenuScene.cpp" />
+    <ClCompile Include="..\Classes\NewgameScene.cpp" />
+    <ClCompile Include="..\Classes\RoadScene.cpp" />
     <ClCompile Include="CastleOfThorn.cpp" />
     <ClCompile Include="CCRPGAboutScene.cpp" />
   </ItemGroup>
@@ -323,7 +336,13 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\Resources\script\1_1.txt" />
+    <Text Include="..\Resources\script\1_2.txt" />
+    <Text Include="..\Resources\script\1_3.txt" />
+    <Text Include="..\Resources\script\1_4.txt" />
+    <Text Include="..\Resources\script\1_go.txt" />
+    <Text Include="..\Resources\script\1_notgo.txt" />
     <Text Include="..\Resources\script\intro.txt" />
+    <Text Include="..\Resources\script\save.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Resources\maps\apartment.tmx" />

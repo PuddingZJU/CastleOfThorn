@@ -1,0 +1,4 @@
+unknown 你好我是存档点 alria 24 white
+unknown 我会在每一个迷宫中出现哦 alria 24 white
+unknown 因为只有一个存档，所以每次跟我对话的话会把之前的存档覆盖哦 alria 24 white
+unknown 现在我已经帮你存档了，继续玩吧 alria 24 white

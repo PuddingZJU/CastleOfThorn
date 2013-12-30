@@ -1,37 +1,24 @@
 //
-//  IntroScene.cpp
+//  RoadScene.cpp
 //  Castle of Thorn
 //
 //  Created by Leon on 13-12-13.
 //
 //
 
-#include "IntroScene.h"
+#include "RoadScene.h"
 #include "CCRPGTalkBox.h"
 #include "CCRPGJoystick.h"
 #include <sstream>
 USING_NS_CC;
 
-CCScene* IntroScene::scene(){
+CCScene* RoadScene::scene(){
 	// 'scene' is an autorelease object
 	CCScene *scene = CCScene::create();
 
 	// 'layer' is an autorelease object
-	IntroScene *layer = IntroScene::create();
-	layer->LoadScene();
-	// add layer as a child to scene
-	scene->addChild(layer);
+	RoadScene *layer = RoadScene::create();
 
-	// return the scene
-	return scene;
-}
-CCScene* IntroScene::scene_load(){
-	// 'scene' is an autorelease object
-	CCScene *scene = CCScene::create();
-
-	// 'layer' is an autorelease object
-	IntroScene *layer = IntroScene::create();
-	layer->LoadData();
 	// add layer as a child to scene
 	scene->addChild(layer);
 
@@ -39,38 +26,22 @@ CCScene* IntroScene::scene_load(){
 	return scene;
 }
 
-bool IntroScene::init(){
+bool RoadScene::init(){
 	if ( !CCLayer::init() )
 	{
 		return false;
 	}
+	loadmode = false;
 	event[0]=false;
 	event[1]=false;
 	event[2]=false;
+	CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
+	CCRPGTalkBox* box1 = CCRPGTalkBox::create(12, "dialog-box.png", "Road.txt", 13, CCSizeMake(visibleSize.width, 200), 1,callfunc_selector(RoadScene::LoadScene),this,screenpos);
+	addChild(box1,9999,12);
+	box1->NextText();
 	return true;
 }
-
-void IntroScene::LoadData(){
-	CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
-	float sceneX = CCUserDefault::sharedUserDefault()->getFloatForKey("sceneposX",-visibleSize.width/2);
-	float sceneY = CCUserDefault::sharedUserDefault()->getFloatForKey("sceneposY",0);
-	float playerX = CCUserDefault::sharedUserDefault()->getFloatForKey("playposX",visibleSize.width/2-screenpos.x-48);
-	float playerY = CCUserDefault::sharedUserDefault()->getFloatForKey("playposY",visibleSize.height/2-screenpos.y);
-	event[0] =  CCUserDefault::sharedUserDefault()->getFloatForKey("event0",0);
-	event[1] =  CCUserDefault::sharedUserDefault()->getFloatForKey("event1",0);
-	map = CCTMXTiledMap::create("maps/apartment.tmx");
-	this->setPosition(-visibleSize.width/2,0);
-	screenpos = ccp(sceneX,sceneY);
-	addChild(map,0,1);
-	this->player = CCRPGPlayer::create("yi",100,100,100,100,1);
-	player->setPosition(ccp(playerX,playerY));
-	map->addChild(player,3,1024);
-	CCRPGJoystick* controller = CCRPGJoystick::create();
-	controller->initJoyStick(this);
-	addChild(controller,1);
-	controller->setSceneScrollPosition(player->getPosition());
-}
-void IntroScene::LoadScene(){
+void RoadScene::LoadScene(){
 	removeChildByTag(12);
 	CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
 	map = CCTMXTiledMap::create("maps/apartment.tmx");
@@ -86,12 +57,11 @@ void IntroScene::LoadScene(){
 	CCRPGJoystick* controller = CCRPGJoystick::create();
 	controller->initJoyStick(this);
 	addChild(controller,1);
-	controller->setSceneScrollPosition(player->getPosition());
 	CCRPGTalkBox* box1 = CCRPGTalkBox::create(13, "dialog-box.png", "1_1.txt", 13, CCSizeMake(visibleSize.width, 200), 1,NULL,this,screenpos);
 	addChild(box1,9999,13);
 	box1->NextText();
 }
-void IntroScene::A_Button_Pressed(){
+void RoadScene::A_Button_Pressed(){
 	int itemid = get_itemID("items","itemID");
 	if (itemid!=0)
 	{
@@ -148,24 +118,22 @@ void IntroScene::A_Button_Pressed(){
 		}
 	}
 }
-void IntroScene::B_Button_Pressed(){
+void RoadScene::B_Button_Pressed(){
 	CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
 	player->setPosition(ccp(visibleSize.width/2-32,visibleSize.height/2));
 }
 
-void IntroScene::Scan_cur_block(CCPoint pos){
+void RoadScene::Scan_cur_block(CCPoint pos){
 
 	if (pos.y==4 &&(pos.x>=30 && pos.x<=32) && !event[0])
 	{
-		player->stopAllActions();
-		event[0]=true; 
+		event[0]=true;
 		CCRPGTalkBox* box1 = CCRPGTalkBox::create(13, "dialog-box.png", "1_2.txt", 13, CCSizeMake(800, 200), 1,NULL,this,screenpos);
 		addChild(box1,9999,13);
 		box1->NextText();
 	}
 	if (pos.x==24 && pos.y==4 && event[0] && !event[1])
 	{
-		player->stopAllActions();
 		event[1]=true;
 		CCRPGTalkBox* box1 = CCRPGTalkBox::create(13, "dialog-box.png", "1_3.txt", 13, CCSizeMake(800, 200), 1,NULL,this,screenpos);
 		addChild(box1,9999,13);
@@ -173,6 +141,6 @@ void IntroScene::Scan_cur_block(CCPoint pos){
 	}
 }
 
-void IntroScene::Scan_Face_To_block(CCPoint pos){
+void RoadScene::Scan_Face_To_block(CCPoint pos){
 
 }

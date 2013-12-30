@@ -256,6 +256,9 @@
     <Image Include="..\Resources\image\background\about.png">
       <Filter>Assets\Resources\image\background</Filter>
     </Image>
+    <Image Include="..\Resources\image\character\npc.png">
+      <Filter>Assets\Resources\image\character</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CastleOfThorn.cpp" />
@@ -284,6 +287,24 @@
       <Filter>Classes</Filter>
     </ClCompile>
     <ClCompile Include="CCRPGAboutScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCRPGLoadMenu.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCRPGSaveMenu.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FirstfloorScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NewgameScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\RoadScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameoverScene.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -319,6 +340,24 @@
     <ClInclude Include="CCRPGAboutScene.h">
       <Filter>Classes</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\CCRPGLoadMenu.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCRPGSaveMenu.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FirstfloorScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameoverScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NewgameScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\RoadScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="WMAppManifest.xml" />
@@ -338,7 +377,25 @@
     <Text Include="..\Resources\script\intro.txt">
       <Filter>Assets\Resources\script</Filter>
     </Text>
+    <Text Include="..\Resources\script\1_2.txt">
+      <Filter>Assets\Resources\script</Filter>
+    </Text>
+    <Text Include="..\Resources\script\1_3.txt">
+      <Filter>Assets\Resources\script</Filter>
+    </Text>
     <Text Include="..\Resources\script\1_1.txt">
+      <Filter>Assets\Resources\script</Filter>
+    </Text>
+    <Text Include="..\Resources\script\1_4.txt">
+      <Filter>Assets\Resources\script</Filter>
+    </Text>
+    <Text Include="..\Resources\script\1_go.txt">
+      <Filter>Assets\Resources\script</Filter>
+    </Text>
+    <Text Include="..\Resources\script\1_notgo.txt">
+      <Filter>Assets\Resources\script</Filter>
+    </Text>
+    <Text Include="..\Resources\script\save.txt">
       <Filter>Assets\Resources\script</Filter>
     </Text>
   </ItemGroup>

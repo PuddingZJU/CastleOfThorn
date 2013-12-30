@@ -33,7 +33,7 @@ public:
 	int mpmax;
 	int level;
 	string name;
-	CCArray* items;
+	vector<int> items;
 	CCArray* teamer;
 	CCAnimation *animitionUp;
 	CCAnimation *animitionDown ;

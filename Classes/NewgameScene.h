@@ -1,17 +1,17 @@
 //
-//  IntroScene.h
+//  NewgameScene.h
 //  Castle of Thorn
 //
 //  Created by Leon on 13-12-13.
 //
 //
 
-#ifndef __Castle_of_Thorn__IntroScene__
-#define __Castle_of_Thorn__IntroScene__
+#ifndef __Castle_of_Thorn__NewgameScene__
+#define __Castle_of_Thorn__NewgameScene__
 
 #include "cocos2d.h"
 #include "CCRPGScene.h"
-class IntroScene : public CCRPGScene
+class NewgameScene : public CCRPGScene
 {
 private:
     float scaleX ;
@@ -26,12 +26,10 @@ public:
 	void Scan_Face_To_block(CCPoint pos);
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::CCScene* scene();
-	static cocos2d::CCScene* scene_load();
-	void LoadData();
     // a selector callback
 	void LoadScene();
 	bool event[3];
     // implement the "static node()" method manually
-    CREATE_FUNC(IntroScene);
+    CREATE_FUNC(NewgameScene);
 };
-#endif /* defined(__Castle_of_Thorn__IntroScene__) */
+#endif /* defined(__Castle_of_Thorn__NewgameScene__) */

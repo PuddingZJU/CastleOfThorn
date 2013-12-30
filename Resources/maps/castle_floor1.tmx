@@ -98,7 +98,7 @@
    eJzt2MEJACEQQ9Gpx/4LtAUhiTPKD+z18dmLYtXZlvlzz2nSN8dKmPTNsRImfXOshEnfPavjTE/cJTr+H32aRZ9m0adZ9GkWfZr1Sp/7TSBhsj+3AX7XGPE=
   </data>
  </layer>
- <layer name="light_left_scope" width="40" height="30">
+ <layer name="light_left_scope" width="40" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt1k0OwiAQBWDwoK1n6MJ6BkzV+xjP0GN4DJ1FSchkgFIm4cXwkrfmC+FnjOnp+d+4kzE3VpRINhSftw3UkXoG8r0Dy4U6U68gvoVZkHyLYEHxvTYHos8FDjSfYw5uuVMf1GcDnxP2iftavX/87UXySf8Cii/2ZyH4YjYNn8YckVqzxqc1R0xKvtXmbUfPQcxY4vvYvK3mnErGEt/X5m2194gbS3x7W5sJ3BcaS+9v6q5p+vxafg7gs0Bq3Zyxp6d1fnRKv9o=
   </data>

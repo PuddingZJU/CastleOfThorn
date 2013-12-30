@@ -3,6 +3,7 @@
 #include "IntroScene.h"
 #include "CCRPGPlayer.h"
 #include "CCRPGAboutScene.h"
+#include "NewgameScene.h"
 USING_NS_CC;
 
 CCScene* MainMenu::scene()
@@ -74,11 +75,13 @@ bool MainMenu::init()
 }
 
 void MainMenu::menu_startNewGame(CCObject* pSender){
-	CCDirector::sharedDirector()->replaceScene(	CCTransitionFade::create(3.0f,IntroScene::scene()));
+	CCDirector::sharedDirector()->replaceScene(	CCTransitionFade::create(3.0f,NewgameScene::scene()));
 }
 void MainMenu::menu_continueGame(CCObject* pSender){
-
-	CCDirector::sharedDirector()->replaceScene(	CCTransitionFade::create(3.0f,IntroScene::scene()));
+	string scene = CCUserDefault::sharedUserDefault()->getStringForKey("scene");
+	if(scene == "apartment"){
+	CCDirector::sharedDirector()->replaceScene(	CCTransitionFade::create(3.0f,IntroScene::scene_load()));
+	}
 }
 void MainMenu::menuCloseCallback(CCObject* pSender)
 {

@@ -1,0 +1,14 @@
+
+1.png 小林，有你的信！ alria 24 white
+lin.png 信？ alria 24 white
+lin.png 不会吧，怎么会有人给我写 alria 24 white
+1.png 你自己看，确实是给你的 alria 24 white
+1.png To林，信封摸起来好舒服，不过好奇怪，怎么没有寄件人地址，连收件人地址也没有 alria 24 white
+lin.png 我看看 alria 24 white
+lin.png 荆棘城堡？房地产广告么，名字真奇怪，谁会给自己的地产起名叫‘荆棘’啊。 alria 24 white
+lin.png 现在几点了？ alria 24 white
+1.png 差不多六点了，你看太阳都快下山了  alria 24 white
+lin.png 小熹呢？ alria 24 white
+1.png 快回来了吧，今天是她生日啊，说好了吃蛋糕的。  alria 24 white
+lin.png 嗯，再等等。 alria 24 white
+

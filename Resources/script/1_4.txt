@@ -1,0 +1,7 @@
+1.png 小林？你去哪里了？ alria 24 white
+lin.png 出去了一下 alria 24 white
+1.png 刚刚有一个奇怪的电话打过来，说让我们去找小熹……还说…让我问你 alria 24 white
+unknown 小林拿出了荆棘枝条 alria 24 white
+lin.png 是这个吗？ alria 24 white
+1.png 门口拿的？ alria 24 white
+lin.png 对。先准备一下，然后出发吧。 alria 24 white

@@ -23,6 +23,12 @@
     <property name="itemID" value="8"/>
    </properties>
   </tile>
+  <tile id="14">
+   <properties>
+    <property name="info" value="12月17日，小熹的生日"/>
+    <property name="itemID" value="10"/>
+   </properties>
+  </tile>
   <tile id="15">
    <properties>
     <property name="info" value="天都快黑了，为什么小熹还不回家？"/>
@@ -37,6 +43,7 @@
   </tile>
   <tile id="29">
    <properties>
+    <property name="info" value="得到了一个手电筒"/>
     <property name="itemID" value="4"/>
    </properties>
   </tile>
@@ -118,8 +125,8 @@
   </tile>
   <tile id="184">
    <properties>
-    <property name="ItemID" value="1"/>
     <property name="info" value="这是小林的画册"/>
+    <property name="itemID" value="1"/>
    </properties>
   </tile>
   <tile id="190">
@@ -131,7 +138,7 @@
  </tileset>
  <layer name="walk" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJztklkOwCAIBYl6jN7/nP2xiSUPpVC7MsmLWxOmKFHwdUodlzpvg8hN0J503tYrbM7X3E+bnssoo1rI1+pn8bTUIjbX/OMb/DJhZvk94f2F3/1+VrctX/Q7iud+r+DvfgnU6635vscvNWOivQva89Sz+qGgM+R3Rp968fhxpB7M9iPy+/W+8d6v5Kfpj9ZPwvv+ND2w9G/kJzm/wW8Wo7sOgsDHClA5B/Y=
+   eJzt02EOgCAIBlCmHqP7n7M/tRkDJEgz49tYam28zAAiq6cc1+0Y10UlV0WtcffrfgWN8Rz7tCVZWtXqRXmtPovT0gvQWPOOGfjM4uOMvXwznL/wve+z2s5a0Xc3nu87In/3JaKfNMfrHl+qrgmuFmrN08/qo4q6R/me2CepPD4cbg96+wD8PukZ6V/w+DT7M8InnT/NGdf4OC/n48xf8PVK61tHIhFfdhsGB9g=
   </data>
  </layer>
  <layer name="floor" width="40" height="30">
@@ -146,17 +153,17 @@
  </layer>
  <layer name="furniture" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJztkTksRUEUhueFytJZK3uFggQFDcpHRIGEwlIgIaGlpaWlVeu1tOpXK6yFvUTlk0xicjJ3zI07771ivuTLmTNzZu6fXKXKn2qsCfj+uWXvQ9S/ctRjg2W/G3twXCvZwm1Htk/8MvoTY90lZueM9Zg4a8FWy/sDOIiTWskO7jryVeSUqsz99qfGWaeYXTbWE443fbj8530bGxm+VdD1UdRQXOMN3nrOXxnr0Nl+eMJnfElxZxXXDNcD5IpEIpG01Kacv8N7fNB9IzZhL47iWXbRVJXomz3uvOIbvuu+DdtxCPN4kVU4qBN9h2VmKsPvFZN5UUvBXsL+MfZjn66l4iBhfxhHjOpiRZvEvkVfjhxnvv91Bmcd54cWi8kiLqWYnw6UI4lNrS8LoYJEIpGy5Rvh/y/I
+   eJztkbsvREEUh2dD5dF5VqylQkGCgmZtuUQUSCg8CiQktLRqWlr19lr+B7XCehTeJSqfZBKTk7nj3uTO3i3mS76cOTNn5v6Sq1T904wtHt+/tOx9ivpfjnbssOwP4hCWtJI93Hdk+8Jvoz831gNidslYT4uzHuy1vD+G4zirlRzgoSNfQ06pxtxfXzHO+sXsurGecbyZFTspvnWt65OovrjFKt7FnL8x1r6z/fKML/ia4M4mbhlue8gVCAQCSWlNOH+PD/io+07swmEs4kV60VST6Ltj3HnDd/zQfR77cALLeJVWOGgTfcEyM5fi92rJsqhZcBSxf4ajOKJrVhxH7E/ilFFdbGh9cOo4i/tfF3DRcX5isZas4lqC+XlPOaLY1cZlxVeQQCBQt/wAJKIsaw==
   </data>
  </layer>
  <layer name="items" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBjZwJXG5stRqN+NKq6AgJ1UNGsUDD4gM9AOGAWjYBSMglFAEGgMtANGwYgE84B4AhBvHmiHDHMwB4izBtoRVAQ3B9oBBID6QDtgFIyCUUB3AACg4wWO
+   eJxjYBgZwHWgHUAA8OMQd6OiHTupaNYoGHxAZqAdMApGwSgYBaNgFIyCQQkmAPE8IN480A7BAzQG2gFUAHOAOGugHYEHyJGo/iZNXEE9oD7QDhgFo2AU0B0AALMsBZ0=
   </data>
  </layer>
  <layer name="background" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJztl0EKACAIBPX/n+4eEcimWM3CnnJxJKJyM/Pmjihar2Th07LwaVn4tOyLfJWCT9MtfJn3dXW/rPO7Wqve3+58O8Gn6RRf1jwd+HgfwDfXV/xbs/tg/KsHFgcBfw==
+   eJztl1EKwCAMQ+vddzmv4in2O6QTutigM4F82eCzImoxs7K4I4rWI1nxYVmErwZzz2yk/q/989SA7Fv9Sf2bnf3Cx5T4MO3Cl3lfs+fLOr/eGHt/V+cbSXyYZvFlrYfNdznW+0B8fT3j35o9jyyf6htEvgXG
   </data>
  </layer>
 </map>

@@ -1,0 +1,4 @@
+npc.png 要找小熹么，拿上门口的荆棘树枝，一直往前走。噢，林应该知道，你问她~ alria 24 white
+1.png 你是谁？！小熹怎么了？ alria 24 white
+npc.png 来了就知道。小熹很好。 alria 24 white
+1.png 喂喂 alria 24 white
