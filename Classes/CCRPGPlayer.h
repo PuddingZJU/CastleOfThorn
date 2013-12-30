@@ -25,6 +25,7 @@ string Convert2String(const T &value){
 class CCRPGPlayer : public cocos2d::CCSprite{
 public:
 	bool isDead;
+	bool isMoving;
 	int hp;
 	int hpmax;
 	int mp;

@@ -12,6 +12,8 @@ CCRPGTalkBox* CCRPGTalkBox::create(int tag,std::string background_image,std::str
     CCRPGTalkBox *cur = CCRPGTalkBox::create();
     cur->box_scale = 1;
 	cur->cur_pos = 0;
+	cur->line_cnt = 0;
+	cur->box_content = "";
     if (cur == NULL) {
         CCLOG("error");
     }
@@ -63,6 +65,8 @@ bool CCRPGTalkBox::hasNext(){
 }
 
 void CCRPGTalkBox::NextText(){
+	line_cnt = 0;
+	box_content = "";
     if (cur_pos<_text.size()) {
         this->setTouchEnabled(true);
         left=0;
@@ -99,25 +103,38 @@ void CCRPGTalkBox::NextText(){
     
 }
 void CCRPGTalkBox::TextUpdate(float ctime){
-    if (textpos<_text[cur_pos-1].size()) {
-       
-	
-		_content->setString(_text[cur_pos-1].substr(0,textpos+1).c_str());
-		// _content->setDimensions(CCSizeMake(width-boardpixel*2,height-boardpixel*2));
-		_content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
-
-		textpos= textpos + _text[cur_pos-1].size()/5+1;
-		if (textpos>=_text[cur_pos-1].size()) {
-			textpos=_text[cur_pos-1].size()-1;
-			_content->setString(_text[cur_pos-1].substr(0,textpos+1).c_str());
-			// _content->setDimensions(CCSizeMake(width-boardpixel*2,height-boardpixel*2));
-			_content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
-            textpos=_text[cur_pos-1].size();
-        }
+    if (textpos<_text[cur_pos-1].size()-1) {
+		box_content = "";
+		int wordscnt=0;
+		if (_speaker_icon[cur_pos-1]!="unknown")
+		{
+			width= origWidth -height;
+		}
+		for (int i =0;i<=textpos;i+=2)
+		{
+			wordscnt+=1;
+			if (wordscnt%(int)(width/_font_size[cur_pos-1]-3)==0 && i!=0)
+			{
+				box_content+="\n";
+			}
+			box_content+= _text[cur_pos-1][i];
+			box_content+= _text[cur_pos-1][i+1];
+			if(_text[cur_pos-1][i]<0 && _text[cur_pos-1][i]>-127){
+			box_content+= _text[cur_pos-1][i+2];
+			textpos +=1;
+			i+=1;
+			}
+		}
+		textpos= textpos + 2;
     }
     else{
         startschdule = false;
+		return;
     }
+	_content->setString(box_content.c_str());
+	// _content->setDimensions(CCSizeMake(width-boardpixel*2,height-boardpixel*2));
+	_content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
+
 }
 
 bool CCRPGTalkBox::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent){
@@ -129,9 +146,29 @@ void CCRPGTalkBox::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEve
     if (startschdule) {
         unschedule(schedule_selector(CCRPGTalkBox::TextUpdate));
         startschdule = false;
-        _content->setString(_text[cur_pos-1].c_str());
-		// _content->setDimensions(CCSizeMake(width-boardpixel*2,height-boardpixel*2));
-        _content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
+		box_content = "";
+		int wordscnt=0;
+		if (_speaker_icon[cur_pos-1]!="unknown")
+		{
+			width= origWidth -height;
+		}
+		for (int i =0;i<_text[cur_pos-1].size();i+=2)
+		{
+			wordscnt+=1;
+			if (wordscnt%(int)(width/_font_size[cur_pos-1]-3)==0 && i!=0)
+			{
+				box_content+="\n";
+			}
+			box_content+= _text[cur_pos-1][i];
+			box_content+= _text[cur_pos-1][i+1];
+			if(_text[cur_pos-1][i]<0 && _text[cur_pos-1][i]>-127){
+				box_content+= _text[cur_pos-1][i+2];
+				i+=1;
+			}
+		}
+	_content->setString(box_content.c_str());
+	_content->setPosition(CCSize(_box->getPositionX()-_box->getContentSize().width/2+boardpixel*2+_content->getContentSize().width/2, _box->getPositionY()+_box->getContentSize().height/2-boardpixel*2-_content->getContentSize().height/2));
+       
     }
     else if (hasNext()) {
         

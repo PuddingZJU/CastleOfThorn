@@ -12,6 +12,8 @@ private:
     std::vector<float> _font_size;
     std::vector<std::string> _color;
     int width,height,origWidth;
+	std::string box_content;
+	int line_cnt;
     float box_scale;
     int boardpixel;
     int left;

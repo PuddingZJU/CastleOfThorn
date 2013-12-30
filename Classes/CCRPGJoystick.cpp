@@ -80,7 +80,7 @@ bool CCRPGJoystick::ccTouchBegan(CCTouch* pTouch, CCEvent* pEvent)
 
 	if (abs(x)<=height/2 && abs(y)<=height/2)
 	{
-
+		scene->player->isMoving = true;
 		if(y > x && y > -x)  
 		{  
 			getChildByTag(11)->setVisible(true);
@@ -152,7 +152,7 @@ void CCRPGJoystick::ccTouchEnded(CCTouch* pTouch, CCEvent* pEvent)
 	getChildByTag(12)->setVisible(false);
 	getChildByTag(13)->setVisible(false);
 	getChildByTag(14)->setVisible(false);
-
+	scene->player->isMoving= false;
 	scene->player->stopAllActions();
 } 
 void CCRPGJoystick::setSceneScrollPosition(cocos2d::CCPoint position){
@@ -236,7 +236,7 @@ void CCRPGJoystick::UpDate(float time){
 		//确保主角不会超出屏幕的边界,如果超出则按照边界点来算  
 		//tilePos = this->ensureTilePosIsWithinBounds(tilePos);  
 		//判断目标位置是否能移动  
-		if (this->isTilePosBlocked(tilePos, scene->map) == true) {  
+		if (this->isTilePosBlocked(tilePos, scene->map) == true && ismoving) {  
 			//将要移动的那个坐标的瓷砖块移动到当前屏幕的中央  
 			scene->player->stopAllActions();
 		}  
