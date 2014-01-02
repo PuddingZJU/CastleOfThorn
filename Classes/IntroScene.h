@@ -27,10 +27,15 @@ public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::CCScene* scene();
 	static cocos2d::CCScene* scene_load();
+    void GoToNextStage();
 	void LoadData();
     // a selector callback
 	void LoadScene();
+    virtual void changeZorder(CCPoint tilePos);
 	bool event[3];
+    void Event0();
+    void Event1();
+    void Event2();
     // implement the "static node()" method manually
     CREATE_FUNC(IntroScene);
 };

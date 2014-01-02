@@ -1,11 +1,11 @@
 #include "CCRPGScene.h"
-
+#include "CCRPGStatusMenu.h"
 void CCRPGScene::A_Button_Pressed(){
 
 }
 
 void CCRPGScene::B_Button_Pressed(){
-
+        CCDirector::sharedDirector()->pushScene(StatusMenu::scene(player));
 }
 
 void CCRPGScene::Scan_cur_block(CCPoint pos){
@@ -14,6 +14,9 @@ void CCRPGScene::Scan_cur_block(CCPoint pos){
 
 void CCRPGScene::Scan_Face_To_block(CCPoint pos){
 
+}
+void CCRPGScene::changeZorder(CCPoint tilePos){
+    
 }
 
 int CCRPGScene::get_itemID(string item_layer_name,string ItemIDKey){

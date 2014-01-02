@@ -165,11 +165,14 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		35084825187541EB00211B7A /* PreviewScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35084823187541EB00211B7A /* PreviewScene.cpp */; };
+		3508482B1875C19F00211B7A /* 2_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 350848281875C19F00211B7A /* 2_1.txt */; };
+		3508482C1875C19F00211B7A /* 2_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 350848291875C19F00211B7A /* 2_2.txt */; };
+		3508482D1875C19F00211B7A /* 2_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3508482A1875C19F00211B7A /* 2_3.txt */; };
+		3508482F1875C70900211B7A /* preview.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3508482E1875C70800211B7A /* preview.txt */; };
 		3514AD111875281900F40D37 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3514ACF51875281900F40D37 /* AppDelegate.cpp */; };
 		3514AD121875281900F40D37 /* CCRPGJoystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3514ACF71875281900F40D37 /* CCRPGJoystick.cpp */; };
-		3514AD131875281900F40D37 /* CCRPGLoadMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3514ACF91875281900F40D37 /* CCRPGLoadMenu.cpp */; };
 		3514AD141875281900F40D37 /* CCRPGPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3514ACFB1875281900F40D37 /* CCRPGPlayer.cpp */; };
-		3514AD151875281900F40D37 /* CCRPGSaveMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3514ACFD1875281900F40D37 /* CCRPGSaveMenu.cpp */; };
 		3514AD161875281900F40D37 /* CCRPGScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3514ACFF1875281900F40D37 /* CCRPGScene.cpp */; };
 		3514AD171875281900F40D37 /* CCRPGStatusMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3514AD011875281900F40D37 /* CCRPGStatusMenu.cpp */; };
 		3514AD181875281900F40D37 /* CCRPGTalkBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3514AD031875281900F40D37 /* CCRPGTalkBox.cpp */; };
@@ -316,6 +319,9 @@
 		3514AE3A1875283700F40D37 /* 1_notgo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3514ADB11875283700F40D37 /* 1_notgo.txt */; };
 		3514AE3B1875283700F40D37 /* intro.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3514ADB21875283700F40D37 /* intro.txt */; };
 		3514AE3C1875283700F40D37 /* save.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3514ADB31875283700F40D37 /* save.txt */; };
+		3574DCEA187529B600FDB4B5 /* CCRPGAboutScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3574DCE8187529B600FDB4B5 /* CCRPGAboutScene.cpp */; };
+		3574DCEC1875398200FDB4B5 /* menu_bg_all.png in Resources */ = {isa = PBXBuildFile; fileRef = 3574DCEB1875398200FDB4B5 /* menu_bg_all.png */; };
+		3574DCEE18753D3E00FDB4B5 /* item_bg_all.png in Resources */ = {isa = PBXBuildFile; fileRef = 3574DCED18753D3E00FDB4B5 /* item_bg_all.png */; };
 		379BB99517F03F3700829B88 /* CCActionFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB8FC17F03F3700829B88 /* CCActionFrame.cpp */; };
 		379BB99617F03F3700829B88 /* CCActionFrameEasing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB8FE17F03F3700829B88 /* CCActionFrameEasing.cpp */; };
 		379BB99717F03F3700829B88 /* CCActionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB90017F03F3700829B88 /* CCActionManager.cpp */; };
@@ -735,16 +741,18 @@
 		1D6058910D05DD3D006BFB54 /* Castle of Thorn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Castle of Thorn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		35084823187541EB00211B7A /* PreviewScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PreviewScene.cpp; path = ../Classes/PreviewScene.cpp; sourceTree = "<group>"; };
+		35084824187541EB00211B7A /* PreviewScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreviewScene.h; path = ../Classes/PreviewScene.h; sourceTree = "<group>"; };
+		350848281875C19F00211B7A /* 2_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2_1.txt; sourceTree = "<group>"; };
+		350848291875C19F00211B7A /* 2_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2_2.txt; sourceTree = "<group>"; };
+		3508482A1875C19F00211B7A /* 2_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2_3.txt; sourceTree = "<group>"; };
+		3508482E1875C70800211B7A /* preview.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = preview.txt; sourceTree = "<group>"; };
 		3514ACF51875281900F40D37 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		3514ACF61875281900F40D37 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Classes/AppDelegate.h; sourceTree = "<group>"; };
 		3514ACF71875281900F40D37 /* CCRPGJoystick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCRPGJoystick.cpp; path = ../Classes/CCRPGJoystick.cpp; sourceTree = "<group>"; };
 		3514ACF81875281900F40D37 /* CCRPGJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCRPGJoystick.h; path = ../Classes/CCRPGJoystick.h; sourceTree = "<group>"; };
-		3514ACF91875281900F40D37 /* CCRPGLoadMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCRPGLoadMenu.cpp; path = ../Classes/CCRPGLoadMenu.cpp; sourceTree = "<group>"; };
-		3514ACFA1875281900F40D37 /* CCRPGLoadMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCRPGLoadMenu.h; path = ../Classes/CCRPGLoadMenu.h; sourceTree = "<group>"; };
 		3514ACFB1875281900F40D37 /* CCRPGPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCRPGPlayer.cpp; path = ../Classes/CCRPGPlayer.cpp; sourceTree = "<group>"; };
 		3514ACFC1875281900F40D37 /* CCRPGPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCRPGPlayer.h; path = ../Classes/CCRPGPlayer.h; sourceTree = "<group>"; };
-		3514ACFD1875281900F40D37 /* CCRPGSaveMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCRPGSaveMenu.cpp; path = ../Classes/CCRPGSaveMenu.cpp; sourceTree = "<group>"; };
-		3514ACFE1875281900F40D37 /* CCRPGSaveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCRPGSaveMenu.h; path = ../Classes/CCRPGSaveMenu.h; sourceTree = "<group>"; };
 		3514ACFF1875281900F40D37 /* CCRPGScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCRPGScene.cpp; path = ../Classes/CCRPGScene.cpp; sourceTree = "<group>"; };
 		3514AD001875281900F40D37 /* CCRPGScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCRPGScene.h; path = ../Classes/CCRPGScene.h; sourceTree = "<group>"; };
 		3514AD011875281900F40D37 /* CCRPGStatusMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCRPGStatusMenu.cpp; path = ../Classes/CCRPGStatusMenu.cpp; sourceTree = "<group>"; };
@@ -900,6 +908,10 @@
 		3514ADB11875283700F40D37 /* 1_notgo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1_notgo.txt; sourceTree = "<group>"; };
 		3514ADB21875283700F40D37 /* intro.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = intro.txt; sourceTree = "<group>"; };
 		3514ADB31875283700F40D37 /* save.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = save.txt; sourceTree = "<group>"; };
+		3574DCE8187529B600FDB4B5 /* CCRPGAboutScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCRPGAboutScene.cpp; path = ../Classes/CCRPGAboutScene.cpp; sourceTree = "<group>"; };
+		3574DCE9187529B600FDB4B5 /* CCRPGAboutScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCRPGAboutScene.h; path = ../Classes/CCRPGAboutScene.h; sourceTree = "<group>"; };
+		3574DCEB1875398200FDB4B5 /* menu_bg_all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_bg_all.png; sourceTree = "<group>"; };
+		3574DCED18753D3E00FDB4B5 /* item_bg_all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item_bg_all.png; sourceTree = "<group>"; };
 		379BB8FC17F03F3700829B88 /* CCActionFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCActionFrame.cpp; sourceTree = "<group>"; };
 		379BB8FD17F03F3700829B88 /* CCActionFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCActionFrame.h; sourceTree = "<group>"; };
 		379BB8FE17F03F3700829B88 /* CCActionFrameEasing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCActionFrameEasing.cpp; sourceTree = "<group>"; };
@@ -1565,16 +1577,14 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3574DCE8187529B600FDB4B5 /* CCRPGAboutScene.cpp */,
+				3574DCE9187529B600FDB4B5 /* CCRPGAboutScene.h */,
 				3514ACF51875281900F40D37 /* AppDelegate.cpp */,
 				3514ACF61875281900F40D37 /* AppDelegate.h */,
 				3514ACF71875281900F40D37 /* CCRPGJoystick.cpp */,
 				3514ACF81875281900F40D37 /* CCRPGJoystick.h */,
-				3514ACF91875281900F40D37 /* CCRPGLoadMenu.cpp */,
-				3514ACFA1875281900F40D37 /* CCRPGLoadMenu.h */,
 				3514ACFB1875281900F40D37 /* CCRPGPlayer.cpp */,
 				3514ACFC1875281900F40D37 /* CCRPGPlayer.h */,
-				3514ACFD1875281900F40D37 /* CCRPGSaveMenu.cpp */,
-				3514ACFE1875281900F40D37 /* CCRPGSaveMenu.h */,
 				3514ACFF1875281900F40D37 /* CCRPGScene.cpp */,
 				3514AD001875281900F40D37 /* CCRPGScene.h */,
 				3514AD011875281900F40D37 /* CCRPGStatusMenu.cpp */,
@@ -1593,6 +1603,8 @@
 				3514AD0E1875281900F40D37 /* NewgameScene.h */,
 				3514AD0F1875281900F40D37 /* RoadScene.cpp */,
 				3514AD101875281900F40D37 /* RoadScene.h */,
+				35084823187541EB00211B7A /* PreviewScene.cpp */,
+				35084824187541EB00211B7A /* PreviewScene.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1834,6 +1846,7 @@
 		3514AD621875283700F40D37 /* background */ = {
 			isa = PBXGroup;
 			children = (
+				3574DCEB1875398200FDB4B5 /* menu_bg_all.png */,
 				3514AD631875283700F40D37 /* about-us.png */,
 				3514AD641875283700F40D37 /* about.png */,
 				3514AD651875283700F40D37 /* chara_lin.png */,
@@ -1842,6 +1855,7 @@
 				3514AD681875283700F40D37 /* dialog-box.png */,
 				3514AD691875283700F40D37 /* game-over.png */,
 				3514AD6A1875283700F40D37 /* game-settings.png */,
+				3574DCED18753D3E00FDB4B5 /* item_bg_all.png */,
 				3514AD6B1875283700F40D37 /* gamescreenshot110px74px.png */,
 				3514AD6C1875283700F40D37 /* item-container.png */,
 				3514AD6D1875283700F40D37 /* items_bg.png */,
@@ -1949,6 +1963,10 @@
 		3514ADAB1875283700F40D37 /* script */ = {
 			isa = PBXGroup;
 			children = (
+				3508482E1875C70800211B7A /* preview.txt */,
+				350848281875C19F00211B7A /* 2_1.txt */,
+				350848291875C19F00211B7A /* 2_2.txt */,
+				3508482A1875C19F00211B7A /* 2_3.txt */,
 				3514ADAC1875283700F40D37 /* 1_1.txt */,
 				3514ADAD1875283700F40D37 /* 1_2.txt */,
 				3514ADAE1875283700F40D37 /* 1_3.txt */,
@@ -2388,6 +2406,7 @@
 				3514ADBC1875283700F40D37 /* lin-back-left.png in Resources */,
 				3514ADE71875283700F40D37 /* yi-left-right.png in Resources */,
 				3514ADBE1875283700F40D37 /* lin-back.png in Resources */,
+				3508482D1875C19F00211B7A /* 2_3.txt in Resources */,
 				3514ADC81875283700F40D37 /* v-left-left.png in Resources */,
 				3514ADCE1875283700F40D37 /* vichy-back-left.png in Resources */,
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
@@ -2418,6 +2437,7 @@
 				3514AE111875283700F40D37 /* btnB_down.png in Resources */,
 				3514AE061875283700F40D37 /* btn-about-pressed.png in Resources */,
 				3514ADD91875283700F40D37 /* xi-front.png in Resources */,
+				3574DCEC1875398200FDB4B5 /* menu_bg_all.png in Resources */,
 				3514ADC71875283700F40D37 /* lin-right.png in Resources */,
 				3514ADFE1875283700F40D37 /* load-game.png in Resources */,
 				3514ADD01875283700F40D37 /* vichy-back.png in Resources */,
@@ -2437,12 +2457,14 @@
 				3514ADB41875283700F40D37 /* ani01.png in Resources */,
 				3514AE101875283700F40D37 /* btnB.png in Resources */,
 				3514AE231875283700F40D37 /* menu-details-chara.png in Resources */,
+				3508482C1875C19F00211B7A /* 2_2.txt in Resources */,
 				3514ADE61875283700F40D37 /* yi-left-left.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				3514ADE41875283700F40D37 /* yi-front-right.png in Resources */,
 				3514AE0B1875283700F40D37 /* btn-newgame.png in Resources */,
 				3514AE141875283700F40D37 /* close.png in Resources */,
 				3514AE051875283700F40D37 /* voice-slidebar.png in Resources */,
+				3508482F1875C70900211B7A /* preview.txt in Resources */,
 				3514ADCD1875283700F40D37 /* v-right.png in Resources */,
 				3514AE2A1875283700F40D37 /* apartment-tilesets.png in Resources */,
 				3514ADF81875283700F40D37 /* dialog-box.png in Resources */,
@@ -2460,6 +2482,7 @@
 				3514ADB81875283700F40D37 /* ani05.png in Resources */,
 				3514ADEC1875283700F40D37 /* COT.docx in Resources */,
 				3514AE3B1875283700F40D37 /* intro.txt in Resources */,
+				3574DCEE18753D3E00FDB4B5 /* item_bg_all.png in Resources */,
 				3514AE241875283700F40D37 /* menu-details.png in Resources */,
 				3514AE291875283700F40D37 /* knife.png in Resources */,
 				3514AE171875283700F40D37 /* dpad_down.png in Resources */,
@@ -2500,6 +2523,7 @@
 				3514AE221875283700F40D37 /* game-settings.png in Resources */,
 				3514ADFC1875283700F40D37 /* item-container.png in Resources */,
 				3514ADC31875283700F40D37 /* lin-left-right.png in Resources */,
+				3508482B1875C19F00211B7A /* 2_1.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2606,7 +2630,6 @@
 				15A3DA411682F826002FB0C5 /* CCMenuItemLoader.cpp in Sources */,
 				15A3DA421682F826002FB0C5 /* CCNode+CCBRelativePositioning.cpp in Sources */,
 				15A3DA431682F826002FB0C5 /* CCNodeLoader.cpp in Sources */,
-				3514AD131875281900F40D37 /* CCRPGLoadMenu.cpp in Sources */,
 				15A3DA441682F826002FB0C5 /* CCNodeLoaderLibrary.cpp in Sources */,
 				15A3DA451682F826002FB0C5 /* CCParticleSystemQuadLoader.cpp in Sources */,
 				15A3DA461682F826002FB0C5 /* CCScale9SpriteLoader.cpp in Sources */,
@@ -2640,7 +2663,6 @@
 				15A3DAEE1682F8A6002FB0C5 /* SimpleAudioEngine.mm in Sources */,
 				15A3DAEF1682F8A6002FB0C5 /* SimpleAudioEngine_objc.m in Sources */,
 				3514AD191875281900F40D37 /* FirstfloorScene.cpp in Sources */,
-				3514AD151875281900F40D37 /* CCRPGSaveMenu.cpp in Sources */,
 				1A27573F1697CF2B00504026 /* CCEditBoxImplAndroid.cpp in Sources */,
 				3514AD1D1875281900F40D37 /* NewgameScene.cpp in Sources */,
 				1AC3624916D4A1E8000847F2 /* AppController.mm in Sources */,
@@ -2680,6 +2702,7 @@
 				379BB99B17F03F3700829B88 /* CCProcessBase.cpp in Sources */,
 				3514AD141875281900F40D37 /* CCRPGPlayer.cpp in Sources */,
 				379BB99C17F03F3700829B88 /* CCTween.cpp in Sources */,
+				35084825187541EB00211B7A /* PreviewScene.cpp in Sources */,
 				379BB99D17F03F3700829B88 /* CCArmature.cpp in Sources */,
 				3514AD121875281900F40D37 /* CCRPGJoystick.cpp in Sources */,
 				379BB99E17F03F3700829B88 /* CCBone.cpp in Sources */,
@@ -2702,6 +2725,7 @@
 				379BB9AF17F03F3700829B88 /* CCComController.cpp in Sources */,
 				379BB9B017F03F3700829B88 /* CCComRender.cpp in Sources */,
 				379BB9B117F03F3700829B88 /* CCInputDelegate.cpp in Sources */,
+				3574DCEA187529B600FDB4B5 /* CCRPGAboutScene.cpp in Sources */,
 				379BB9B217F03F3700829B88 /* UIRootWidget.cpp in Sources */,
 				379BB9B317F03F3700829B88 /* UIWidget.cpp in Sources */,
 				379BB9B417F03F3700829B88 /* UILayout.cpp in Sources */,
@@ -2792,7 +2816,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = "armv6 armv7 i386";
 			};
@@ -2839,7 +2863,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};

@@ -27,7 +27,6 @@ bool AboutScene::init()
         return false;
     }
     CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
-    CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
 
     //背景图片  start
     CCSprite* pSprite = CCSprite::create("about.png");
@@ -46,7 +45,7 @@ bool AboutScene::init()
 	CCLabelTTF* backlabel =  CCLabelTTF::create("返回", "AR PLMingU20 Light", 24);
 	backlabel->setColor(ccc3(0,0,0));
 	CCMenuItemLabel *back = CCMenuItemLabel::create(backlabel,this,menu_selector(AboutScene::backCallback));
-	back->setPosition(300,-200);
+	back->setPosition(300,-visibleSize.height/2+50);
 	CCMenu * menu = CCMenu::create(back,NULL);
 	this->addChild(menu,2);
 	

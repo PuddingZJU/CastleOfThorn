@@ -43,8 +43,8 @@ void CCRPGJoystick::initJoyStick(CCRPGScene* scene){
 	A_button->setPosition(ccp(visibleSize.width/2-A_button->getContentSize().width*2-10-scene->screenpos.x,height/2-visibleSize.height/2-scene->screenpos.y));
 	CCMenuItemImage* B_button = CCMenuItemImage::create("btnB.png","btnB_down.png",this,SEL_MenuHandler(&CCRPGJoystick::B_button_Pressed));
 	B_button->setPosition(ccp(visibleSize.width/2-B_button->getContentSize().width-scene->screenpos.x,height/2-visibleSize.height/2-scene->screenpos.y));
-	addChild(A_button,2,16);
-	addChild(B_button,2,17);
+	A_button->setTag(16);
+    B_button->setTag(17);
 	CCMenu* buttons = CCMenu::create(A_button,B_button,NULL);
 	this->addChild(buttons,2,15);
 	ismoving =false;
@@ -156,31 +156,31 @@ void CCRPGJoystick::ccTouchEnded(CCTouch* pTouch, CCEvent* pEvent)
 	scene->player->stopAllActions();
 } 
 void CCRPGJoystick::setSceneScrollPosition(cocos2d::CCPoint position){
-	//��ȡ��Ļ�ߴ�
+	//ªÒ»°∆¡ƒª≥ﬂ¥Á
 	CCSize screenSize=CCDirector::sharedDirector()->getWinSize();
-	//����timeMap�ĸ߶ȣ���λ����
+	//º∆À„timeMapµƒ∏ﬂ∂»£¨µ•ŒªœÒÀÿ
 	CCSize mapSizeInPixel=CCSizeMake(scene->map->getMapSize().width*scene->map->getTileSize().width, scene->map->getMapSize().height*scene->map->getTileSize().height);
-	//��ȡ��ʿλ�ú���Ļ�е�x��y�����ֵ
+	//ªÒ»°”¬ øŒª÷√∫Õ∆¡ƒª÷–µ„x∫Õyµƒ◊Ó¥Û÷µ
 	float x=MAX(position.x, screenSize.width/2.0f);
 	float y=MAX(position.y, screenSize.height/2.0f);
-	//��ͼ�ܿ��ȴ�����Ļ����ʱ�ſ��ܹ���
+	//µÿÕº◊‹øÌ∂»¥Û”⁄∆¡ƒªøÌ∂» ±≤≈ø…ƒ‹πˆ∂Ø
 	if (mapSizeInPixel.width>screenSize.width) {
-		//�����ƶ����벻�ܳ�����ͼ�ܿ��ȼ�ȥ��Ļ����һ��
+		//≥°æ∞“∆∂Øæ‡¿Î≤ªƒ‹≥¨π˝µÿÕº◊‹øÌ∂»ºı»•∆¡ƒªøÌµƒ“ª∞Î
 		x=MIN(x, mapSizeInPixel.width-screenSize.width/2.0f);
 	}
-	//��ͼ�ܸ߶ȴ�����Ļ�߶�ʱ�ſ��ܹ���
+	//µÿÕº◊‹∏ﬂ∂»¥Û”⁄∆¡ƒª∏ﬂ∂» ±≤≈ø…ƒ‹πˆ∂Ø
 	if (mapSizeInPixel.height>screenSize.height) {
-		//�����ƶ����벻�ܳ�����ͼ�ܸ߶ȼ�ȥ��Ļ�ߵ�һ��
+		//≥°æ∞“∆∂Øæ‡¿Î≤ªƒ‹≥¨π˝µÿÕº◊‹∏ﬂ∂»ºı»•∆¡ƒª∏ﬂµƒ“ª∞Î
 		y=MIN(y, mapSizeInPixel.height-screenSize.height/2.0f);
 	}
-	//��ʿʵ��λ��
+	//”¬ ø µº Œª÷√
 	CCPoint heroPosition=ccp(x,y);
-	//��Ļ�е�λ��
+	//∆¡ƒª÷–µ„Œª÷√
 	CCPoint screenCenter=ccp(screenSize.width/2.0f,screenSize.height/2.0f);
-	//������ʿʵ��λ�ú��ص�λ�õľ���
+	//º∆À„”¬ ø µº Œª÷√∫Õ÷ÿµ„Œª÷√µƒæ‡¿Î
 	CCPoint scrollPosition=ccpSub(screenCenter, heroPosition);
 
-	//�������ƶ�����Ӧλ��
+	//Ω´≥°æ∞“∆∂ØµΩœ‡”¶Œª÷√
 	scene->screenpos = scrollPosition;
 	scene->setPosition(scrollPosition);
 	getChildByTag(10)->setPosition(ccp(height/2+20-scrollPosition.x,height/2+10-scrollPosition.y));
@@ -188,8 +188,8 @@ void CCRPGJoystick::setSceneScrollPosition(cocos2d::CCPoint position){
 	getChildByTag(12)->setPosition(ccp(height/2+20-scrollPosition.x,height/2+10-scrollPosition.y));
 	getChildByTag(13)->setPosition(ccp(height/2+20-scrollPosition.x,height/2+10-scrollPosition.y));
 	getChildByTag(14)->setPosition(ccp(height/2+20-scrollPosition.x,height/2+10-scrollPosition.y));
-	getChildByTag(16)->setPosition(ccp(screenSize.width/2-66*2-10-scrollPosition.x,height/2-screenSize.height/2-scrollPosition.y));
-	getChildByTag(17)->setPosition(ccp(screenSize.width/2-66-scrollPosition.x,height/2-screenSize.height/2-scrollPosition.y));
+	getChildByTag(15)->getChildByTag(16)->setPosition(ccp(screenSize.width/2-66*2-10-scrollPosition.x,height/2-screenSize.height/2-scrollPosition.y));
+	getChildByTag(15)->getChildByTag(17)->setPosition(ccp(screenSize.width/2-66-scrollPosition.x,height/2-screenSize.height/2-scrollPosition.y));
 	CCLog("%f,%f",scrollPosition.x,scrollPosition.y);
 
 }
@@ -221,23 +221,17 @@ void CCRPGJoystick::UpDate(float time){
 		CCPoint tilePos = this->tilePosFromLocation(pos, scene->map);  
 		scene->player->curTile = tilePos;
 		scene->Scan_cur_block(tilePos);
-		if (tilePos.y<=20 && tilePos.y>= 18 || (tilePos.y==4 && tilePos.x ==14))
-		{
-			scene->map->getChildByTag(1024)->setZOrder(3);
-		}
-		else{
-			scene->map->getChildByTag(1024)->setZOrder(4);
-		}
-		//��ȡ��ǰҪ�ƶ�һ��λ�õ��������  
-		//������Ҫ�ƶ����Ǹ�λ�õľ�������  
+		scene->changeZorder(tilePos);
+		//ªÒ»°µ±«∞“™“∆∂Ø“ª∏ˆŒª÷√µƒœ‡∂‘◊¯±Í  
+		//º∆À„ªÒµ√“™“∆∂ØµΩƒ«∏ˆŒª÷√µƒæ¯∂‘◊¯±Í  
 		tilePos = CCPointMake(tilePos.x + offset.x, tilePos.y + offset.y); 
 		scene->player->facetoTile = tilePos;
 		scene->Scan_Face_To_block(tilePos);
-		//ȷ�����ǲ��ᳬ����Ļ�ı߽�,����������ձ߽������  
+		//»∑±£÷˜Ω«≤ªª·≥¨≥ˆ∆¡ƒªµƒ±ﬂΩÁ,»Áπ˚≥¨≥ˆ‘Ú∞¥’’±ﬂΩÁµ„¿¥À„  
 		//tilePos = this->ensureTilePosIsWithinBounds(tilePos);  
-		//�ж�Ŀ��λ���Ƿ����ƶ�  
+		//≈–∂œƒø±ÍŒª÷√ «∑Òƒ‹“∆∂Ø  
 		if (this->isTilePosBlocked(tilePos, scene->map) == true && ismoving) {  
-			//��Ҫ�ƶ����Ǹ�����Ĵ�ש���ƶ�����ǰ��Ļ������  
+			//Ω´“™“∆∂Øµƒƒ«∏ˆ◊¯±Íµƒ¥…◊©øÈ“∆∂ØµΩµ±«∞∆¡ƒªµƒ÷–—Î  
 			scene->player->stopAllActions();
 		}  
 		
@@ -246,10 +240,9 @@ void CCRPGJoystick::UpDate(float time){
 }
 CCPoint CCRPGJoystick::tilePosFromLocation(cocos2d::CCPoint location, cocos2d::CCTMXTiledMap *tilemap)  
 {  
-	//��ȥ��ͼ��ƫ����  
+	//ºı»•µÿÕºµƒ∆´“∆¡ø  
 	CCPoint pos = ccpSub(location, tilemap->getPosition());  
 
-	float halfMapWidth = tilemap->getMapSize().width * 0.5f;  
 	float mapHeight = tilemap->getMapSize().height;  
 	float tileWidth = tilemap->getTileSize().width;  
 	float tileHeight = tilemap->getTileSize().height;  
@@ -277,7 +270,10 @@ CCPoint CCRPGJoystick::tilePosFromLocation(cocos2d::CCPoint location, cocos2d::C
 	return pos;  
 }  
 bool CCRPGJoystick::isTilePosBlocked(cocos2d::CCPoint tilepos, cocos2d::CCTMXTiledMap *tileMap)  
-{  
+{
+    if (tilepos.x<=0 || tilepos.y<=0 || tilepos.x>=tileMap->getMapSize().width || tilepos.y>=tileMap->getMapSize().height) {
+        return true;
+    }
 	CCTMXLayer * layer = tileMap->layerNamed("walk");  
 	bool isBokcked = true;  
 	unsigned int tileGID = layer->tileGIDAt(tilepos);  

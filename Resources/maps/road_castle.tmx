@@ -13,16 +13,6 @@
    eJztzjEKACAMBMFw/3+0jb1IiiDOwvaTqsr+VIbn4+Pj4+Pj4+Pj4/vHNxFfL75efL1e8vn+BYbxBdE=
   </data>
  </layer>
- <layer name="walk" width="40" height="30">
-  <data encoding="base64" compression="zlib">
-   eJztzjEKACAMQ9EOvf+ZpeCoFgzSFPMhS6Znpl7kc0x5surkw5IPSz68jjYWo3xY7L6oo43FKB8Wuy862aq+zFY5+f7xMRqZbTvfylr5qfsGXscGfQ==
-  </data>
- </layer>
- <layer name="road" width="40" height="30">
-  <data encoding="base64" compression="zlib">
-   eJzt1LENACAIBEAS99/ZCSxEoibclVA+TwQAnBnJHXSgH7C2248bM/iF+6zx6pfIr94EO6sAOg==
-  </data>
- </layer>
  <layer name="trees" width="40" height="30">
   <data encoding="base64" compression="zlib">
    eJzt1LENACAMA8E02X9lRqAAoWDdVSnSveQqYKcv/TCTvtn0zaZvNn3f6AE3efTNpu+5Cdv72yYvIJAAtQ==
@@ -30,12 +20,12 @@
  </layer>
  <layer name="light" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJzt1bEOABAMhGGT2ez9H9QkMYmWXJH/G9uRu6YEAMjOnUpx7lSqc4c3kI895ONv1nwoZiNrPhSzkTUfihnOueFGzNxwI2b6/4zqktX3i+qS1feL6hL65bwG7h0DkQ==
+   eJzt1TEKADAIQ1Gnzp29/0F7BIVI08J/U8ZAQCMATFjuAoXtLlBId4EC+2rYV8O+GvbV/LTvzdy1TbkrTRnA+/ifGm7evAMRigLR
   </data>
  </layer>
  <layer name="castle" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzjEOgCAQRNG9hpUaKjHc/3psAjWh0ua95HdTTMRwZGd2Lbrn7g8l9v6Vz58NLXuyuuidOwAAAAD2dbAPBI0=
+   eJztzjEOABAMRuEmTmFCTIj7X08T5jJheF/yhib/UJHJa0GLRmntXshy9l++/tnUtaJVo7Z2r7nNDQAAAAAA8JMBFLYEkw==
   </data>
  </layer>
  <layer name="door" width="40" height="30">
@@ -43,14 +33,24 @@
    eJztzisOgDAQANGeBQEVhE8Vv/ufixFVDSS4RcxLJs3umqb0rKeB8ss9SlffhVYqzT7aSBMddNJFc93/xdbMe8gvJEmSJEmSvrkBdH0DJA==
   </data>
  </layer>
+ <layer name="walk" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjEKADAIxVAH73/mLh3cSgkopQl80O1F2C/lXr3rP10eNp0+lj6WPpY+lj6WPpY+1uu+ienTp09fh8/uW9lHBrk=
+  </data>
+ </layer>
  <layer name="entrance" width="40" height="30">
   <data encoding="base64" compression="zlib">
    eJzt0LsKwCAMheGz1jXdvLz/Y2qhQsYoWDr8HwSXIznEJN2Ky2/expSFf7uuMSm4K7v807Ed7DWZ4veoLv9Ft7mzuTeaBwAAAAAA+IsO5R0Cfg==
   </data>
  </layer>
- <layer name="entrance_covered" width="40" height="30" visible="0">
+ <layer name="entrance_covered" width="40" height="30">
   <data encoding="base64" compression="zlib">
    eJzt0CEOACAMQ9FZsMOy+x+TCcQECZkZgv+SprapisjwaKIrNU9PdLXMb+PBvumx3bdt9mBfFLeeGgAAAAAA/GkBVsUEWA==
+  </data>
+ </layer>
+ <layer name="light_up" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt0SEOAEAIxEAU+jT/f+iFFyAqQHTUyk0aIWmS2wcGb/vAoLYPDOzL2JexL2Nfxr6MfRn7MvZl7Mvk4d3e4d3q8L7sAywhA8E=
   </data>
  </layer>
 </map>

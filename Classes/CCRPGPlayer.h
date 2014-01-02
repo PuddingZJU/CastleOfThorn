@@ -34,6 +34,7 @@ public:
 	int level;
 	string name;
 	vector<int> items;
+    int itemsccount[50];
 	CCArray* teamer;
 	CCAnimation *animitionUp;
 	CCAnimation *animitionDown ;

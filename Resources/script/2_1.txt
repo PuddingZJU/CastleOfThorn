@@ -1,0 +1,3 @@
+1.png 电话里说……小林你知道怎么走……？ alria 24 white
+lin.png 嗯，往西就好 alria 24 white
+1.png ‘感觉今天的林和平时不太一样…不过还是跟她走吧’  alria 24 white

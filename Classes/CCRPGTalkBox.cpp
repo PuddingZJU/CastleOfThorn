@@ -79,6 +79,11 @@ void CCRPGTalkBox::NextText(){
 			_icon->setPosition(CCSizeMake(height/2-screenpos.x, height/2-screenpos.y));
             this->addChild(_icon,2,2);
         }
+        else{
+             this->removeChildByTag(2);
+            left = 0;
+            width=origWidth;
+        }
         this->removeChildByTag(1);
         CCSprite* tmp = CCSprite::create(_background_image.c_str());
         CCSize size = tmp->getContentSize();

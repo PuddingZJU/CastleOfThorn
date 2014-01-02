@@ -12,6 +12,8 @@
 #include <sstream>
 USING_NS_CC;
 
+
+
 CCScene* FirstfloorScene::scene(){
 	// 'scene' is an autorelease object
 	CCScene *scene = CCScene::create();

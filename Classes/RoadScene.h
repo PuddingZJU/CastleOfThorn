@@ -18,17 +18,16 @@ private:
     float scaleY;
 public:
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
-	bool loadmode;
     virtual bool init();
-	virtual void A_Button_Pressed();
-	virtual void B_Button_Pressed();
 	virtual void Scan_cur_block(CCPoint pos);
-	void Scan_Face_To_block(CCPoint pos);
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::CCScene* scene();
     // a selector callback
 	void LoadScene();
-	bool event[3];
+	bool event;
+    static RoadScene* createWithPlayer(CCRPGPlayer *p);
+    void GoToNextStage();
+    void Event_1();
     // implement the "static node()" method manually
     CREATE_FUNC(RoadScene);
 };

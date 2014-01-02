@@ -10,7 +10,7 @@
 
 CCRPGPlayer* CCRPGPlayer::create(string name,int hp,int hpmax, int mp,int mpmax,int level){
 	CCRPGPlayer* cur = new CCRPGPlayer();
-	if (cur && cur->initWithFile(("animation/"+name+"-front.png").c_str()))
+	if (cur && cur->initWithFile((""+name+"-front.png").c_str()))
 	{
 		cur->autorelease();
 		cur->name = name;
@@ -20,6 +20,7 @@ CCRPGPlayer* CCRPGPlayer::create(string name,int hp,int hpmax, int mp,int mpmax,
 		cur->mpmax = mpmax;
 		cur->initAnimation();
 		cur->initAction();
+        memset(cur->itemsccount,0,sizeof(cur->itemsccount));
 		return cur;
 	}
 	CC_SAFE_DELETE(cur);
@@ -39,7 +40,7 @@ void CCRPGPlayer::initAnimation(){
 	{  
 		for(int j = 0; j < 4; j ++)  
 		{  
-			frame = CCSpriteFrame::createWithTexture(CCTextureCache::sharedTextureCache()->addImage(("animation/"+name+to[i]+act[j]).c_str()),CCRectMake(0,0,32.0,48.0));  
+			frame = CCSpriteFrame::createWithTexture(CCTextureCache::sharedTextureCache()->addImage((""+name+to[i]+act[j]).c_str()),CCRectMake(0,0,32.0,48.0));  
 			if(i == 0)  
 			{  
 				framesDown->addObject(frame);  

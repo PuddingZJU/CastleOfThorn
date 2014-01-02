@@ -23,11 +23,11 @@
                   symbolName = "CCRPGTalkBox::getContent() const"
                   moduleName = "Castle of Thorn"
                   urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/CCRPGTalkBox.h"
-                  timestampString = "408607475.186339"
+                  timestampString = "410374896.269289"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
                   offsetFromSymbolStart = "0">
                </Location>
                <Location
@@ -37,11 +37,11 @@
                   symbolName = "CCRPGTalkBox::setContent(cocos2d::CCLabelTTF*)"
                   moduleName = "Castle of Thorn"
                   urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/CCRPGTalkBox.h"
-                  timestampString = "408607475.186737"
+                  timestampString = "410374896.26956"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
                   offsetFromSymbolStart = "0">
                </Location>
             </Locations>
@@ -54,13 +54,229 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/CCRPGTalkBox.cpp"
-            timestampString = "408607384.330528"
+            timestampString = "410373978.645835"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "CCRPGTalkBox::TextUpdate()"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "CCRPGTalkBox::TextUpdate(float ctime)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/IntroScene.cpp"
+            timestampString = "410374863.217084"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "IntroScene::A_Button_Pressed()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/IntroScene.cpp"
+            timestampString = "410374863.217084"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "IntroScene::A_Button_Pressed()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IntroScene::A_Button_Pressed()"
+                  moduleName = "Castle of Thorn"
+                  urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/IntroScene.cpp"
+                  timestampString = "410342453.122207"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "2246">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IntroScene::A_Button_Pressed()"
+                  moduleName = "Castle of Thorn"
+                  urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/IntroScene.cpp"
+                  timestampString = "410342453.122537"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "2326">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/IntroScene.cpp"
+            timestampString = "410374863.217084"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "IntroScene::A_Button_Pressed()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IntroScene::A_Button_Pressed()"
+                  moduleName = "Castle of Thorn"
+                  urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/IntroScene.cpp"
+                  timestampString = "410374896.27"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IntroScene::A_Button_Pressed()"
+                  moduleName = "Castle of Thorn"
+                  urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/IntroScene.cpp"
+                  timestampString = "410374896.270189"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
+                  offsetFromSymbolStart = "2196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/IntroScene.cpp"
+            timestampString = "410374863.217084"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "IntroScene::A_Button_Pressed()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/IntroScene.cpp"
+            timestampString = "410374863.217084"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
+            landmarkName = "IntroScene::A_Button_Pressed()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IntroScene::A_Button_Pressed()"
+                  moduleName = "Castle of Thorn"
+                  urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/IntroScene.cpp"
+                  timestampString = "410374896.270604"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "2328">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IntroScene::A_Button_Pressed()"
+                  moduleName = "Castle of Thorn"
+                  urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/IntroScene.cpp"
+                  timestampString = "410374896.270797"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "2332">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/IntroScene.cpp"
+            timestampString = "410374783.834663"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "IntroScene::LoadData()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IntroScene::LoadData()"
+                  moduleName = "Castle of Thorn"
+                  urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/IntroScene.cpp"
+                  timestampString = "410374896.271007"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "756">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IntroScene::LoadData()"
+                  moduleName = "Castle of Thorn"
+                  urlString = "file:///Volumes/DATA/cocos2d-x-2.2.1/projects/CastleOfThorn/Classes/IntroScene.cpp"
+                  timestampString = "410374896.271345"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "766">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
