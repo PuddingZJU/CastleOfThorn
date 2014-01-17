@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="castle_001" tilewidth="32" tileheight="32">
+  <image source="castle_001.png" width="768" height="1600"/>
+  <tile id="506">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="507">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="508">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="602">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="603">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="604">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="624">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="625">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="626">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="650">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="696">
+   <properties>
+    <property name="thorn" value="3"/>
+   </properties>
+  </tile>
+  <tile id="798">
+   <properties>
+    <property name="item_position" value="2"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="1201" name="apartment-tilesets" tilewidth="32" tileheight="32">
+  <image source="apartment-tilesets.png" width="320" height="960"/>
+  <tile id="27">
+   <properties>
+    <property name="info" value="瓶里没水了"/>
+    <property name="itemID" value="2"/>
+   </properties>
+  </tile>
+  <tile id="195">
+   <properties>
+    <property name="info" value="《追忆逝水年华》"/>
+    <property name="itemID" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="floor_walk" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt10EKACAIRFHxyh2jS3cFjSlL/sBs6y0E0axPhmuK703fdE3x4cOHD18PX3QnKX2ZPdjBp7Lt+JR/R32ZOVW+ie9PX0Xx3fO9Pn+VPlVO34+kXxbZgGoU
+  </data>
+ </layer>
+ <layer name="walls" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlbENgDAMBE22BaYASnYDpiBMQQgFjROUGNkCBZ/0jWX5v3oDlMNUAcxItZ83N2oh3F8quXyrv22RUvnw/iaYb/e3HVLn5/2NBgj3wcjlUxRFoRL7C9KdT/GM/QXpzqd4xv4C7vyZOWOO58Vo0rLM+XI8Kbvu4/m4ecPzr5TQf5z9ct7i7j/OfjlvUfovB85+4e4qRVGUJxxJGqis
+  </data>
+ </layer>
+ <layer name="carpet" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt00EKwCAMRNHBg6Y9he0p1CM30HVQSiEu/oNZ5y9UAgB8YUU6gp0lu06q3nAFu+mbat7Qg40N+vCyxD+3crslvpnM2wAAAH97ANqwFM0=
+  </data>
+ </layer>
+ <layer name="window" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzrEJACAMRNEQsLHTLXQL3X8oFVuLFAFF/qsP/on8KalIVr+dtzKb1dC17ry12eyGrnUHAAC2GG4/OHv1FwAAwDIAuaMCKQ==
+  </data>
+ </layer>
+ <layer name="furniture_below" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjEKwCAQRFHBPYHo/e8ZFCw2RazTWLwHv5huSgHgr6dmt5nvpxbZqtktepx7RAYAAPC1AccbBXA=
+  </data>
+ </layer>
+ <layer name="furniture_main" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBieQJiJgUGEiXrqqA20gXbqINmrxkKcOnoBZ6CdLkC8DogvMjIwXAJiBqAbGVkQfJAcTN1AgWNAu18C3fIKiCWAbpNkQfCPYXHXFGb6u3EUjIKBBouZEXjJIMwDu5kReM8gdB+tgTKw3FIBYlUc9cBAA2ugu2yA2BbqPuQ6gB7gCQH5YKC7QoA4FOo+fHUALcAf+lgzCkbBKKAzgJV18HbwIAOwsg5Gg4AZsNwzB2ILOrfN/w/S+gsZlKG1L+wGmZv70NwXNsjcNwpGwWABAOxRJfY=
+  </data>
+ </layer>
+ <layer name="furniture_above" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1KENACAQBMFPgAQ0/VeKQdABCF7MJOtPXQQA/LXKKatZT3BjtN8LAHLo/hB4sAEVvQJG
+  </data>
+ </layer>
+ <layer name="item" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjENADAIADAO0DVT8x80wMPTKmgE7Py6HgATL68HAAAAOw08MAC9
+  </data>
+ </layer>
+ <layer name="ceiling" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlcENACAIA5nH/Qd0BSKtRewlfC8XoxiRY4EHDdLpvj4uhtN9fVwMp/vuuRQ7n/HXKM5vUh8S99X4sU/5Prz/zlyq+5fFfTUm9XV/Hy/sP8WY2WyRxRs9
+  </data>
+ </layer>
+ <layer name="r4_unlock" width="40" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztzkERACAIADC0vuGMYQxtwBfu3BIsAgCg3h7Vg9xp/rvNf2tWD3LdfwDwuwe27wPT
+  </data>
+ </layer>
+ <layer name="U007_magic_portal" width="40" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztzrkNACAQxMCVjoSn/z55CmBzCrgAj+TcEgAAAJBjhrTcdieyb161SM11N0r2DQAA/7orCwQR
+  </data>
+ </layer>
+</map>

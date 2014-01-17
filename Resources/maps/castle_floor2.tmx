@@ -1,8 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32">
- <layer name="块层 1" width="40" height="30">
+ <tileset firstgid="1" name="castle_001" tilewidth="32" tileheight="32">
+  <image source="castle_001.png" width="768" height="1344"/>
+ </tileset>
+ <layer name="bg" width="40" height="30">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20ND6AAAAAA4NcAEsAAAQ==
+   eJztwzEJAAAMA7Ay/ybqtDZ2JJBeUlVVVVV9erue/C8=
+  </data>
+ </layer>
+ <layer name="first_floor" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzrEJAAAMw7DQl/s/9IUMHSXw7gQA4M9Onz9//vz58+fPnz9/jQM0FFV4
+  </data>
+ </layer>
+ <layer name="walk" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1FEKAFAERFHZ/tu0JShvULpTfs35EDNCdvO8PhO7f3Z0Dj58+HJf9hsUv6PacdmnyAVfx+0qevDhw4cPHz58+BQd0wkK3GPe
+  </data>
+ </layer>
+ <layer name="wall" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1UEKgDAMRNHU+59NPYX2FGq7y6IQOjTg4j8IFAIzrozZ/+3F7BDmLHn5Pvtq71uYWuLu3qPkV/d9T3u/wtgWd/ceJb9nrxB1r+oBgAyjG+Dvy2ivmOmI7lsN9oqZjui++f/+cC+Y6eDuAAAA5PgAICaabw==
+  </data>
+ </layer>
+ <layer name="fence" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjENACAMAEH8O4EFDbBgi0ro1jS5S37/MQCATnY0E62ivxedRLfoDwCAfj6kMw+d
+  </data>
+ </layer>
+ <layer name="book_shelf" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlcEJgEAQAw8syhr0Yw36sQxb955BEcmusAEzcNwrMJ9lWjNZpv5m+NU81v42+KtQ8WAZh2qDO+i0CPqh0y7oh06HoJ+ik/kn1V278tQ3FdR83mD7Fu0hs8v0LdpDZpfpW7SHzC7Tt2h7mJ379h2+X37n+83tfL9GgRMv2ha1
+  </data>
+ </layer>
+ <layer name="paiting" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzrEJACAMRUHB6dQtdP8dbG0ECyMWd5A2/6VEpJrjfpfA36ux2emP9gHgppbPT58+ffr06dOnT98ffROq/TcF
+  </data>
+ </layer>
+ <layer name="light" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1bEJADAIRFHJmu6/hxMYEAykeK+75tofwQt57vvXbwCY2uqQngEA0CmPXAIv
+  </data>
+ </layer>
+ <layer name="light_on" width="40" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1TEKADAIBEHz/yfb+AIDgoEUM901124EL+S571+/AWBqq0N6BgBApwAaQgXp
+  </data>
+ </layer>
+ <layer name="door" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzrENgDAQBMGTvitMFYb+a+ELcICcQDAjbb4JvHNUMrqzvj5Zm/11dfdP/wAAAIA9DyzCAb0=
+  </data>
+ </layer>
+ <layer name="ceiling" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlTEOwCAQw+49/P+BnbKWyoFOjsTm3FkMsGZmlect7ezd/F1uzj/hdzP6ddGvi35d9Ovy9d0/8S/QHfT+iB/ZoR/j09GP8enox/h09GN8OvoxPh39GJ+OfoxPRz/Gp9OcP3Y92xYeMQ==
   </data>
  </layer>
 </map>

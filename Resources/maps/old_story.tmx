@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="castle_001" tilewidth="32" tileheight="32">
+  <image source="castle_001.png" width="768" height="1600"/>
+  <tile id="370">
+   <properties>
+    <property name="info" value="乐谱"/>
+    <property name="itemID" value="6"/>
+   </properties>
+  </tile>
+  <tile id="506">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="507">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="508">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="602">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="603">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="604">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="624">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="625">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="626">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="643">
+   <properties>
+    <property name="info" value="一个破旧的洋娃娃。领巾上绣有字‘亲爱的Becky,新婚快乐，你永远是我心中的洋娃娃。爱你的哥哥。’"/>
+    <property name="itemID" value="1"/>
+   </properties>
+  </tile>
+  <tile id="650">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="696">
+   <properties>
+    <property name="thorn" value="3"/>
+   </properties>
+  </tile>
+  <tile id="798">
+   <properties>
+    <property name="item_position" value="2"/>
+   </properties>
+  </tile>
+  <tile id="876">
+   <properties>
+    <property name="info" value="一个奇怪的机器，不知道干什么用的"/>
+    <property name="itemID" value="2"/>
+   </properties>
+  </tile>
+  <tile id="1109">
+   <properties>
+    <property name="info" value="一个上锁的箱子"/>
+    <property name="itemID" value="3"/>
+   </properties>
+  </tile>
+  <tile id="1110">
+   <properties>
+    <property name="info" value="一个盒子"/>
+    <property name="itemID" value="4"/>
+   </properties>
+  </tile>
+  <tile id="1134">
+   <properties>
+    <property name="info" value="一个盒子，锁住了。"/>
+    <property name="itemID" value="5"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="bg" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1sEJADAIBEFJ/03YaVowcA8DM3Bv92mfqh4sbXLzZfr06dOnT5++XB8AwG/Sf5jt2gWgN/H1
+  </data>
+ </layer>
+ <layer name="floor_walk" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt0tEJACAIQMFo5faHViiwtLgH/soJtia90egxw8fHx8fHx1fft7oz0rdzBx9fxvDd81X/v0xfVKf26t8meUUCvg==
+  </data>
+ </layer>
+ <layer name="walls" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1cEJwDAMA0Cn+8/WdIomUzTNJ9CfCZYwFB34Kxv8kNl/nMWsBucqvPvumd2C04n3PTN7BMcO3n0iIiJfXu8zOn1np9f7jE7f2en1PqPTM3ZmqsAfI7OWBsxEZi0DmInMEhGRHC/uwGRU
+  </data>
+ </layer>
+ <layer name="carpet" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjEOABAMQNFOOAVOUe5/Mg17F0Ml/kv+/kUA/ChZ2anErW3Vak497Ozg745aw2nGrQEAAAB40AJJZQV0
+  </data>
+ </layer>
+ <layer name="ceiling" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlsEJADAIxJyn+w/YFQp6vUMS8BtCH9qqN87wTDPppC/HpXDSl+NSOOnLcSmc9P1zOW664i/heD/6eq5NfQ7o60Ffj0196fvF2Zc8sJsLH7kXTQ==
+  </data>
+ </layer>
+ <layer name="windows" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzcEJACEMAMFgB9qF14X2X5SWECSvY+a9sBH/1FvEaHVdtXmfX+Kb7aqt+9yJb7YDAAAAeHUArI4CCw==
+  </data>
+ </layer>
+ <layer name="furniture" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhe4CQjA8MpRtx8UtVRGzwE2vGIETefVHXUBj+BdvxixM0nVd0oGDwglolyM2KoYAY5oJOFgaELiLtZBsZ+QmAh0F2LgHjxIHXfYABDOf2NgqEPRtMfbuAJxF5YaJ8BshcdJAJxEhY6hcbuw2WvEVI5709jN5ADApDY6QPmCtwgY6AdMIzAaPojHYymv1EwCoY+AAAX0ybW
+  </data>
+ </layer>
+ <layer name="furniture_above" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1DkRADAMwLAM4RMY5c+oMPKchMCTIwC4rrK7AGCH55cAMNIH3jwAfw==
+  </data>
+ </layer>
+ <layer name="item" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1LsRABAQRdFl1aULVGEEWlC4QEroM+OeZMN3oxUBAADAz4obt5rz28md31wJKtLs7Yq1rLcLAOziH/qFM/HxPvyhAzrVAy0=
+  </data>
+ </layer>
+ <layer name="exit" width="40" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztzkEVABAUALB/QAta0D8aBZx5bAkW8aacIko6vdir69Yu/vV1Gxf/AAAAgH9MZ1sAyg==
+  </data>
+ </layer>
+</map>

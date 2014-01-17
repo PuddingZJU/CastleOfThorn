@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="castle_001" tilewidth="32" tileheight="32">
+  <image source="castle_001.png" width="768" height="1600"/>
+  <tile id="506">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="507">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="508">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="602">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="603">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="604">
+   <properties>
+    <property name="candle" value="11"/>
+   </properties>
+  </tile>
+  <tile id="624">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="625">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="626">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="650">
+   <properties>
+    <property name="allow_movement" value="1"/>
+   </properties>
+  </tile>
+  <tile id="696">
+   <properties>
+    <property name="thorn" value="3"/>
+   </properties>
+  </tile>
+  <tile id="798">
+   <properties>
+    <property name="item_position" value="2"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="bg" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1sEJADAIBEFJ/03YaVowcA8DM3Bv92mfqh4sbXLzZfr06dOnT5++XB8AwG/Sf5jt2gWgN/H1
+  </data>
+ </layer>
+ <layer name="floor_walk" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt18EJADAIQ1Fx5Y7RpbuC0rSK/ECu8g6CaDYnyzXF19O3XVN8+PDhwzfDF71JSl/mDuK780VnKn2ZPcWHr6L4/vm671+lT5XX/yOZlwO5rWj6
+  </data>
+ </layer>
+ <layer name="walls" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1cEJwDAMA0Cn+8/WdIomUzTNJ9CfCZYwFB34Kxv8kNl/nMWsBucqvPvumd2C04n3PTN7BMcO3n0iIiJfXu8zOn1np9f7jE7f2en1PqPTM3ZmqsAfI7OWBsxEZi0DmInMEhGRHC/uwGRU
+  </data>
+ </layer>
+ <layer name="carpet" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt07ENgDAQBMGzCwWqQFQB9GWoAugDh2DpcehH2pEu3+Qk4L9SkDZje2hdJx254TR2OejzrotSb2yIreuk8aNhoq/q2ZeKz3rrO4rPeusr0Vc354bF2OqgDwAAAG83KH4eMQ==
+  </data>
+ </layer>
+ <layer name="windows" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztztENABAQRMGLDuiCLui/KErwdyQz35u8jQAA+FstEa282+1nMxL+3Xbn2ayEf1ldAOA/GxpeAgs=
+  </data>
+ </layer>
+ <layer name="decorations" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1aENACAMRNHSFWAL2AL2XwgDBoFENIXwn2wuueRMReChB5ssAAA/iiqS9L7e9cPzzBTdb5ZOe+vMNIf9vHoBAMB7BolyCAs=
+  </data>
+ </layer>
+ <layer name="coffin" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIKBB38ZKTfjDxXMIBVMY8aOBwsYKu6rAuLqQey+SUA8eRC7b7DH70smCB4o9w3V8mUUjIJRMHCAGuUGtcFoOTQKRsEoGOkAABdTG9w=
+  </data>
+ </layer>
+ <layer name="exit" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjEKgDAUBcEHSWP0/vdUcwB/K9aSZga23wQAAODtbMlV3dVsq2++tp6Maq+OvvoGgL89oOIEEQ==
+  </data>
+ </layer>
+ <layer name="big_window" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzksNwCAABNFN8C8Eigk+JiiI6d4roITOS+Y+0j/EICV3uRy+vnkrfqquub7h3/DT7aZbG/4BAAAAAIBzPdSGCUM=
+  </data>
+ </layer>
+ <layer name="ceiling" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlsEJADAIxJyn+w/YFQp6vUMS8BtCH9qqN87wTDPppC/HpXDSl+NSOOnLcSmc9P1zOW664i/heD/6eq5NfQ7o60Ffj0196fvF2Zc8sJsLH7kXTQ==
+  </data>
+ </layer>
+</map>

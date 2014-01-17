@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="castle_001" tilewidth="32" tileheight="32">
+  <image source="castle_001.png" width="768" height="1600"/>
+ </tileset>
+ <tileset firstgid="1201" name="apartment-tilesets" tilewidth="32" tileheight="32">
+  <image source="apartment-tilesets.png" width="320" height="960"/>
+ </tileset>
+ <layer name="walk" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzrEJAAAIwDDxfZ/2C1FMoHsjALimciZ//vz58+fPn78vf8BuDZG61s8=
+  </data>
+ </layer>
+ <layer name="wall" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzsENgCAQRNGB0ijDosUqwCrULQDcDUfyX/KPk4wEYEdnkqrTZZVJ0f2qZtvudP/8i+5XPbZ9nZSlI42L7gEAAAAAvg8vejmp
+  </data>
+ </layer>
+ <layer name="carpet" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzrENwCAMAEEqkikgUxD2nwyP4A6B7qTvvxQA4BQ1epK9G/5a1JN9/o77G9GfbG74AwDutQC3GQdF
+  </data>
+ </layer>
+ <layer name="thorn" width="40" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztlFEKwCAMQ912/4PuFqMfQgkW6zSyQR6USbEh1LWlCCGEEP/iPrma0TnLcc378ZgH07RvdB7VWonp9QI9VM/Y69b93f5qDvsb3V/pb7QG65n+3tShBms2ZupZ/92IbjTDO97V7xMf3pu/g3l276LAt4vyDHqzl9k5LG8Z35hr7UAhhPgiD4gAIpE=
+  </data>
+ </layer>
+ <layer name="ceiling" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1sEJACAQA8HUY/8FWoMGDpEZyH+fSYBTa3g3fVP0dfR19HX0dfR19HX0dfR1fu17+d8DyQa6Mw8Z
+  </data>
+ </layer>
+ <layer name="furniture_below" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjEKwCAUA9APegJp739PacGlpYu6WuG9KSRLIgCAXdXUz6tdz5eSv+7N9w9+Hnm8nZMNAIA1GvJXBFc=
+  </data>
+ </layer>
+ <layer name="furniture" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjILBDwoZGRiKGOln3zom/HxPIPaCiucBcSfQbV2MEDZIDCaPzwxKwDEm/PxEIE6CircB8UKg2xYxQtggMZg8PjOGM/hLh7T0h47pdbCC78wMDD/Q8E/mgXYVAvCzMDAIoGFBFtrbO5r+RsFAgtH0NwpGwSgYBaNgqAIApasbfw==
+  </data>
+ </layer>
+ <layer name="furniture_above" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztxjENADAIADAScDD/SnkwgIAltFcjAABu6tz/i1f7AQCuGfJSAis=
+  </data>
+ </layer>
+ <layer name="decoration" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzLEJACAMRNEoZAgdwK3cyKEtxEaCijaC/zUXOC4iAIATwc/7uOhvZdeyqJ07xk3/CfwiqX0DAADgLRUL1wQf
+  </data>
+ </layer>
+ <layer name="window" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzDERADAMxLAQLIzyp1AEvd+SIdLmxVUAc07orsfPDd31AAAA2OwBOooCyQ==
+  </data>
+ </layer>
+ <layer name="exit" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzlEJACAQBbAH10pbaP8uWsBvRbYESwD+0yrpdXtxNvZtPvwDAAB4yQKaPQEn
+  </data>
+ </layer>
+ <layer name="save" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjENAAAIA7Al+P8QjAU+DloFTQAA9rquBwAAfDNG8wCY
+  </data>
+ </layer>
+</map>

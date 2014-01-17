@@ -43,7 +43,7 @@
   </tile>
   <tile id="29">
    <properties>
-    <property name="info" value="一个手电筒"/>
+    <property name="info" value="得到了一个手电筒"/>
     <property name="itemID" value="4"/>
    </properties>
   </tile>
@@ -55,7 +55,7 @@
   </tile>
   <tile id="38">
    <properties>
-    <property name="info" value="一把钥匙"/>
+    <property name="info" value="有一把钥匙"/>
     <property name="itemID" value="12"/>
    </properties>
   </tile>

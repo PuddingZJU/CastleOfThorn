@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="xi_memory" tilewidth="32" tileheight="32">
+  <image source="xi_memory.png" width="512" height="512"/>
+ </tileset>
+ <layer name="walk" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt0zEOABAMRuGexyBuwf1PxGKTaElKeC/5R823EKETBePw4SN6NY//kNuKYiOP5v9qbvf7O76y4NPe/cEnCz7BN30/+7u7PkvROO/w4TvpG3WTJRmHDx++e3xeVX3gTjM=
+  </data>
+ </layer>
+ <layer name="shadow" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztkksKACAIBT1E9z9re6lAyxSZgbfzM0YiAAAAeQyVHzt2sdR6em79otPdz3OLdX53v1N/1HwLr/5UFPjhl+m3oqJL1ffDDz/88plo3BlR
+  </data>
+ </layer>
+ <layer name="ceiling" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztllEKACEIRLvD3v+uXWDZcsad0OZBP4HyIhXH6McDHqWfIgbFfhwV/Fa1f7I/3lx27k5hP3zmRuqPzRd5SxQ2/231wtD9fyv4ffUcu19lzIMoyl2xwn6giEGxH8ff/Zvhp4hBsR+H/Tgq+GXs7DtMdZUMnw==
+  </data>
+ </layer>
+ <layer name="bridge1" width="40" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAIA7AJwr8+/jmAtEkTAD6bCgAAcM0C45gAsQ==
+  </data>
+ </layer>
+ <layer name="bridge2" width="40" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztw7ENAAAIA6Ae5P/3uXfVERISAC6mAgAA8GsBUacAsQ==
+  </data>
+ </layer>
+ <layer name="bridge3" width="40" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztw0EJAAAIBLALZP98/i+B4AZLAG6bCgAAwC8Lv6cAsQ==
+  </data>
+ </layer>
+ <layer name="bridge4" width="40" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztw0EJAAAIBLALZP98/i+B4AZLgO+mAgAAwCULLbYAsQ==
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="road" tilewidth="32" tileheight="32">
+  <image source="road.png" width="320" height="512"/>
+ </tileset>
+ <layer name="snow" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1bEJACAUQ8FM+Xv3X8IJBLug3IP012WSTGk3tWx8fHx8fHx8fHx8L/pWcZKkc83/+GEbUZ7sfg==
+  </data>
+ </layer>
+ <layer name="road" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzrEJADAMwLBe0P/P7QsBDxkqgXefs+cO2uSv8df4a/w1/hp/jb/GX+OvmfxJ0q/RPJ4GG1k=
+  </data>
+ </layer>
+ <layer name="trees_backward" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlcEKAyEMRPO99rr9DHvVz617CFh3kk6tFgoZCIFlCOYZs1lEHi3ykG9yVQK+2YzqI5UW1ch9jeT4+nxvcYCMfIyYPj/hxnJn+VWjX4sX4lPE54Lqs/ws31lj5IO8PRuWSyJ94vgQP+TtZ4uZK+2nkuf7hl+R62wpGyt7d4Hk1WPeK3qbTGbvd8U+szSeS7+dwfKb6X3MO6UctCdrF6B5fMdvhdh9zs7jarH7XPkpT2seV+sf+I1nQ7smy+t/4pf82L3X/yfUv5uf915ncigUCoVCodBuPQFhyLbs
+  </data>
+ </layer>
+ <layer name="walls" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztziEOACAMBMH+GPi/wSLIOSrITFLTVmwVAPSZx6xwS7tXRui73dK/Pn36evsAgL9taD4rwg==
+  </data>
+ </layer>
+ <layer name="house" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztyj0OgkAURWH2hNAhUCFS8VdBoFJ0/xvwFBSEmDcUTMX9kpPM5L4gEJGruVFE8cHNuj9bQndKKaPcsVn3PhT0oJKeVP3Zws1m3ftQU0MtddQ7Nuveh4HetNCH5t02ru9p3ax7H167/9exWfciIiIiInKeH1W+Flk=
+  </data>
+ </layer>
+ <layer name="door&amp;windows" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt0DEOwCAMQ1Hu1pmbwApzb86OKDgSljr8tySKPSUlAMBt78eO/yvTXGVV7Du0aa6yLvYdlP+Vw81J+V873NyeYLbrO+RgtusDAACoBoy4DU0=
+  </data>
+ </layer>
+ <layer name="trees" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztyiESADAIA0FeXt1n4xGgKjrsmhNJBAAA/O+UTlv3f+GWTlv3B4BtEu/jBiU=
+  </data>
+ </layer>
+ <layer name="decorations" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt07ENACAMA8EMDhUSczMBRaCwLf0tkFcCVXA11QEXrl3Jfnc6GnO4H+CJv/luqwMgl/4GljoAAIAABy5sBPo=
+  </data>
+ </layer>
+ <layer name="lamps" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt06ENACAAA0EUGs3+g7JAEwxJEXfyVU3HAABeme0BF6s94GK3B/CF9KNWS9KPWi1JP2o1AHjlAD4lAYE=
+  </data>
+ </layer>
+ <layer name="gift" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjENAAAIA7DpRzUe9pCQVkETAAD4b64DAEBtAUTMAIs=
+  </data>
+ </layer>
+</map>
